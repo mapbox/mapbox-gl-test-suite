@@ -1,0 +1,7 @@
+{
+    "name": "mapbox-gl-test-suite",
+    "description": "Rendering tests for Mapbox GL",
+    "version": "0.0.0",
+    "license": "BSD",
+    "dependencies": {}
+}
