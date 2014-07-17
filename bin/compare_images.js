@@ -83,7 +83,7 @@ function writeResult(base, key, info, error, difference) {
         '    <td><img src="' + base + '/' + key + '/actual.png" onmouseover="this.src=\'' + base + '/' + key + '/expected.png\'" onmouseout="this.src=\'' + base + '/' + key + '/actual.png\'"></td>\n' +
         '    <td><img src="' + base + '/' + key + '/expected.png" onmouseover="this.src=\'' + base + '/' + key + '/diff.png\'" onmouseout="this.src=\'' + base + '/' + key + '/expected.png\'"></td>\n' +
         '    <td>\n' +
-        '        <h2 style="text-align:center; background:' + color + '"><a href="' + base + '.style.json">' + base + '/' + key + '</a></h2>\n' +
+        '        <h2 style="text-align:center; background:' + color + '"><a href="' + base + '/style.json">' + base + '/' + key + '</a></h2>\n' +
         (error ? '        <p>' + error + '</p>\n' : '') +
         '        <ul>\n' +
         '            <li>diff: <strong>' + difference + '</strong></li>\n' +
