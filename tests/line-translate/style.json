@@ -31,9 +31,10 @@
             "line-translate": "@constant"
         },
         "style.function": {
-            "line-translate": {
-                "stops": [[16, [15, 15]], [17, [20, 20]]]
-            }
+            "line-translate": [
+                {"stops": [[16, 15], [17, 20]]},
+                {"stops": [[16, 15], [17, 20]]}
+            ]
         }
     }]
 }

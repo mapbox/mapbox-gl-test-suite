@@ -31,9 +31,10 @@
             "line-dasharray": "@constant"
         },
         "style.function": {
-            "line-dasharray": {
-                "stops": [[16, [15, 15]], [17, [20, 20]]]
-            }
+            "line-dasharray": [
+                {"stops": [[16, 15], [17, 20]]},
+                {"stops": [[16, 15], [17, 20]]}
+            ]
         }
     }]
 }
