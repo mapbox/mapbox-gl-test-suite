@@ -1,0 +1,39 @@
+{
+    "version": 4,
+    "sources": {
+        "mapbox": {
+            "type": "vector",
+            "url": "local://tiles/{z}-{x}-{y}.vector.pbf"
+        }
+    },
+    "constants": {
+        "@constant": 0.4
+    },
+    "layers": [{
+        "id": "background",
+        "type": "background",
+        "style": {
+            "background-color": "white"
+        }
+    }, {
+        "id": "road",
+        "source": "mapbox",
+        "source-layer": "road",
+        "type": "line",
+        "style": {
+            "line-width": 10,
+            "line-color": "#000"
+        },
+        "style.literal": {
+            "line-opacity": 0.3
+        },
+        "style.constant": {
+            "line-opacity": "@constant"
+        },
+        "style.function": {
+            "line-opacity": {
+                "stops": [[16, 0.5], [17, 0.6]]
+            }
+        }
+    }]
+}
