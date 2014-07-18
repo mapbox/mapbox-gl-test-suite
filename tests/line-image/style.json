@@ -1,0 +1,26 @@
+{
+    "version": 4,
+    "sources": {
+        "mapbox": {
+            "type": "vector",
+            "url": "local://tiles/{z}-{x}-{y}.vector.pbf"
+        }
+    },
+    "sprite": "local://sprites/outdoors",
+    "layers": [{
+        "id": "background",
+        "type": "background",
+        "style": {
+            "background-color": "white"
+        }
+    }, {
+        "id": "road",
+        "source": "mapbox",
+        "source-layer": "road",
+        "type": "line",
+        "style": {
+            "line-width": 20,
+            "line-image": "beer-12"
+        }
+    }]
+}
