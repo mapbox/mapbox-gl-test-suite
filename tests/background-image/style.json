@@ -1,0 +1,17 @@
+{
+    "version": 4,
+    "sources": {
+        "mapbox": {
+            "type": "vector",
+            "url": "local://tiles/{z}-{x}-{y}.vector.pbf"
+        }
+    },
+    "sprite": "local://sprites/outdoors",
+    "layers": [{
+        "id": "background",
+        "type": "background",
+        "style": {
+            "background-image": "wetland_noveg_64"
+        }
+    }]
+}
