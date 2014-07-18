@@ -3,9 +3,11 @@
     "sources": {
         "mapbox": {
             "type": "vector",
-            "url": "local://tiles/{z}-{x}-{y}.vector.pbf",
-            "maxZoom": 14
+            "url": "local://tiles/{z}-{x}-{y}.vector.pbf"
         }
+    },
+    "constants": {
+        "@constant": 10
     },
     "layers": [{
         "id": "background",
@@ -18,10 +20,15 @@
         "source": "mapbox",
         "source-layer": "road",
         "type": "line",
-        "style": {
+        "style.literal": {
+            "line-width": 5
+        },
+        "style.constant": {
+            "line-width": "@constant"
+        },
+        "style.function": {
             "line-width": {
-                "fn": "stops",
-                "stops": [[13, 0], [13.999, 0], [14, 4], [14.1, 10], [14.2, 20]]
+                "stops": [[16, 15], [17, 20]]
             }
         }
     }]
