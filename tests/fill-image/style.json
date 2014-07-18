@@ -1,0 +1,25 @@
+{
+    "version": 4,
+    "sources": {
+        "mapbox": {
+            "type": "vector",
+            "url": "local://tiles/{z}-{x}-{y}.vector.pbf"
+        }
+    },
+    "sprite": "local://sprites/outdoors",
+    "layers": [{
+        "id": "background",
+        "type": "background",
+        "style": {
+            "background-color": "white"
+        }
+    }, {
+        "id": "land",
+        "source": "mapbox",
+        "source-layer": "water",
+        "type": "fill",
+        "style": {
+            "fill-image": "beer-12"
+        }
+    }]
+}
