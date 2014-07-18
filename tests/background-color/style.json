@@ -1,0 +1,27 @@
+{
+    "version": 4,
+    "sources": {
+        "mapbox": {
+            "type": "vector",
+            "url": "local://tiles/{z}-{x}-{y}.vector.pbf"
+        }
+    },
+    "constants": {
+        "@green": "green"
+    },
+    "layers": [{
+        "id": "background",
+        "type": "background",
+        "style.literal": {
+            "background-color": "red"
+        },
+        "style.constant": {
+            "background-color": "@green"
+        },
+        "style.function": {
+            "background-color": {
+                "stops": [[0, "blue"], [10, "white"]]
+            }
+        }
+    }]
+}
