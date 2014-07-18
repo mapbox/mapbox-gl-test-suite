@@ -1,0 +1,10 @@
+{
+    "map": {
+        "bearing": 90,
+        "classes": ["map"]
+    },
+    "viewport": {
+        "bearing": 90,
+        "classes": ["viewport"]
+    }
+}
