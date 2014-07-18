@@ -23,6 +23,12 @@ cd mapbox-gl-js
 node test/rendering.test.js
 ```
 
+Native:
+
+```
+TODO
+```
+
 This generates `actual.png` files along side each `expected.png` as well as a `diff.png` showing any differences between
 the two. It also generates `tests/index.html` which allows you to browse the complete results.
 
