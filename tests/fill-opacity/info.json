@@ -1,0 +1,13 @@
+{
+    "default": {
+    },
+    "literal": {
+        "classes": ["literal"]
+    },
+    "constant": {
+        "classes": ["constant"]
+    },
+    "function": {
+        "classes": ["function"]
+    }
+}
