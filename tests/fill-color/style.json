@@ -3,23 +3,35 @@
     "sources": {
         "mapbox": {
             "type": "vector",
-            "url": "local://tiles/{z}-{x}-{y}.vector.pbf",
-            "maxZoom": 14
+            "url": "local://tiles/{z}-{x}-{y}.vector.pbf"
         }
+    },
+    "constants": {
+        "@constant": "red"
     },
     "layers": [{
         "id": "background",
         "type": "background",
         "style": {
-            "background-color": "red"
+            "background-color": "white"
         }
     }, {
-        "id": "water",
+        "id": "land",
         "source": "mapbox",
         "source-layer": "water",
         "type": "fill",
         "style": {
+        },
+        "style.literal": {
             "fill-color": "blue"
+        },
+        "style.constant": {
+            "fill-color": "@constant"
+        },
+        "style.function": {
+            "fill-color": {
+                "stops": [[0, "green"], [1, "blue"]]
+            }
         }
     }]
 }

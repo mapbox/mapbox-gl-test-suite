@@ -1,9 +1,13 @@
 {
-    "plain": {
-        "center": [0, 0],
-        "zoom": 0,
-        "log": [
-            [ 1, "INFO", "HttpRequest", 200, "tiles/0-0-0.vector.pbf" ]
-        ]
+    "default": {
+    },
+    "literal": {
+        "classes": ["literal"]
+    },
+    "constant": {
+        "classes": ["constant"]
+    },
+    "function": {
+        "classes": ["function"]
     }
 }
