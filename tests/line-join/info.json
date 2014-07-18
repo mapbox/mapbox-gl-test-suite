@@ -1,0 +1,20 @@
+{
+    "bevel": {
+        "zoom": 16,
+        "center": [52.499167, 13.418056],
+        "height": 256,
+        "classes": ["bevel"]
+    },
+    "miter": {
+        "zoom": 16,
+        "center": [52.499167, 13.418056],
+        "height": 256,
+        "classes": ["miter"]
+    },
+    "round": {
+        "zoom": 16,
+        "center": [52.499167, 13.418056],
+        "height": 256,
+        "classes": ["round"]
+    }
+}

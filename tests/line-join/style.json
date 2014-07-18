@@ -1,0 +1,64 @@
+{
+    "version": 4,
+    "sources": {
+        "mapbox": {
+            "type": "vector",
+            "url": "local://tiles/{z}-{x}-{y}.vector.pbf"
+        }
+    },
+    "layers": [{
+        "id": "background",
+        "type": "background",
+        "style": {
+            "background-color": "white"
+        }
+    }, {
+        "id": "bevel",
+        "source": "mapbox",
+        "source-layer": "road",
+        "type": "line",
+        "render": {
+            "line-join": "bevel"
+        },
+        "style": {
+            "line-width": 10,
+            "line-color": "#000",
+            "line-opacity": 0
+        },
+        "style.bevel": {
+            "line-opacity": 1
+        }
+    }, {
+        "id": "miter",
+        "source": "mapbox",
+        "source-layer": "road",
+        "type": "line",
+        "render": {
+            "line-join": "miter"
+        },
+        "style": {
+            "line-width": 10,
+            "line-color": "#000",
+            "line-opacity": 0
+        },
+        "style.miter": {
+            "line-opacity": 1
+        }
+    }, {
+        "id": "round",
+        "source": "mapbox",
+        "source-layer": "road",
+        "type": "line",
+        "render": {
+            "line-join": "round"
+        },
+        "style": {
+            "line-width": 10,
+            "line-color": "#000",
+            "line-opacity": 0
+        },
+        "style.round": {
+            "line-opacity": 1
+        }
+    }]
+}
