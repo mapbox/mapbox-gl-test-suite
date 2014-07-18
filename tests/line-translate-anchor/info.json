@@ -1,0 +1,16 @@
+{
+    "map": {
+        "zoom": 16,
+        "center": [52.499167, 13.418056],
+        "height": 256,
+        "bearing": 90,
+        "classes": ["map"]
+    },
+    "viewport": {
+        "zoom": 16,
+        "center": [52.499167, 13.418056],
+        "height": 256,
+        "bearing": 90,
+        "classes": ["viewport"]
+    }
+}
