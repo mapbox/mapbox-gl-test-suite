@@ -1,0 +1,20 @@
+{
+    "butt": {
+        "zoom": 16,
+        "center": [52.499167, 13.418056],
+        "height": 256,
+        "classes": ["butt"]
+    },
+    "round": {
+        "zoom": 16,
+        "center": [52.499167, 13.418056],
+        "height": 256,
+        "classes": ["round"]
+    },
+    "square": {
+        "zoom": 16,
+        "center": [52.499167, 13.418056],
+        "height": 256,
+        "classes": ["square"]
+    }
+}
