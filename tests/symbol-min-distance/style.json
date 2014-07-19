@@ -1,0 +1,87 @@
+{
+    "version": 4,
+    "sources": {
+        "mapbox": {
+            "type": "vector",
+            "url": "local://tiles/{z}-{x}-{y}.vector.pbf"
+        }
+    },
+    "sprite": "local://sprites/outdoors",
+    "layers": [{
+        "id": "background",
+        "type": "background",
+        "style": {
+            "background-color": "white"
+        }
+    }, {
+        "id": "point-close",
+        "source": "mapbox",
+        "source-layer": "poi_label",
+        "type": "symbol",
+        "filter": {
+            "maki": "restaurant"
+        },
+        "render": {
+            "icon-image": "{maki}-12",
+            "symbol-placement": "point",
+            "symbol-min-distance": 5
+        },
+        "style": {
+            "icon-opacity": 0
+        },
+        "style.point-close": {
+            "icon-opacity": 1
+        }
+    }, {
+        "id": "point-far",
+        "source": "mapbox",
+        "source-layer": "poi_label",
+        "type": "symbol",
+        "filter": {
+            "maki": "restaurant"
+        },
+        "render": {
+            "icon-image": "{maki}-12",
+            "symbol-placement": "point",
+            "symbol-min-distance": 10
+        },
+        "style": {
+            "icon-opacity": 0
+        },
+        "style.point-far": {
+            "icon-opacity": 1
+        }
+    }, {
+        "id": "line-close",
+        "source": "mapbox",
+        "source-layer": "road",
+        "type": "symbol",
+        "render": {
+            "icon-image": "triangle-stroked-12",
+            "symbol-placement": "line",
+            "symbol-min-distance": 5
+        },
+        "style": {
+            "icon-opacity": 0
+        },
+        "style.line-close": {
+            "icon-opacity": 1
+        }
+    }, {
+        "id": "line-far",
+        "source": "mapbox",
+        "source-layer": "road",
+        "type": "symbol",
+        "render": {
+            "icon-image": "triangle-stroked-12",
+            "symbol-placement": "line",
+            "symbol-min-distance": 10
+        },
+        "style": {
+            "icon-opacity": 0
+        },
+        "style.line-far": {
+            "icon-opacity": 1
+        }
+    }]
+}

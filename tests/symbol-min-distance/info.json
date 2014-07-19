@@ -1,0 +1,26 @@
+{
+    "point-close": {
+        "zoom": 16,
+        "center": [52.499167, 13.418056],
+        "height": 256,
+        "classes": ["point-close"]
+    },
+    "point-far": {
+        "zoom": 16,
+        "center": [52.499167, 13.418056],
+        "height": 256,
+        "classes": ["point-far"]
+    },
+    "line-close": {
+        "zoom": 16,
+        "center": [52.499167, 13.418056],
+        "height": 256,
+        "classes": ["line-close"]
+    },
+    "line-far": {
+        "zoom": 16,
+        "center": [52.499167, 13.418056],
+        "height": 256,
+        "classes": ["line-far"]
+    }
+}
