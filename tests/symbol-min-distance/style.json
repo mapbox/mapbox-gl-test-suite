@@ -23,8 +23,10 @@
         },
         "render": {
             "icon-image": "{maki}-12",
+            "icon-allow-overlap": true,
+            "icon-ignore-placement": true,
             "symbol-placement": "point",
-            "symbol-min-distance": 5
+            "symbol-min-distance": 20
         },
         "style": {
             "icon-opacity": 0
@@ -42,8 +44,10 @@
         },
         "render": {
             "icon-image": "{maki}-12",
+            "icon-allow-overlap": true,
+            "icon-ignore-placement": true,
             "symbol-placement": "point",
-            "symbol-min-distance": 10
+            "symbol-min-distance": 50
         },
         "style": {
             "icon-opacity": 0
@@ -58,8 +62,10 @@
         "type": "symbol",
         "render": {
             "icon-image": "triangle-stroked-12",
+            "icon-allow-overlap": true,
+            "icon-ignore-placement": true,
             "symbol-placement": "line",
-            "symbol-min-distance": 5
+            "symbol-min-distance": 20
         },
         "style": {
             "icon-opacity": 0
@@ -74,8 +80,10 @@
         "type": "symbol",
         "render": {
             "icon-image": "triangle-stroked-12",
+            "icon-allow-overlap": true,
+            "icon-ignore-placement": true,
             "symbol-placement": "line",
-            "symbol-min-distance": 10
+            "symbol-min-distance": 50
         },
         "style": {
             "icon-opacity": 0
