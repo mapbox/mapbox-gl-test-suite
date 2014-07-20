@@ -3,7 +3,8 @@
     "sources": {
         "mapbox": {
             "type": "vector",
-            "url": "local://tiles/{z}-{x}-{y}.vector.pbf"
+            "url": "local://tiles/{z}-{x}-{y}.vector.pbf",
+            "maxZoom": 14
         }
     },
     "constants": {
