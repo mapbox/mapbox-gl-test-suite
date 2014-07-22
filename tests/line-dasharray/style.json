@@ -8,7 +8,9 @@
         }
     },
     "constants": {
-        "@constant": [10, 10]
+        "@constant": [10, 10],
+        "@small": 5,
+        "@large": 10
     },
     "layers": [{
         "id": "background",
@@ -30,6 +32,9 @@
         },
         "style.constant": {
             "line-dasharray": "@constant"
+        },
+        "style.array-constant": {
+            "line-dasharray": ["@small", "@large"]
         },
         "style.function": {
             "line-dasharray": [

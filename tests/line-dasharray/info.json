@@ -16,6 +16,12 @@
         "height": 256,
         "classes": ["constant"]
     },
+    "array-constant": {
+        "zoom": 16,
+        "center": [52.499167, 13.418056],
+        "height": 256,
+        "classes": ["array-constant"]
+    },
     "function": {
         "zoom": 16,
         "center": [52.499167, 13.418056],
