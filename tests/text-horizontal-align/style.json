@@ -1,0 +1,64 @@
+{
+    "version": 4,
+    "sources": {
+        "mapbox": {
+            "type": "vector",
+            "url": "local://tiles/{z}-{x}-{y}.vector.pbf",
+            "maxZoom": 14
+        }
+    },
+    "glyphs": "local://glyphs/{fontstack}/{range}.pbf",
+    "layers": [{
+        "id": "background",
+        "type": "background",
+        "style": {
+            "background-color": "white"
+        }
+    }, {
+        "id": "left",
+        "source": "mapbox",
+        "source-layer": "poi_label",
+        "type": "symbol",
+        "filter": {
+            "maki": "restaurant"
+        },
+        "render": {
+            "symbol-placement": "point",
+            "text-allow-overlap": true,
+            "text-ignore-placement": true,
+            "text-field": "Test Test Test",
+            "text-font": "Open Sans Semibold, Arial Unicode MS Bold",
+            "text-max-width": 5,
+            "text-horizontal-align": "left"
+        },
+        "style": {
+            "text-opacity": 0
+        },
+        "style.left": {
+            "text-opacity": 1
+        }
+    }, {
+        "id": "right",
+        "source": "mapbox",
+        "source-layer": "poi_label",
+        "type": "symbol",
+        "filter": {
+            "maki": "restaurant"
+        },
+        "render": {
+            "symbol-placement": "point",
+            "text-allow-overlap": true,
+            "text-ignore-placement": true,
+            "text-field": "Test Test Test",
+            "text-font": "Open Sans Semibold, Arial Unicode MS Bold",
+            "text-max-width": 5,
+            "text-horizontal-align": "right"
+        },
+        "style": {
+            "text-opacity": 0
+        },
+        "style.right": {
+            "text-opacity": 1
+        }
+    }]
+}
