@@ -1,4 +1,10 @@
 {
+    "default": {
+        "zoom": 16,
+        "center": [52.499167, 13.418056],
+        "height": 256,
+        "classes": ["default"]
+    },
     "bevel": {
         "zoom": 16,
         "center": [52.499167, 13.418056],
