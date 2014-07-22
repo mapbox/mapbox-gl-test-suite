@@ -1,0 +1,63 @@
+{
+    "version": 4,
+    "sources": {
+        "mapbox": {
+            "type": "vector",
+            "url": "local://tiles/{z}-{x}-{y}.vector.pbf",
+            "maxZoom": 14
+        }
+    },
+    "sprite": "local://sprites/outdoors",
+    "constants": {
+        "@constant": [10, 10]
+    },
+    "layers": [{
+        "id": "background",
+        "type": "background",
+        "style": {
+            "background-color": "white"
+        }
+    }, {
+        "id": "literal",
+        "source": "mapbox",
+        "source-layer": "poi_label",
+        "type": "symbol",
+        "filter": {
+            "maki": "restaurant"
+        },
+        "render": {
+            "symbol-placement": "point",
+            "icon-allow-overlap": true,
+            "icon-ignore-placement": true,
+            "icon-image": "{maki}-12",
+            "icon-offset": [5, 5]
+        },
+        "style": {
+            "icon-opacity": 0
+        },
+        "style.literal": {
+            "icon-opacity": 1
+        }
+    }, {
+        "id": "constant",
+        "source": "mapbox",
+        "source-layer": "poi_label",
+        "type": "symbol",
+        "filter": {
+            "maki": "restaurant"
+        },
+        "render": {
+            "symbol-placement": "point",
+            "icon-allow-overlap": true,
+            "icon-ignore-placement": true,
+            "icon-image": "{maki}-12",
+            "icon-offset": "@constant"
+        },
+        "style": {
+            "icon-opacity": 0
+        },
+        "style.constant": {
+            "icon-opacity": 1
+        }
+    }]
+}
