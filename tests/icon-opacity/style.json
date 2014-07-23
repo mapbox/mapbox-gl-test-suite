@@ -9,7 +9,7 @@
     },
     "sprite": "local://sprites/outdoors",
     "constants": {
-        "@constant": [10, 10]
+        "@constant": 0.4
     },
     "layers": [{
         "id": "background",
