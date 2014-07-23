@@ -1,0 +1,14 @@
+{
+    "literal": {
+        "zoom": 16,
+        "center": [52.499167, 13.418056],
+        "height": 256,
+        "classes": ["literal"]
+    },
+    "constant": {
+        "zoom": 16,
+        "center": [52.499167, 13.418056],
+        "height": 256,
+        "classes": ["constant"]
+    }
+}
