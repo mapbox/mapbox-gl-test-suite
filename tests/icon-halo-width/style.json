@@ -1,0 +1,49 @@
+{
+    "version": 4,
+    "sources": {
+        "mapbox": {
+            "type": "vector",
+            "url": "local://tiles/{z}-{x}-{y}.vector.pbf",
+            "maxZoom": 14
+        }
+    },
+    "sprite": "local://sprites/sprite",
+    "constants": {
+        "@constant": 3
+    },
+    "layers": [{
+        "id": "background",
+        "type": "background",
+        "style": {
+            "background-color": "white"
+        }
+    }, {
+        "id": "icon",
+        "source": "mapbox",
+        "source-layer": "poi_label",
+        "type": "symbol",
+        "filter": {
+            "maki": "restaurant"
+        },
+        "render": {
+            "symbol-placement": "point",
+            "icon-allow-overlap": true,
+            "icon-ignore-placement": true,
+            "icon-image": "dot.sdf"
+        },
+        "style": {
+            "icon-halo-color": "blue"
+        },
+        "style.literal": {
+            "icon-halo-width": 2
+        },
+        "style.constant": {
+            "icon-halo-width": "@constant"
+        },
+        "style.function": {
+            "icon-halo-width": {
+                "stops": [[16, 4], [17, 5]]
+            }
+        }
+    }]
+}
