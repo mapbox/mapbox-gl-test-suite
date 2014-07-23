@@ -7,7 +7,7 @@
             "maxZoom": 14
         }
     },
-    "sprite": "local://sprites/outdoors",
+    "sprite": "local://sprites/sprite",
     "layers": [{
         "id": "background",
         "type": "background",

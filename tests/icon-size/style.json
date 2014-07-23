@@ -7,7 +7,7 @@
             "maxZoom": 14
         }
     },
-    "sprite": "local://sprites/outdoors",
+    "sprite": "local://sprites/sprite",
     "constants": {
         "@constant": 3
     },
