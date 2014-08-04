@@ -26,7 +26,10 @@ node test/rendering.test.js
 Native:
 
 ```
-TODO
+cd mapbox-gl-native
+npm install git+https://github.com/mapbox/mapbox-gl-test-suite.git
+make test/headless && (cd ./node_modules/mapbox-gl-test-suite/ && ./bin/compare_images.js)
+open ./node_modules/mapbox-gl-test-suite/tests/index.html
 ```
 
 This generates `actual.png` files along side each `expected.png` as well as a `diff.png` showing any differences between
