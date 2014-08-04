@@ -69,7 +69,7 @@ function processFiles() {
 
 function writeResult(base, key, info, error, difference) {
     var color = 'green';
-    var allowedDifference = ('diff' in info) ? info.diff : 0.01;
+    var allowedDifference = ('diff' in info) ? info.diff : 0.001;
     if (difference > allowedDifference) {
         color = 'red';
         if (exitCode < 1) {
