@@ -9,5 +9,11 @@
     },
     "function": {
         "classes": ["function"]
+    },
+    "opacity": {
+        "classes": ["opacity"]
+    },
+    "multiply": {
+        "classes": ["multiply"]
     }
 }

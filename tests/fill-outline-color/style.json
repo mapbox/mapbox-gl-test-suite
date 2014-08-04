@@ -33,6 +33,16 @@
             "fill-outline-color": {
                 "stops": [[0, "green"], [1, "blue"]]
             }
+        },
+        "style.opacity": {
+            "fill-color": "rgba(0,0,0,0)",
+            "fill-outline-color": "rgba(255,0,0,1)",
+            "fill-opacity": 0.5
+        },
+        "style.multiply": {
+            "fill-color": "rgba(0,0,0,0)",
+            "fill-outline-color": "rgba(255,0,0,0.5)",
+            "fill-opacity": 0.5
         }
     }]
 }
