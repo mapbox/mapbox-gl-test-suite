@@ -1,4 +1,7 @@
 {
     "literal": {
+    },
+    "opacity": {
+        "classes": ["opacity"]
     }
 }

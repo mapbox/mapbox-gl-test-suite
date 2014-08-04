@@ -21,6 +21,9 @@
         "type": "fill",
         "style": {
             "fill-image": "beer-12"
+        },
+        "style.opacity": {
+            "fill-opacity": 0.5
         }
     }]
 }
