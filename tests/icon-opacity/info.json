@@ -21,5 +21,23 @@
         "center": [52.499167, 13.418056],
         "height": 256,
         "classes": ["function"]
+    },
+    "text-and-icon": {
+        "zoom": 16,
+        "center": [52.499167, 13.418056],
+        "height": 256,
+        "classes": ["text-and-icon"]
+    },
+    "text-only": {
+        "zoom": 16,
+        "center": [52.499167, 13.418056],
+        "height": 256,
+        "classes": ["text-only"]
+    },
+    "icon-only": {
+        "zoom": 16,
+        "center": [52.499167, 13.418056],
+        "height": 256,
+        "classes": ["icon-only"]
     }
 }
