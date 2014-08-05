@@ -21,7 +21,7 @@ JS:
 ```
 cd mapbox-gl-js
 npm install
-node test/rendering.test.js && (cd ./node_modules/mapbox-gl-test-suite/ && ./bin/compare_images.js)
+node test/render.test.js && (cd ./node_modules/mapbox-gl-test-suite/ && ./bin/compare_images.js)
 open ./node_modules/mapbox-gl-test-suite/tests/index.html
 ```
 
