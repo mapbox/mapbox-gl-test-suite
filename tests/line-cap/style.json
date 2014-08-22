@@ -1,65 +1,65 @@
 {
-    "version": 4,
-    "sources": {
-        "mapbox": {
-            "type": "vector",
-            "url": "local://tiles/{z}-{x}-{y}.vector.pbf",
-            "maxZoom": 14
-        }
+  "version": 5,
+  "sources": {
+    "mapbox": {
+      "type": "vector",
+      "maxzoom": 14,
+      "tiles": ["local://tiles/{z}-{x}-{y}.vector.pbf"]
+    }
+  },
+  "layers": [{
+    "id": "background",
+    "type": "background",
+    "style": {
+      "background-color": "white"
+    }
+  }, {
+    "id": "butt",
+    "source": "mapbox",
+    "source-layer": "road",
+    "type": "line",
+    "render": {
+      "line-cap": "butt"
     },
-    "layers": [{
-        "id": "background",
-        "type": "background",
-        "style": {
-            "background-color": "white"
-        }
-    }, {
-        "id": "butt",
-        "source": "mapbox",
-        "source-layer": "road",
-        "type": "line",
-        "render": {
-            "line-cap": "butt"
-        },
-        "style": {
-            "line-width": 10,
-            "line-color": "#000",
-            "line-opacity": 0
-        },
-        "style.butt": {
-            "line-opacity": 1
-        }
-    }, {
-        "id": "round",
-        "source": "mapbox",
-        "source-layer": "road",
-        "type": "line",
-        "render": {
-            "line-cap": "round"
-        },
-        "style": {
-            "line-width": 10,
-            "line-color": "#000",
-            "line-opacity": 0
-        },
-        "style.round": {
-            "line-opacity": 1
-        }
-    }, {
-        "id": "square",
-        "source": "mapbox",
-        "source-layer": "road",
-        "type": "line",
-        "render": {
-            "line-cap": "square"
-        },
-        "style": {
-            "line-width": 10,
-            "line-color": "#000",
-            "line-opacity": 0
-        },
-        "style.square": {
-            "line-opacity": 1
-        }
-    }]
+    "style": {
+      "line-width": 10,
+      "line-color": "#000",
+      "line-opacity": 0
+    },
+    "style.butt": {
+      "line-opacity": 1
+    }
+  }, {
+    "id": "round",
+    "source": "mapbox",
+    "source-layer": "road",
+    "type": "line",
+    "render": {
+      "line-cap": "round"
+    },
+    "style": {
+      "line-width": 10,
+      "line-color": "#000",
+      "line-opacity": 0
+    },
+    "style.round": {
+      "line-opacity": 1
+    }
+  }, {
+    "id": "square",
+    "source": "mapbox",
+    "source-layer": "road",
+    "type": "line",
+    "render": {
+      "line-cap": "square"
+    },
+    "style": {
+      "line-width": 10,
+      "line-color": "#000",
+      "line-opacity": 0
+    },
+    "style.square": {
+      "line-opacity": 1
+    }
+  }]
 }

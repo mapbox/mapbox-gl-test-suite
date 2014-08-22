@@ -1,34 +1,34 @@
 {
-    "version": 4,
-    "sources": {
-        "mapbox": {
-            "type": "vector",
-            "url": "local://tiles/{z}-{x}-{y}.vector.pbf",
-            "maxZoom": 14
-        }
-    },
-    "glyphs": "local://glyphs/{fontstack}/{range}.pbf",
-    "constants": {
-        "@constant": 30
-    },
-    "layers": [{
-        "id": "background",
-        "type": "background",
-        "style": {
-            "background-color": "white"
-        }
-    }, {
-        "id": "false",
-        "source": "mapbox",
-        "source-layer": "road",
-        "type": "symbol",
-        "render": {
-            "symbol-placement": "line",
-            "text-allow-overlap": true,
-            "text-ignore-placement": true,
-            "text-field": "line line line line",
-            "text-font": "Open Sans Semibold, Arial Unicode MS Bold",
-            "text-keep-upright": false
-        }
-    }]
+  "version": 5,
+  "sources": {
+    "mapbox": {
+      "type": "vector",
+      "maxzoom": 14,
+      "tiles": ["local://tiles/{z}-{x}-{y}.vector.pbf"]
+    }
+  },
+  "glyphs": "local://glyphs/{fontstack}/{range}.pbf",
+  "constants": {
+    "@constant": 30
+  },
+  "layers": [{
+    "id": "background",
+    "type": "background",
+    "style": {
+      "background-color": "white"
+    }
+  }, {
+    "id": "false",
+    "source": "mapbox",
+    "source-layer": "road",
+    "type": "symbol",
+    "render": {
+      "symbol-placement": "line",
+      "text-allow-overlap": true,
+      "text-ignore-placement": true,
+      "text-field": "line line line line",
+      "text-font": "Open Sans Semibold, Arial Unicode MS Bold",
+      "text-keep-upright": false
+    }
+  }]
 }

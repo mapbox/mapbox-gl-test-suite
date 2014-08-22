@@ -1,46 +1,44 @@
 {
-    "version": 4,
-    "sources": {
-        "mapbox": {
-            "type": "vector",
-            "url": "local://tiles/{z}-{x}-{y}.vector.pbf",
-            "maxZoom": 14
-        }
+  "version": 5,
+  "sources": {
+    "mapbox": {
+      "type": "vector",
+      "maxzoom": 14,
+      "tiles": ["local://tiles/{z}-{x}-{y}.vector.pbf"]
+    }
+  },
+  "sprite": "local://sprites/sprite",
+  "constants": {
+    "@constant": "green"
+  },
+  "layers": [{
+    "id": "background",
+    "type": "background",
+    "style": {
+      "background-color": "white"
+    }
+  }, {
+    "id": "icon",
+    "source": "mapbox",
+    "source-layer": "poi_label",
+    "type": "symbol",
+    "filter": { "maki": "restaurant" },
+    "render": {
+      "symbol-placement": "point",
+      "icon-allow-overlap": true,
+      "icon-ignore-placement": true,
+      "icon-image": "dot.sdf"
     },
-    "sprite": "local://sprites/sprite",
-    "constants": {
-        "@constant": "green"
+    "style.literal": {
+      "icon-color": "red"
     },
-    "layers": [{
-        "id": "background",
-        "type": "background",
-        "style": {
-            "background-color": "white"
-        }
-    }, {
-        "id": "icon",
-        "source": "mapbox",
-        "source-layer": "poi_label",
-        "type": "symbol",
-        "filter": {
-            "maki": "restaurant"
-        },
-        "render": {
-            "symbol-placement": "point",
-            "icon-allow-overlap": true,
-            "icon-ignore-placement": true,
-            "icon-image": "dot.sdf"
-        },
-        "style.literal": {
-            "icon-color": "red"
-        },
-        "style.constant": {
-            "icon-color": "@constant"
-        },
-        "style.function": {
-            "icon-color": {
-                "stops": [[16, "blue"], [17, "red"]]
-            }
-        }
-    }]
+    "style.constant": {
+      "icon-color": "@constant"
+    },
+    "style.function": {
+      "icon-color": {
+        "stops": [[16, "blue"], [17, "red"]]
+      }
+    }
+  }]
 }

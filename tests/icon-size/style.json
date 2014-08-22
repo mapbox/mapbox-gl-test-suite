@@ -1,46 +1,44 @@
 {
-    "version": 4,
-    "sources": {
-        "mapbox": {
-            "type": "vector",
-            "url": "local://tiles/{z}-{x}-{y}.vector.pbf",
-            "maxZoom": 14
-        }
+  "version": 5,
+  "sources": {
+    "mapbox": {
+      "type": "vector",
+      "maxzoom": 14,
+      "tiles": ["local://tiles/{z}-{x}-{y}.vector.pbf"]
+    }
+  },
+  "sprite": "local://sprites/sprite",
+  "constants": {
+    "@constant": 3
+  },
+  "layers": [{
+    "id": "background",
+    "type": "background",
+    "style": {
+      "background-color": "white"
+    }
+  }, {
+    "id": "icon",
+    "source": "mapbox",
+    "source-layer": "poi_label",
+    "type": "symbol",
+    "filter": { "maki": "restaurant" },
+    "render": {
+      "symbol-placement": "point",
+      "icon-allow-overlap": true,
+      "icon-ignore-placement": true,
+      "icon-image": "{maki}-12"
     },
-    "sprite": "local://sprites/sprite",
-    "constants": {
-        "@constant": 3
+    "style.literal": {
+      "icon-size": 2
     },
-    "layers": [{
-        "id": "background",
-        "type": "background",
-        "style": {
-            "background-color": "white"
-        }
-    }, {
-        "id": "icon",
-        "source": "mapbox",
-        "source-layer": "poi_label",
-        "type": "symbol",
-        "filter": {
-            "maki": "restaurant"
-        },
-        "render": {
-            "symbol-placement": "point",
-            "icon-allow-overlap": true,
-            "icon-ignore-placement": true,
-            "icon-image": "{maki}-12"
-        },
-        "style.literal": {
-            "icon-size": 2
-        },
-        "style.constant": {
-            "icon-size": "@constant"
-        },
-        "style.function": {
-            "icon-size": {
-                "stops": [[16, 4], [17, 5]]
-            }
-        }
-    }]
+    "style.constant": {
+      "icon-size": "@constant"
+    },
+    "style.function": {
+      "icon-size": {
+        "stops": [[16, 4], [17, 5]]
+      }
+    }
+  }]
 }

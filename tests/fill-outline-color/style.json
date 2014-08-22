@@ -1,48 +1,47 @@
 {
-    "version": 4,
-    "sources": {
-        "mapbox": {
-            "type": "vector",
-            "url": "local://tiles/{z}-{x}-{y}.vector.pbf",
-            "maxZoom": 14
-        }
+  "version": 5,
+  "sources": {
+    "mapbox": {
+      "type": "vector",
+      "maxzoom": 14,
+      "tiles": ["local://tiles/{z}-{x}-{y}.vector.pbf"]
+    }
+  },
+  "constants": {
+    "@constant": "red"
+  },
+  "layers": [{
+    "id": "background",
+    "type": "background",
+    "style": {
+      "background-color": "white"
+    }
+  }, {
+    "id": "land",
+    "source": "mapbox",
+    "source-layer": "water",
+    "type": "fill",
+    "style": {},
+    "style.literal": {
+      "fill-outline-color": "blue"
     },
-    "constants": {
-        "@constant": "red"
+    "style.constant": {
+      "fill-outline-color": "@constant"
     },
-    "layers": [{
-        "id": "background",
-        "type": "background",
-        "style": {
-            "background-color": "white"
-        }
-    }, {
-        "id": "land",
-        "source": "mapbox",
-        "source-layer": "water",
-        "type": "fill",
-        "style": {
-        },
-        "style.literal": {
-            "fill-outline-color": "blue"
-        },
-        "style.constant": {
-            "fill-outline-color": "@constant"
-        },
-        "style.function": {
-            "fill-outline-color": {
-                "stops": [[0, "green"], [1, "blue"]]
-            }
-        },
-        "style.opacity": {
-            "fill-color": "rgba(0,0,0,0)",
-            "fill-outline-color": "rgba(255,0,0,1)",
-            "fill-opacity": 0.5
-        },
-        "style.multiply": {
-            "fill-color": "rgba(0,0,0,0)",
-            "fill-outline-color": "rgba(255,0,0,0.5)",
-            "fill-opacity": 0.5
-        }
-    }]
+    "style.function": {
+      "fill-outline-color": {
+        "stops": [[0, "green"], [1, "blue"]]
+      }
+    },
+    "style.opacity": {
+      "fill-color": "rgba(0,0,0,0)",
+      "fill-outline-color": "rgba(255,0,0,1)",
+      "fill-opacity": 0.5
+    },
+    "style.multiply": {
+      "fill-color": "rgba(0,0,0,0)",
+      "fill-outline-color": "rgba(255,0,0,0.5)",
+      "fill-opacity": 0.5
+    }
+  }]
 }

@@ -1,34 +1,34 @@
 {
-    "version": 4,
-    "sources": {
-        "mapbox": {
-            "type": "vector",
-            "url": "local://tiles/{z}-{x}-{y}.vector.pbf",
-            "maxZoom": 14
-        }
+  "version": 5,
+  "sources": {
+    "mapbox": {
+      "type": "vector",
+      "maxzoom": 14,
+      "tiles": ["local://tiles/{z}-{x}-{y}.vector.pbf"]
+    }
+  },
+  "constants": {
+    "@constant": [10, 10]
+  },
+  "layers": [{
+    "id": "background",
+    "type": "background",
+    "style": {
+      "background-color": "white"
+    }
+  }, {
+    "id": "land",
+    "source": "mapbox",
+    "source-layer": "water",
+    "type": "fill",
+    "style": {
+      "fill-translate": [10, 10]
     },
-    "constants": {
-        "@constant": [10, 10]
+    "style.map": {
+      "fill-translate-anchor": "map"
     },
-    "layers": [{
-        "id": "background",
-        "type": "background",
-        "style": {
-            "background-color": "white"
-        }
-    }, {
-        "id": "land",
-        "source": "mapbox",
-        "source-layer": "water",
-        "type": "fill",
-        "style": {
-            "fill-translate": [10, 10]
-        },
-        "style.map": {
-            "fill-translate-anchor": "map"
-        },
-        "style.viewport": {
-            "fill-translate-anchor": "viewport"
-        }
-    }]
+    "style.viewport": {
+      "fill-translate-anchor": "viewport"
+    }
+  }]
 }

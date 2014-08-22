@@ -3,5 +3,11 @@
     "description": "Rendering tests for Mapbox GL",
     "version": "0.0.0",
     "license": "BSD",
-    "dependencies": {}
+    "dependencies": {},
+    "devDependencies": {
+      "mapbox-gl-style-lint": "git+https://github.com/mapbox/mapbox-gl-style-lint.git"
+    },
+    "scripts": {
+      "migrate": "for file in tests/*/style.json; do gl-style-migrate $file | sponge $file; done"
+    }
 }

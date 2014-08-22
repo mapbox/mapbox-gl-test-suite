@@ -1,36 +1,36 @@
 {
-    "version": 4,
-    "sources": {
-        "mapbox": {
-            "type": "vector",
-            "url": "local://tiles/{z}-{x}-{y}.vector.pbf",
-            "maxZoom": 14
-        }
+  "version": 5,
+  "sources": {
+    "mapbox": {
+      "type": "vector",
+      "maxzoom": 14,
+      "tiles": ["local://tiles/{z}-{x}-{y}.vector.pbf"]
+    }
+  },
+  "constants": {
+    "@constant": 10
+  },
+  "layers": [{
+    "id": "background",
+    "type": "background",
+    "style": {
+      "background-color": "white"
+    }
+  }, {
+    "id": "road",
+    "source": "mapbox",
+    "source-layer": "road",
+    "type": "line",
+    "style.literal": {
+      "line-width": 5
     },
-    "constants": {
-        "@constant": 10
+    "style.constant": {
+      "line-width": "@constant"
     },
-    "layers": [{
-        "id": "background",
-        "type": "background",
-        "style": {
-            "background-color": "white"
-        }
-    }, {
-        "id": "road",
-        "source": "mapbox",
-        "source-layer": "road",
-        "type": "line",
-        "style.literal": {
-            "line-width": 5
-        },
-        "style.constant": {
-            "line-width": "@constant"
-        },
-        "style.function": {
-            "line-width": {
-                "stops": [[16, 15], [17, 20]]
-            }
-        }
-    }]
+    "style.function": {
+      "line-width": {
+        "stops": [[16, 15], [17, 20]]
+      }
+    }
+  }]
 }

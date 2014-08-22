@@ -1,28 +1,28 @@
 {
-    "version": 4,
-    "sources": {
-        "mapbox": {
-            "type": "vector",
-            "url": "local://tiles/{z}-{x}-{y}.vector.pbf",
-            "maxZoom": 14
-        }
-    },
-    "constants": {
-        "@constant": "red"
-    },
-    "layers": [{
-        "id": "background",
-        "type": "background",
-        "style": {
-            "background-color": "white"
-        }
-    }, {
-        "id": "fill",
-        "source": "mapbox",
-        "source-layer": "building",
-        "type": "fill",
-        "style": {
-            "fill-color": "black"
-        }
-    }]
+  "version": 5,
+  "sources": {
+    "mapbox": {
+      "type": "vector",
+      "maxzoom": 14,
+      "tiles": ["local://tiles/{z}-{x}-{y}.vector.pbf"]
+    }
+  },
+  "constants": {
+    "@constant": "red"
+  },
+  "layers": [{
+    "id": "background",
+    "type": "background",
+    "style": {
+      "background-color": "white"
+    }
+  }, {
+    "id": "fill",
+    "source": "mapbox",
+    "source-layer": "building",
+    "type": "fill",
+    "style": {
+      "fill-color": "black"
+    }
+  }]
 }

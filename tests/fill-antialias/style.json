@@ -1,26 +1,26 @@
 {
-    "version": 4,
-    "sources": {
-        "mapbox": {
-            "type": "vector",
-            "url": "local://tiles/{z}-{x}-{y}.vector.pbf",
-            "maxZoom": 14
-        }
-    },
-    "layers": [{
-        "id": "background",
-        "type": "background",
-        "style": {
-            "background-color": "red"
-        }
-    }, {
-        "id": "water",
-        "source": "mapbox",
-        "source-layer": "water",
-        "type": "fill",
-        "style": {
-            "fill-color": "blue",
-            "fill-antialias": false
-        }
-    }]
+  "version": 5,
+  "sources": {
+    "mapbox": {
+      "type": "vector",
+      "maxzoom": 14,
+      "tiles": ["local://tiles/{z}-{x}-{y}.vector.pbf"]
+    }
+  },
+  "layers": [{
+    "id": "background",
+    "type": "background",
+    "style": {
+      "background-color": "red"
+    }
+  }, {
+    "id": "water",
+    "source": "mapbox",
+    "source-layer": "water",
+    "type": "fill",
+    "style": {
+      "fill-color": "blue",
+      "fill-antialias": false
+    }
+  }]
 }

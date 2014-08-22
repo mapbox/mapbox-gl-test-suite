@@ -1,63 +1,59 @@
 {
-    "version": 4,
-    "sources": {
-        "mapbox": {
-            "type": "vector",
-            "url": "local://tiles/{z}-{x}-{y}.vector.pbf",
-            "maxZoom": 14
-        }
+  "version": 5,
+  "sources": {
+    "mapbox": {
+      "type": "vector",
+      "maxzoom": 14,
+      "tiles": ["local://tiles/{z}-{x}-{y}.vector.pbf"]
+    }
+  },
+  "glyphs": "local://glyphs/{fontstack}/{range}.pbf",
+  "constants": {
+    "@constant": "Open Sans Semibold, Arial Unicode MS Bold"
+  },
+  "layers": [{
+    "id": "background",
+    "type": "background",
+    "style": {
+      "background-color": "white"
+    }
+  }, {
+    "id": "literal",
+    "source": "mapbox",
+    "source-layer": "poi_label",
+    "type": "symbol",
+    "filter": { "maki": "restaurant" },
+    "render": {
+      "symbol-placement": "point",
+      "text-allow-overlap": true,
+      "text-ignore-placement": true,
+      "text-field": "Test",
+      "text-font": "Open Sans Semibold, Arial Unicode MS Bold"
     },
-    "glyphs": "local://glyphs/{fontstack}/{range}.pbf",
-    "constants": {
-        "@constant": "Open Sans Semibold, Arial Unicode MS Bold"
+    "style": {
+      "text-opacity": 0
     },
-    "layers": [{
-        "id": "background",
-        "type": "background",
-        "style": {
-            "background-color": "white"
-        }
-    }, {
-        "id": "literal",
-        "source": "mapbox",
-        "source-layer": "poi_label",
-        "type": "symbol",
-        "filter": {
-            "maki": "restaurant"
-        },
-        "render": {
-            "symbol-placement": "point",
-            "text-allow-overlap": true,
-            "text-ignore-placement": true,
-            "text-field": "Test",
-            "text-font": "Open Sans Semibold, Arial Unicode MS Bold"
-        },
-        "style": {
-            "text-opacity": 0
-        },
-        "style.literal": {
-            "text-opacity": 1
-        }
-    }, {
-        "id": "constant",
-        "source": "mapbox",
-        "source-layer": "poi_label",
-        "type": "symbol",
-        "filter": {
-            "maki": "restaurant"
-        },
-        "render": {
-            "symbol-placement": "point",
-            "text-allow-overlap": true,
-            "text-ignore-placement": true,
-            "text-field": "Test",
-            "text-font": "@constant"
-        },
-        "style": {
-            "text-opacity": 0
-        },
-        "style.constant": {
-            "text-opacity": 1
-        }
-    }]
+    "style.literal": {
+      "text-opacity": 1
+    }
+  }, {
+    "id": "constant",
+    "source": "mapbox",
+    "source-layer": "poi_label",
+    "type": "symbol",
+    "filter": { "maki": "restaurant" },
+    "render": {
+      "symbol-placement": "point",
+      "text-allow-overlap": true,
+      "text-ignore-placement": true,
+      "text-field": "Test",
+      "text-font": "@constant"
+    },
+    "style": {
+      "text-opacity": 0
+    },
+    "style.constant": {
+      "text-opacity": 1
+    }
+  }]
 }
