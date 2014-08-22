@@ -30,7 +30,7 @@ Native:
 ```
 cd mapbox-gl-native
 npm install git+https://github.com/mapbox/mapbox-gl-test-suite.git
-make test/headless && (cd ./node_modules/mapbox-gl-test-suite/ && ./bin/compare_images.js)
+make test_headless && (cd ./node_modules/mapbox-gl-test-suite/ && ./bin/compare_images.js)
 open ./node_modules/mapbox-gl-test-suite/tests/index.html
 ```
 
