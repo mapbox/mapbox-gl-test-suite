@@ -1,0 +1,27 @@
+{
+  "version": 5,
+  "sources": {
+    "mapbox": {
+      "type": "vector",
+      "maxzoom": 14,
+      "tiles": ["local://tiles/{z}-{x}-{y}.vector.pbf"]
+    }
+  },
+  "sprite": "local://sprites/sprite",
+  "constants": {
+    "@constant": "0.4"
+  },
+  "layers": [{
+    "id": "background",
+    "type": "background",
+    "style": {
+      "background-opacity": 0.5
+    },
+    "style.color": {
+      "background-color": "red"
+    },
+    "style.image": {
+      "background-image": "wetland-17"
+    }
+  }]
+}
