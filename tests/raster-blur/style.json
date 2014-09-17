@@ -1,0 +1,57 @@
+{
+    "version": 5,
+    "sources": {
+        "raster": {
+            "type": "raster",
+            "tiles": ["local://tiles/{z}-{x}-{y}.png"],
+            "tileSize": 512
+        }
+    },
+    "constants": {
+        "@constant": 10
+    },
+    "layers": [{
+        "id": "default",
+        "source": "raster",
+        "type": "raster",
+        "style": {
+            "raster-opacity": 0
+        },
+        "style.default": {
+            "raster-opacity": 1
+        },
+        "render": {
+            "raster-size": 512
+        },
+        "layers": [{
+            "id": "raster",
+            "type": "raster",
+            "source": "raster",
+            "style": {
+                "raster-fade-duration": 0
+            }
+        }]
+    }, {
+        "id": "constant",
+        "source": "raster",
+        "type": "raster",
+        "style": {
+            "raster-opacity": 0
+        },
+        "style.constant": {
+            "raster-opacity": 1
+        },
+        "render": {
+            "raster-size": 512,
+            "raster-blur": "@constant"
+        },
+        "layers": [{
+            "id": "raster",
+            "type": "raster",
+            "source": "raster",
+            "style": {
+                "raster-fade-duration": 0
+            }
+        }]
+    }]
+}
