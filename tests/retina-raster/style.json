@@ -1,0 +1,25 @@
+{
+    "version": 5,
+    "sources": {
+        "satellite": {
+            "type": "raster",
+            "tiles": ["local://tiles/{z}-{x}-{y}.satellite.png"],
+            "maxzoom": 17,
+            "tileSize": 256
+        }
+    },
+    "constants": {
+        "@constant": 10
+    },
+    "layers": [{
+        "id": "raster",
+        "type": "raster",
+        "source": "satellite",
+        "style": {
+            "raster-fade-duration": 0
+        },
+        "style.literal": {
+            "raster-opacity": 0.5
+        }
+    }]
+}
