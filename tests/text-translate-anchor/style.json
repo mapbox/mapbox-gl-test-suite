@@ -1,5 +1,5 @@
 {
-  "version": 5,
+  "version": 6,
   "sources": {
     "mapbox": {
       "type": "vector",
@@ -19,7 +19,7 @@
     "source": "mapbox",
     "source-layer": "poi_label",
     "type": "symbol",
-    "filter": { "maki": "restaurant" },
+    "filter": ["==", "maki", "restaurant"],
     "render": {
       "symbol-placement": "point",
       "text-allow-overlap": true,

@@ -1,35 +1,35 @@
 {
-    "version": 5,
-    "sources": {
-        "satellite": {
-            "type": "raster",
-            "tiles": ["local://tiles/{z}-{x}-{y}.satellite.png"],
-            "maxzoom": 17,
-            "tileSize": 256
-        }
+  "version": 6,
+  "sources": {
+    "satellite": {
+      "type": "raster",
+      "tiles": ["local://tiles/{z}-{x}-{y}.satellite.png"],
+      "maxzoom": 17,
+      "tileSize": 256
+    }
+  },
+  "constants": {
+    "@constant": [0.4, 0.6]
+  },
+  "layers": [{
+    "id": "raster",
+    "type": "raster",
+    "source": "satellite",
+    "style": {
+      "raster-fade-duration": 0
     },
-    "constants": {
-        "@constant": [0.4, 0.6]
+    "style.literal": {
+      "raster-brightness": [0.2, 0.8]
     },
-    "layers": [{
-        "id": "raster",
-        "type": "raster",
-        "source": "satellite",
-        "style": {
-            "raster-fade-duration": 0
-        },
-        "style.literal": {
-            "raster-brightness": [0.2, 0.8]
-        },
-        "style.constant": {
-            "raster-brightness": "@constant"
-        },
-        "style.function": {
-            "raster-brightness": [{
-                "stops": [[16, 0.5], [17, 0.5]]
-            }, {
-                "stops": [[16, 0.6], [17, 0.4]]
-            }]
-        }
-    }]
+    "style.constant": {
+      "raster-brightness": "@constant"
+    },
+    "style.function": {
+      "raster-brightness": [{
+        "stops": [[16, 0.5], [17, 0.5]]
+      }, {
+        "stops": [[16, 0.6], [17, 0.4]]
+      }]
+    }
+  }]
 }

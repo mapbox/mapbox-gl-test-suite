@@ -1,33 +1,33 @@
 {
-    "version": 5,
-    "sources": {
-        "satellite": {
-            "type": "raster",
-            "tiles": ["local://tiles/{z}-{x}-{y}.satellite.png"],
-            "maxzoom": 17,
-            "tileSize": 256
-        }
+  "version": 6,
+  "sources": {
+    "satellite": {
+      "type": "raster",
+      "tiles": ["local://tiles/{z}-{x}-{y}.satellite.png"],
+      "maxzoom": 17,
+      "tileSize": 256
+    }
+  },
+  "constants": {
+    "@constant": 0.4
+  },
+  "layers": [{
+    "id": "raster",
+    "type": "raster",
+    "source": "satellite",
+    "style": {
+      "raster-fade-duration": 0
     },
-    "constants": {
-        "@constant": 0.4
+    "style.literal": {
+      "raster-saturation": 0.2
     },
-    "layers": [{
-        "id": "raster",
-        "type": "raster",
-        "source": "satellite",
-        "style": {
-            "raster-fade-duration": 0
-        },
-        "style.literal": {
-            "raster-saturation": 0.2
-        },
-        "style.constant": {
-            "raster-saturation": "@constant"
-        },
-        "style.function": {
-            "raster-saturation": {
-                "stops": [[16, 0.6], [17, 0.8]]
-            }
-        }
-    }]
+    "style.constant": {
+      "raster-saturation": "@constant"
+    },
+    "style.function": {
+      "raster-saturation": {
+        "stops": [[16, 0.6], [17, 0.8]]
+      }
+    }
+  }]
 }
