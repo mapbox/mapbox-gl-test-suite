@@ -26,14 +26,14 @@
       "line-color": "#000"
     },
     "style.literal": {
-      "line-offset": 5
+      "line-gap-width": 4
     },
     "style.constant": {
-      "line-offset": "@constant"
+      "line-gap-width": "@constant"
     },
     "style.function": {
-      "line-offset": {
-        "stops": [[16, 15], [17, 20]]
+      "line-gap-width": {
+        "stops": [[16, 14], [17, 19]]
       }
     }
   }]
