@@ -11,81 +11,81 @@
   "layers": [{
     "id": "background",
     "type": "background",
-    "style": {
+    "paint": {
       "background-color": "white"
     }
   }, {
     "id": "point-close",
+    "type": "symbol",
     "source": "mapbox",
     "source-layer": "poi_label",
-    "type": "symbol",
     "filter": ["==", "maki", "restaurant"],
-    "render": {
+    "layout": {
       "icon-image": "{maki}-12",
       "icon-allow-overlap": true,
       "icon-ignore-placement": true,
       "symbol-placement": "point",
       "symbol-min-distance": 20
     },
-    "style": {
+    "paint": {
       "icon-opacity": 0
     },
-    "style.point-close": {
+    "paint.point-close": {
       "icon-opacity": 1
     }
   }, {
     "id": "point-far",
+    "type": "symbol",
     "source": "mapbox",
     "source-layer": "poi_label",
-    "type": "symbol",
     "filter": ["==", "maki", "restaurant"],
-    "render": {
+    "layout": {
       "icon-image": "{maki}-12",
       "icon-allow-overlap": true,
       "icon-ignore-placement": true,
       "symbol-placement": "point",
       "symbol-min-distance": 50
     },
-    "style": {
+    "paint": {
       "icon-opacity": 0
     },
-    "style.point-far": {
+    "paint.point-far": {
       "icon-opacity": 1
     }
   }, {
     "id": "line-close",
+    "type": "symbol",
     "source": "mapbox",
     "source-layer": "road",
-    "type": "symbol",
-    "render": {
+    "layout": {
       "icon-image": "triangle-stroked-12",
       "icon-allow-overlap": true,
       "icon-ignore-placement": true,
       "symbol-placement": "line",
       "symbol-min-distance": 20
     },
-    "style": {
+    "paint": {
       "icon-opacity": 0
     },
-    "style.line-close": {
+    "paint.line-close": {
       "icon-opacity": 1
     }
   }, {
     "id": "line-far",
+    "type": "symbol",
     "source": "mapbox",
     "source-layer": "road",
-    "type": "symbol",
-    "render": {
+    "layout": {
       "icon-image": "triangle-stroked-12",
       "icon-allow-overlap": true,
       "icon-ignore-placement": true,
       "symbol-placement": "line",
       "symbol-min-distance": 50
     },
-    "style": {
+    "paint": {
       "icon-opacity": 0
     },
-    "style.line-far": {
+    "paint.line-far": {
       "icon-opacity": 1
     }
   }]

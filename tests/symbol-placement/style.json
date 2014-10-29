@@ -11,38 +11,38 @@
   "layers": [{
     "id": "background",
     "type": "background",
-    "style": {
+    "paint": {
       "background-color": "white"
     }
   }, {
     "id": "point",
+    "type": "symbol",
     "source": "mapbox",
     "source-layer": "poi_label",
-    "type": "symbol",
     "filter": ["==", "maki", "restaurant"],
-    "render": {
+    "layout": {
       "icon-image": "{maki}-12",
       "symbol-placement": "point"
     },
-    "style": {
+    "paint": {
       "icon-opacity": 0
     },
-    "style.point": {
+    "paint.point": {
       "icon-opacity": 1
     }
   }, {
     "id": "line",
+    "type": "symbol",
     "source": "mapbox",
     "source-layer": "road",
-    "type": "symbol",
-    "render": {
+    "layout": {
       "icon-image": "triangle-stroked-12",
       "symbol-placement": "line"
     },
-    "style": {
+    "paint": {
       "icon-opacity": 0
     },
-    "style.line": {
+    "paint.line": {
       "icon-opacity": 1
     }
   }]

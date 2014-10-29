@@ -1,5 +1,8 @@
 {
   "version": 6,
+  "constants": {
+    "@constant": 10
+  },
   "sources": {
     "mapbox": {
       "type": "vector",
@@ -7,27 +10,24 @@
       "tiles": ["local://tiles/{z}-{x}-{y}.vector.pbf"]
     }
   },
-  "constants": {
-    "@constant": 10
-  },
   "layers": [{
     "id": "background",
     "type": "background",
-    "style": {
+    "paint": {
       "background-color": "white"
     }
   }, {
     "id": "road",
+    "type": "line",
     "source": "mapbox",
     "source-layer": "road",
-    "type": "line",
-    "style.literal": {
+    "paint.literal": {
       "line-width": 5
     },
-    "style.constant": {
+    "paint.constant": {
       "line-width": "@constant"
     },
-    "style.function": {
+    "paint.function": {
       "line-width": {
         "stops": [[16, 15], [17, 20]]
       }

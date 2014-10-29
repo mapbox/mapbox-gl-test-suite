@@ -1,5 +1,8 @@
 {
   "version": 6,
+  "constants": {
+    "@constant": 10
+  },
   "sources": {
     "satellite": {
       "type": "raster",
@@ -8,17 +11,14 @@
       "tileSize": 256
     }
   },
-  "constants": {
-    "@constant": 10
-  },
   "layers": [{
     "id": "raster",
     "type": "raster",
     "source": "satellite",
-    "style": {
+    "paint": {
       "raster-fade-duration": 0
     },
-    "style.literal": {
+    "paint.literal": {
       "raster-opacity": 0.5
     }
   }]

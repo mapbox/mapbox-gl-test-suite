@@ -11,7 +11,7 @@
   "layers": [{
     "id": "background",
     "type": "background",
-    "style": {
+    "paint": {
       "background-image": "wetland-17"
     }
   }]

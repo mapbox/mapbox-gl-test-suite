@@ -1,5 +1,8 @@
 {
   "version": 6,
+  "constants": {
+    "@constant": "Open Sans Semibold, Arial Unicode MS Bold"
+  },
   "sources": {
     "mapbox": {
       "type": "vector",
@@ -8,51 +11,48 @@
     }
   },
   "glyphs": "local://glyphs/{fontstack}/{range}.pbf",
-  "constants": {
-    "@constant": "Open Sans Semibold, Arial Unicode MS Bold"
-  },
   "layers": [{
     "id": "background",
     "type": "background",
-    "style": {
+    "paint": {
       "background-color": "white"
     }
   }, {
     "id": "literal",
+    "type": "symbol",
     "source": "mapbox",
     "source-layer": "poi_label",
-    "type": "symbol",
     "filter": ["==", "maki", "restaurant"],
-    "render": {
+    "layout": {
       "symbol-placement": "point",
       "text-allow-overlap": true,
       "text-ignore-placement": true,
       "text-field": "Test",
       "text-font": "Open Sans Semibold, Arial Unicode MS Bold"
     },
-    "style": {
+    "paint": {
       "text-opacity": 0
     },
-    "style.literal": {
+    "paint.literal": {
       "text-opacity": 1
     }
   }, {
     "id": "constant",
+    "type": "symbol",
     "source": "mapbox",
     "source-layer": "poi_label",
-    "type": "symbol",
     "filter": ["==", "maki", "restaurant"],
-    "render": {
+    "layout": {
       "symbol-placement": "point",
       "text-allow-overlap": true,
       "text-ignore-placement": true,
       "text-field": "Test",
       "text-font": "@constant"
     },
-    "style": {
+    "paint": {
       "text-opacity": 0
     },
-    "style.constant": {
+    "paint.constant": {
       "text-opacity": 1
     }
   }]

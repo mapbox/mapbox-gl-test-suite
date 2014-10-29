@@ -11,28 +11,28 @@
   "layers": [{
     "id": "background",
     "type": "background",
-    "style": {
+    "paint": {
       "background-color": "white"
     }
   }, {
     "id": "text",
+    "type": "symbol",
     "source": "mapbox",
     "source-layer": "poi_label",
-    "type": "symbol",
     "filter": ["==", "maki", "restaurant"],
-    "render": {
+    "layout": {
       "symbol-placement": "point",
       "icon-allow-overlap": true,
       "icon-ignore-placement": true,
       "icon-image": "{maki}-12"
     },
-    "style": {
+    "paint": {
       "icon-translate": [10, 10]
     },
-    "style.map": {
+    "paint.map": {
       "icon-translate-anchor": "map"
     },
-    "style.viewport": {
+    "paint.viewport": {
       "icon-translate-anchor": "viewport"
     }
   }]

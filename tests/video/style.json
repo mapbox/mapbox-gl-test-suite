@@ -9,7 +9,7 @@
   },
   "layers": [{
     "id": "video",
-    "source": "video",
-    "type": "raster"
+    "type": "raster",
+    "source": "video"
   }]
 }

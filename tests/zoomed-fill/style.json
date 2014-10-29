@@ -1,5 +1,8 @@
 {
   "version": 6,
+  "constants": {
+    "@constant": "red"
+  },
   "sources": {
     "mapbox": {
       "type": "vector",
@@ -7,21 +10,18 @@
       "tiles": ["local://tiles/{z}-{x}-{y}.vector.pbf"]
     }
   },
-  "constants": {
-    "@constant": "red"
-  },
   "layers": [{
     "id": "background",
     "type": "background",
-    "style": {
+    "paint": {
       "background-color": "white"
     }
   }, {
     "id": "fill",
+    "type": "fill",
     "source": "mapbox",
     "source-layer": "building",
-    "type": "fill",
-    "style": {
+    "paint": {
       "fill-color": "black"
     }
   }]

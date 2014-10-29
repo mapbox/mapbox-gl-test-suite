@@ -13,7 +13,7 @@
     "id": "raster",
     "type": "raster",
     "source": "satellite",
-    "style": {
+    "paint": {
       "raster-fade-duration": 0
     }
   }]

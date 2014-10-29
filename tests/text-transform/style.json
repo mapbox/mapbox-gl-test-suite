@@ -11,16 +11,16 @@
   "layers": [{
     "id": "background",
     "type": "background",
-    "style": {
+    "paint": {
       "background-color": "white"
     }
   }, {
     "id": "uppercase",
+    "type": "symbol",
     "source": "mapbox",
     "source-layer": "poi_label",
-    "type": "symbol",
     "filter": ["==", "maki", "restaurant"],
-    "render": {
+    "layout": {
       "symbol-placement": "point",
       "text-allow-overlap": true,
       "text-ignore-placement": true,
@@ -29,19 +29,19 @@
       "text-max-width": 5,
       "text-transform": "uppercase"
     },
-    "style": {
+    "paint": {
       "text-opacity": 0
     },
-    "style.uppercase": {
+    "paint.uppercase": {
       "text-opacity": 1
     }
   }, {
     "id": "lowercase",
+    "type": "symbol",
     "source": "mapbox",
     "source-layer": "poi_label",
-    "type": "symbol",
     "filter": ["==", "maki", "restaurant"],
-    "render": {
+    "layout": {
       "symbol-placement": "point",
       "text-allow-overlap": true,
       "text-ignore-placement": true,
@@ -50,10 +50,10 @@
       "text-max-width": 5,
       "text-transform": "lowercase"
     },
-    "style": {
+    "paint": {
       "text-opacity": 0
     },
-    "style.lowercase": {
+    "paint.lowercase": {
       "text-opacity": 1
     }
   }]

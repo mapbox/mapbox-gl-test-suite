@@ -1,5 +1,8 @@
 {
   "version": 6,
+  "constants": {
+    "@constant": 0.4
+  },
   "sources": {
     "mapbox": {
       "type": "vector",
@@ -7,28 +10,25 @@
       "tiles": ["local://tiles/{z}-{x}-{y}.vector.pbf"]
     }
   },
-  "constants": {
-    "@constant": 0.4
-  },
   "layers": [{
     "id": "background",
     "type": "background",
-    "style": {
+    "paint": {
       "background-color": "white"
     }
   }, {
     "id": "land",
+    "type": "fill",
     "source": "mapbox",
     "source-layer": "water",
-    "type": "fill",
-    "style": {},
-    "style.literal": {
+    "paint": {},
+    "paint.literal": {
       "fill-opacity": 0.3
     },
-    "style.constant": {
+    "paint.constant": {
       "fill-opacity": "@constant"
     },
-    "style.function": {
+    "paint.function": {
       "fill-opacity": {
         "stops": [[0, 0.5], [1, 0.6]]
       }

@@ -1,5 +1,8 @@
 {
   "version": 6,
+  "constants": {
+    "@constant": [0.4, 0.6]
+  },
   "sources": {
     "satellite": {
       "type": "raster",
@@ -8,23 +11,20 @@
       "tileSize": 256
     }
   },
-  "constants": {
-    "@constant": [0.4, 0.6]
-  },
   "layers": [{
     "id": "raster",
     "type": "raster",
     "source": "satellite",
-    "style": {
+    "paint": {
       "raster-fade-duration": 0
     },
-    "style.literal": {
+    "paint.literal": {
       "raster-brightness": [0.2, 0.8]
     },
-    "style.constant": {
+    "paint.constant": {
       "raster-brightness": "@constant"
     },
-    "style.function": {
+    "paint.function": {
       "raster-brightness": [{
         "stops": [[16, 0.5], [17, 0.5]]
       }, {

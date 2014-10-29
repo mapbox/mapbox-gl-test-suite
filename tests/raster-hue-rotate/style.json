@@ -1,5 +1,8 @@
 {
   "version": 6,
+  "constants": {
+    "@constant": 180
+  },
   "sources": {
     "satellite": {
       "type": "raster",
@@ -8,23 +11,20 @@
       "tileSize": 256
     }
   },
-  "constants": {
-    "@constant": 180
-  },
   "layers": [{
     "id": "raster",
     "type": "raster",
     "source": "satellite",
-    "style": {
+    "paint": {
       "raster-fade-duration": 0
     },
-    "style.literal": {
+    "paint.literal": {
       "raster-hue-rotate": 90
     },
-    "style.constant": {
+    "paint.constant": {
       "raster-hue-rotate": "@constant"
     },
-    "style.function": {
+    "paint.function": {
       "raster-hue-rotate": {
         "stops": [[16, 270], [17, 365]]
       }

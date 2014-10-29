@@ -1,5 +1,8 @@
 {
   "version": 6,
+  "constants": {
+    "@constant": "green"
+  },
   "sources": {
     "mapbox": {
       "type": "vector",
@@ -8,38 +11,35 @@
     }
   },
   "glyphs": "local://glyphs/{fontstack}/{range}.pbf",
-  "constants": {
-    "@constant": "green"
-  },
   "layers": [{
     "id": "background",
     "type": "background",
-    "style": {
+    "paint": {
       "background-color": "white"
     }
   }, {
     "id": "text",
+    "type": "symbol",
     "source": "mapbox",
     "source-layer": "poi_label",
-    "type": "symbol",
     "filter": ["==", "maki", "restaurant"],
-    "render": {
+    "layout": {
       "symbol-placement": "point",
       "text-allow-overlap": true,
       "text-ignore-placement": true,
       "text-field": "Test",
       "text-font": "Open Sans Semibold, Arial Unicode MS Bold"
     },
-    "style": {
+    "paint": {
       "text-halo-width": 4
     },
-    "style.literal": {
+    "paint.literal": {
       "text-halo-color": "blue"
     },
-    "style.constant": {
+    "paint.constant": {
       "text-halo-color": "@constant"
     },
-    "style.function": {
+    "paint.function": {
       "text-halo-color": {
         "stops": [[16, "red"], [17, "blue"]]
       }
