@@ -21,7 +21,7 @@ JS:
 ```
 cd mapbox-gl-js
 npm install
-node test/render.test.js && (cd ./node_modules/mapbox-gl-test-suite/ && ./bin/compare_images.js)
+node test/render.test.js && (cd ./node_modules/mapbox-gl-test-suite/ && ./bin/compare_images.py)
 open ./node_modules/mapbox-gl-test-suite/tests/index.html
 ```
 
@@ -29,9 +29,9 @@ Native:
 
 ```
 cd mapbox-gl-native
-npm install git+https://github.com/mapbox/mapbox-gl-test-suite.git
-make test_headless && (cd ./node_modules/mapbox-gl-test-suite/ && ./bin/compare_images.js)
-open ./node_modules/mapbox-gl-test-suite/tests/index.html
+git submodule update --init test/suite
+make test_headless && (cd ./test/suite/ && ./bin/compare_images.py)
+open ./test/suite/tests/index.html
 ```
 
 This generates `actual.png` files along side each `expected.png` as well as a `diff.png` showing any differences between
