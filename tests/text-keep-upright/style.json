@@ -18,7 +18,26 @@
       "background-color": "white"
     }
   }, {
-    "id": "false",
+    "id": "line-placement-true",
+    "type": "symbol",
+    "source": "mapbox",
+    "source-layer": "road",
+    "layout": {
+      "symbol-placement": "line",
+      "text-allow-overlap": true,
+      "text-ignore-placement": true,
+      "text-field": "line line line line",
+      "text-font": "Open Sans Semibold, Arial Unicode MS Bold",
+      "text-keep-upright": true
+    },
+    "paint": {
+      "text-opacity": 0
+    },
+    "paint.line-placement-true": {
+      "text-opacity": 1
+    }
+  }, {
+    "id": "line-placement-false",
     "type": "symbol",
     "source": "mapbox",
     "source-layer": "road",
@@ -29,6 +48,88 @@
       "text-field": "line line line line",
       "text-font": "Open Sans Semibold, Arial Unicode MS Bold",
       "text-keep-upright": false
+    },
+    "paint": {
+      "text-opacity": 0
+    },
+    "paint.line-placement-false": {
+      "text-opacity": 1
+    }
+  }, {
+    "id": "point-placement-true",
+    "type": "symbol",
+    "source": "mapbox",
+    "source-layer": "poi_label",
+    "layout": {
+      "symbol-placement": "point",
+      "text-field": "point point point",
+      "text-font": "Open Sans Semibold, Arial Unicode MS Bold",
+      "text-rotation-alignment": "viewport",
+      "text-keep-upright": true,
+      "text-rotate": 180
+    },
+    "paint": {
+      "text-opacity": 0
+    },
+    "paint.point-placement-true": {
+      "text-opacity": 1
+    }
+  }, {
+    "id": "point-placement-false",
+    "type": "symbol",
+    "source": "mapbox",
+    "source-layer": "poi_label",
+    "layout": {
+      "symbol-placement": "point",
+      "text-field": "point point point",
+      "text-font": "Open Sans Semibold, Arial Unicode MS Bold",
+      "text-rotation-alignment": "viewport",
+      "text-keep-upright": false,
+      "text-rotate": 180
+    },
+    "paint": {
+      "text-opacity": 0
+    },
+    "paint.point-placement-false": {
+      "text-opacity": 1
+    }
+  }, {
+    "id": "point-placement-align-map-true",
+    "type": "symbol",
+    "source": "mapbox",
+    "source-layer": "poi_label",
+    "layout": {
+      "symbol-placement": "point",
+      "text-allow-overlap": true,
+      "text-field": "point point point",
+      "text-font": "Open Sans Semibold, Arial Unicode MS Bold",
+      "text-rotation-alignment": "map",
+      "text-keep-upright": true
+    },
+    "paint": {
+      "text-opacity": 0
+    },
+    "paint.point-placement-align-map-true": {
+      "text-opacity": 1
+    }
+  }, {
+    "id": "point-placement-align-map-false",
+    "type": "symbol",
+    "source": "mapbox",
+    "source-layer": "poi_label",
+    "layout": {
+      "symbol-placement": "point",
+      "text-allow-overlap": true,
+      "text-field": "point point point",
+      "text-font": "Open Sans Semibold, Arial Unicode MS Bold",
+      "text-rotation-alignment": "map",
+      "text-keep-upright": false
+    },
+    "paint": {
+      "text-opacity": 0
+    },
+    "paint.point-placement-align-map-false": {
+      "text-opacity": 1
     }
   }]
 }
