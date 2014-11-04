@@ -4,10 +4,10 @@
     "mapbox": {
       "type": "vector",
       "maxzoom": 14,
-      "tiles": ["local://tiles/{z}-{x}-{y}.vector.pbf"]
+      "tiles": ["http://localhost:2900/tiles/{z}-{x}-{y}.vector.pbf"]
     }
   },
-  "glyphs": "local://glyphs/{fontstack}/{range}.pbf",
+  "glyphs": "http://localhost:2900/glyphs/{fontstack}/{range}.pbf",
   "constants": {
     "@constant": 1.4
   },

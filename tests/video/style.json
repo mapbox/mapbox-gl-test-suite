@@ -3,7 +3,7 @@
     "sources": {
         "video": {
             "type": "video",
-            "url": "local://video/0.png",
+            "url": "http://localhost:2900/video/0.png",
             "coordinates": [
                 [37.56238816766053, -122.51596391201019],
                 [37.56410183312965, -122.51467645168304],
