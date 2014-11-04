@@ -3,7 +3,7 @@
     "sources": {
         "satellite": {
             "type": "raster",
-            "tiles": ["http://localhost:2900/tiles/{z}-{x}-{y}.satellite.png"],
+            "tiles": ["local://tiles/{z}-{x}-{y}.satellite.png"],
             "maxzoom": 17,
             "tileSize": 256
         }

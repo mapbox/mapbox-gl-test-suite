@@ -4,10 +4,10 @@
     "mapbox": {
       "type": "vector",
       "maxzoom": 14,
-      "tiles": ["http://localhost:2900/tiles/{z}-{x}-{y}.vector.pbf"]
+      "tiles": ["local://tiles/{z}-{x}-{y}.vector.pbf"]
     }
   },
-  "sprite": "http://localhost:2900/sprites/sprite",
+  "sprite": "local://sprites/sprite",
   "constants": {
     "@constant": "0.4"
   },
