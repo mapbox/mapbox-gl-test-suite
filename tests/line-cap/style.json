@@ -1,5 +1,5 @@
 {
-  "version": 5,
+  "version": 6,
   "sources": {
     "mapbox": {
       "type": "vector",
@@ -10,55 +10,55 @@
   "layers": [{
     "id": "background",
     "type": "background",
-    "style": {
+    "paint": {
       "background-color": "white"
     }
   }, {
     "id": "butt",
+    "type": "line",
     "source": "mapbox",
     "source-layer": "road",
-    "type": "line",
-    "render": {
+    "layout": {
       "line-cap": "butt"
     },
-    "style": {
+    "paint": {
       "line-width": 10,
       "line-color": "#000",
       "line-opacity": 0
     },
-    "style.butt": {
+    "paint.butt": {
       "line-opacity": 1
     }
   }, {
     "id": "round",
+    "type": "line",
     "source": "mapbox",
     "source-layer": "road",
-    "type": "line",
-    "render": {
+    "layout": {
       "line-cap": "round"
     },
-    "style": {
+    "paint": {
       "line-width": 10,
       "line-color": "#000",
       "line-opacity": 0
     },
-    "style.round": {
+    "paint.round": {
       "line-opacity": 1
     }
   }, {
     "id": "square",
+    "type": "line",
     "source": "mapbox",
     "source-layer": "road",
-    "type": "line",
-    "render": {
+    "layout": {
       "line-cap": "square"
     },
-    "style": {
+    "paint": {
       "line-width": 10,
       "line-color": "#000",
       "line-opacity": 0
     },
-    "style.square": {
+    "paint.square": {
       "line-opacity": 1
     }
   }]

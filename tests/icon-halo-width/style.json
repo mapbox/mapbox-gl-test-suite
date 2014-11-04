@@ -1,5 +1,8 @@
 {
-  "version": 5,
+  "version": 6,
+  "constants": {
+    "@constant": 3
+  },
   "sources": {
     "mapbox": {
       "type": "vector",
@@ -8,37 +11,34 @@
     }
   },
   "sprite": "local://sprites/sprite",
-  "constants": {
-    "@constant": 3
-  },
   "layers": [{
     "id": "background",
     "type": "background",
-    "style": {
+    "paint": {
       "background-color": "white"
     }
   }, {
     "id": "icon",
+    "type": "symbol",
     "source": "mapbox",
     "source-layer": "poi_label",
-    "type": "symbol",
-    "filter": { "maki": "restaurant" },
-    "render": {
+    "filter": ["==", "maki", "restaurant"],
+    "layout": {
       "symbol-placement": "point",
       "icon-allow-overlap": true,
       "icon-ignore-placement": true,
       "icon-image": "dot.sdf"
     },
-    "style": {
+    "paint": {
       "icon-halo-color": "blue"
     },
-    "style.literal": {
+    "paint.literal": {
       "icon-halo-width": 2
     },
-    "style.constant": {
+    "paint.constant": {
       "icon-halo-width": "@constant"
     },
-    "style.function": {
+    "paint.function": {
       "icon-halo-width": {
         "stops": [[16, 4], [17, 5]]
       }

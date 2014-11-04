@@ -1,5 +1,5 @@
 {
-  "version": 5,
+  "version": 6,
   "sources": {
     "mapbox": {
       "type": "vector",
@@ -11,45 +11,45 @@
   "layers": [{
     "id": "background",
     "type": "background",
-    "style": {
+    "paint": {
       "background-color": "white"
     }
   }, {
     "id": "viewport",
+    "type": "symbol",
     "source": "mapbox",
     "source-layer": "poi_label",
-    "type": "symbol",
-    "filter": { "maki": "restaurant" },
-    "render": {
+    "filter": ["==", "maki", "restaurant"],
+    "layout": {
       "symbol-placement": "point",
       "icon-allow-overlap": true,
       "icon-ignore-placement": true,
       "icon-image": "{maki}-12",
       "icon-rotation-alignment": "viewport"
     },
-    "style": {
+    "paint": {
       "icon-opacity": 0
     },
-    "style.viewport": {
+    "paint.viewport": {
       "icon-opacity": 1
     }
   }, {
     "id": "map",
+    "type": "symbol",
     "source": "mapbox",
     "source-layer": "poi_label",
-    "type": "symbol",
-    "filter": { "maki": "restaurant" },
-    "render": {
+    "filter": ["==", "maki", "restaurant"],
+    "layout": {
       "symbol-placement": "point",
       "icon-allow-overlap": true,
       "icon-ignore-placement": true,
       "icon-image": "{maki}-12",
       "icon-rotation-alignment": "map"
     },
-    "style": {
+    "paint": {
       "icon-opacity": 0
     },
-    "style.map": {
+    "paint.map": {
       "icon-opacity": 1
     }
   }]

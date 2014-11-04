@@ -1,5 +1,8 @@
 {
-  "version": 5,
+  "version": 6,
+  "constants": {
+    "@constant": 1.4
+  },
   "sources": {
     "mapbox": {
       "type": "vector",
@@ -8,22 +11,19 @@
     }
   },
   "glyphs": "local://glyphs/{fontstack}/{range}.pbf",
-  "constants": {
-    "@constant": 1.4
-  },
   "layers": [{
     "id": "background",
     "type": "background",
-    "style": {
+    "paint": {
       "background-color": "white"
     }
   }, {
     "id": "literal",
+    "type": "symbol",
     "source": "mapbox",
     "source-layer": "poi_label",
-    "type": "symbol",
-    "filter": { "maki": "restaurant" },
-    "render": {
+    "filter": ["==", "maki", "restaurant"],
+    "layout": {
       "symbol-placement": "point",
       "text-allow-overlap": true,
       "text-ignore-placement": true,
@@ -32,19 +32,19 @@
       "text-max-width": 5,
       "text-line-height": 1.3
     },
-    "style": {
+    "paint": {
       "text-opacity": 0
     },
-    "style.literal": {
+    "paint.literal": {
       "text-opacity": 1
     }
   }, {
     "id": "constant",
+    "type": "symbol",
     "source": "mapbox",
     "source-layer": "poi_label",
-    "type": "symbol",
-    "filter": { "maki": "restaurant" },
-    "render": {
+    "filter": ["==", "maki", "restaurant"],
+    "layout": {
       "symbol-placement": "point",
       "text-allow-overlap": true,
       "text-ignore-placement": true,
@@ -53,10 +53,10 @@
       "text-max-width": 5,
       "text-line-height": "@constant"
     },
-    "style": {
+    "paint": {
       "text-opacity": 0
     },
-    "style.constant": {
+    "paint.constant": {
       "text-opacity": 1
     }
   }]

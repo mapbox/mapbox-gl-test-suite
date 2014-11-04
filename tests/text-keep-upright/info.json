@@ -1,7 +1,40 @@
 {
-    "false": {
+    "line-placement-true": {
         "zoom": 16,
         "center": [52.499167, 13.418056],
-        "height": 256
+        "height": 256,
+        "classes": ["line-placement-true"]
+    },
+    "line-placement-false": {
+        "zoom": 16,
+        "center": [52.499167, 13.418056],
+        "height": 256,
+        "classes": ["line-placement-false"]
+    },
+    "point-placement-true": {
+        "zoom": 16,
+        "center": [52.499167, 13.418056],
+        "height": 256,
+        "classes": ["point-placement-true"]
+    },
+    "point-placement-false": {
+        "zoom": 16,
+        "center": [52.499167, 13.418056],
+        "height": 256,
+        "classes": ["point-placement-false"]
+    },
+    "point-placement-align-map-true": {
+        "zoom": 16,
+        "center": [52.499167, 13.418056],
+        "height": 256,
+        "bearing": 180,
+        "classes": ["point-placement-align-map-true"]
+    },
+    "point-placement-align-map-false": {
+        "zoom": 16,
+        "center": [52.499167, 13.418056],
+        "height": 256,
+        "bearing": 180,
+        "classes": ["point-placement-align-map-false"]
     }
 }

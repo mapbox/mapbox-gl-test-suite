@@ -1,5 +1,8 @@
 {
-  "version": 5,
+  "version": 6,
+  "constants": {
+    "@constant": "0.4"
+  },
   "sources": {
     "mapbox": {
       "type": "vector",
@@ -8,19 +11,16 @@
     }
   },
   "sprite": "local://sprites/sprite",
-  "constants": {
-    "@constant": "0.4"
-  },
   "layers": [{
     "id": "background",
     "type": "background",
-    "style": {
+    "paint": {
       "background-opacity": 0.5
     },
-    "style.color": {
+    "paint.color": {
       "background-color": "red"
     },
-    "style.image": {
+    "paint.image": {
       "background-image": "wetland-17"
     }
   }]

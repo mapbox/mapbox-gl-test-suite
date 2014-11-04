@@ -1,5 +1,8 @@
 {
-  "version": 5,
+  "version": 6,
+  "constants": {
+    "@green": "green"
+  },
   "sources": {
     "mapbox": {
       "type": "vector",
@@ -7,19 +10,16 @@
       "tiles": ["local://tiles/{z}-{x}-{y}.vector.pbf"]
     }
   },
-  "constants": {
-    "@green": "green"
-  },
   "layers": [{
     "id": "background",
     "type": "background",
-    "style.literal": {
+    "paint.literal": {
       "background-color": "red"
     },
-    "style.constant": {
+    "paint.constant": {
       "background-color": "@green"
     },
-    "style.function": {
+    "paint.function": {
       "background-color": {
         "stops": [[0, "blue"], [10, "white"]]
       }

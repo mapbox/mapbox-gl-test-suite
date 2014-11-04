@@ -1,5 +1,5 @@
 {
-  "version": 5,
+  "version": 6,
   "sources": {
     "mapbox": {
       "type": "vector",
@@ -11,18 +11,18 @@
   "layers": [{
     "id": "background",
     "type": "background",
-    "style": {
+    "paint": {
       "background-color": "white"
     }
   }, {
     "id": "land",
+    "type": "fill",
     "source": "mapbox",
     "source-layer": "water",
-    "type": "fill",
-    "style": {
+    "paint": {
       "fill-image": "beer-12"
     },
-    "style.opacity": {
+    "paint.opacity": {
       "fill-opacity": 0.5
     }
   }]

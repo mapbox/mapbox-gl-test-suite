@@ -10,5 +10,29 @@
         "center": [52.499167, 13.418056],
         "height": 256,
         "classes": ["constant"]
+    },
+    "anchor-left": {
+        "zoom": 16,
+        "center": [52.499167, 13.418056],
+        "height": 256,
+        "classes": ["anchor-left"]
+    },
+    "anchor-right": {
+        "zoom": 16,
+        "center": [52.499167, 13.418056],
+        "height": 256,
+        "classes": ["anchor-right"]
+    },
+    "anchor-top": {
+        "zoom": 16,
+        "center": [52.499167, 13.418056],
+        "height": 256,
+        "classes": ["anchor-top"]
+    },
+    "anchor-bottom": {
+        "zoom": 16,
+        "center": [52.499167, 13.418056],
+        "height": 256,
+        "classes": ["anchor-bottom"]
     }
 }

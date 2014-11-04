@@ -1,5 +1,5 @@
 {
-  "version": 5,
+  "version": 6,
   "sources": {
     "mapbox": {
       "type": "vector",
@@ -10,77 +10,77 @@
   "layers": [{
     "id": "background",
     "type": "background",
-    "style": {
+    "paint": {
       "background-color": "white"
     }
   }, {
     "id": "default",
+    "type": "line",
     "source": "mapbox",
     "source-layer": "road",
-    "type": "line",
-    "style": {
+    "paint": {
       "line-width": 10,
       "line-color": "#000",
       "line-opacity": 0
     },
-    "style.default": {
+    "paint.default": {
       "line-opacity": 1
     }
   }, {
     "id": "bevel",
+    "type": "line",
     "source": "mapbox",
     "source-layer": "road",
-    "type": "line",
-    "render": {
+    "layout": {
       "line-join": "bevel"
     },
-    "style": {
+    "paint": {
       "line-width": 10,
       "line-color": "#000",
       "line-opacity": 0
     },
-    "style.bevel": {
+    "paint.bevel": {
       "line-opacity": 1
     },
-    "style.bevel-transparent": {
+    "paint.bevel-transparent": {
       "line-opacity": 0.5
     }
   }, {
     "id": "miter",
+    "type": "line",
     "source": "mapbox",
     "source-layer": "road",
-    "type": "line",
-    "render": {
+    "layout": {
       "line-join": "miter"
     },
-    "style": {
+    "paint": {
       "line-width": 10,
       "line-color": "#000",
       "line-opacity": 0
     },
-    "style.miter": {
+    "paint.miter": {
       "line-opacity": 1
     },
-    "style.miter-transparent": {
+    "paint.miter-transparent": {
       "line-opacity": 0.5
     }
   }, {
     "id": "round",
+    "type": "line",
     "source": "mapbox",
     "source-layer": "road",
-    "type": "line",
-    "render": {
+    "layout": {
       "line-join": "round"
     },
-    "style": {
+    "paint": {
       "line-width": 10,
       "line-color": "#000",
       "line-opacity": 0
     },
-    "style.round": {
+    "paint.round": {
       "line-opacity": 1
     },
-    "style.round-transparent": {
+    "paint.round-transparent": {
       "line-opacity": 0.5
     }
   }]

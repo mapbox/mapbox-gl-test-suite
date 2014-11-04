@@ -1,5 +1,8 @@
 {
-  "version": 5,
+  "version": 6,
+  "constants": {
+    "@constant": 0.4
+  },
   "sources": {
     "mapbox": {
       "type": "vector",
@@ -9,54 +12,51 @@
   },
   "sprite": "local://sprites/sprite",
   "glyphs": "local://glyphs/{fontstack}/{range}.pbf",
-  "constants": {
-    "@constant": 0.4
-  },
   "layers": [{
     "id": "background",
     "type": "background",
-    "style": {
+    "paint": {
       "background-color": "white"
     }
   }, {
     "id": "icon",
+    "type": "symbol",
     "source": "mapbox",
     "source-layer": "poi_label",
-    "type": "symbol",
-    "filter": { "maki": "restaurant" },
-    "render": {
+    "filter": ["==", "maki", "restaurant"],
+    "layout": {
       "symbol-placement": "point",
       "icon-allow-overlap": true,
       "icon-ignore-placement": true,
       "icon-image": "building-12"
     },
-    "style.literal": {
-      "icon-opacity": 0.3
+    "paint.icon-only": {
+      "icon-opacity": 0
     },
-    "style.constant": {
+    "paint.constant": {
       "icon-opacity": "@constant"
     },
-    "style.function": {
+    "paint.function": {
       "icon-opacity": {
         "stops": [[16, 0.5], [17, 0.6]]
       }
     },
-    "style.text-and-icon": {
+    "paint.text-and-icon": {
       "icon-opacity": 0
     },
-    "style.text-only": {
+    "paint.text-only": {
       "icon-opacity": 0
     },
-    "style.icon-only": {
-      "icon-opacity": 0
+    "paint.literal": {
+      "icon-opacity": 0.3
     }
   }, {
     "id": "text-and-icon",
+    "type": "symbol",
     "source": "mapbox",
     "source-layer": "poi_label",
-    "type": "symbol",
-    "filter": { "maki": "restaurant" },
-    "render": {
+    "filter": ["==", "maki", "restaurant"],
+    "layout": {
       "symbol-placement": "point",
       "icon-allow-overlap": true,
       "icon-ignore-placement": true,
@@ -66,18 +66,18 @@
       "text-field": "Test",
       "text-font": "Open Sans Semibold, Arial Unicode MS Bold"
     },
-    "style": {
+    "paint": {
       "icon-opacity": 0,
       "text-opacity": 0
     },
-    "style.text-and-icon": {
+    "paint.text-and-icon": {
       "icon-opacity": 1,
       "text-opacity": 1
     },
-    "style.text-only": {
+    "paint.text-only": {
       "text-opacity": 1
     },
-    "style.icon-only": {
+    "paint.icon-only": {
       "icon-opacity": 1
     }
   }]

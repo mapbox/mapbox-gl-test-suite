@@ -1,33 +1,33 @@
 {
-    "version": 5,
-    "sources": {
-        "satellite": {
-            "type": "raster",
-            "tiles": ["local://tiles/{z}-{x}-{y}.satellite.png"],
-            "maxzoom": 17,
-            "tileSize": 256
-        }
+  "version": 6,
+  "constants": {
+    "@constant": 180
+  },
+  "sources": {
+    "satellite": {
+      "type": "raster",
+      "tiles": ["local://tiles/{z}-{x}-{y}.satellite.png"],
+      "maxzoom": 17,
+      "tileSize": 256
+    }
+  },
+  "layers": [{
+    "id": "raster",
+    "type": "raster",
+    "source": "satellite",
+    "paint": {
+      "raster-fade-duration": 0
     },
-    "constants": {
-        "@constant": 180
+    "paint.literal": {
+      "raster-hue-rotate": 90
     },
-    "layers": [{
-        "id": "raster",
-        "type": "raster",
-        "source": "satellite",
-        "style": {
-            "raster-fade-duration": 0
-        },
-        "style.literal": {
-            "raster-hue-rotate": 90
-        },
-        "style.constant": {
-            "raster-hue-rotate": "@constant"
-        },
-        "style.function": {
-            "raster-hue-rotate": {
-                "stops": [[16, 270], [17, 365]]
-            }
-        }
-    }]
+    "paint.constant": {
+      "raster-hue-rotate": "@constant"
+    },
+    "paint.function": {
+      "raster-hue-rotate": {
+        "stops": [[16, 270], [17, 365]]
+      }
+    }
+  }]
 }
