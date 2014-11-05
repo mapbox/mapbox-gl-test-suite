@@ -17,7 +17,7 @@ Handler = SimpleHTTPServer.SimpleHTTPRequestHandler
 class WebServer(SocketServer.TCPServer):
     allow_reuse_address = True
 
-server = WebServer(('localhost', port), Handler)
+server = WebServer(('127.0.0.1', port), Handler)
 
 def signal_handler(signal, frame):
     threading.Thread(target = server.shutdown).start()
