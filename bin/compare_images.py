@@ -90,7 +90,7 @@ for name in dirs:
         # The compare program returns 2 on error otherwise 0 if the images
         # are similar or 1 if they are dissimilar.
         if process.returncode == 2:
-            writeResult(name, key, info[key], error.trim(), float('inf'));
+            writeResult(name, key, info[key], error.strip(), float('inf'));
             code = 2;
             pass
         else:
