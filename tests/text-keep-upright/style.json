@@ -62,6 +62,7 @@
     "source-layer": "poi_label",
     "layout": {
       "symbol-placement": "point",
+      "text-allow-overlap": true,
       "text-field": "point point point",
       "text-font": "Open Sans Semibold, Arial Unicode MS Bold",
       "text-rotation-alignment": "viewport",
@@ -81,6 +82,7 @@
     "source-layer": "poi_label",
     "layout": {
       "symbol-placement": "point",
+      "text-allow-overlap": true,
       "text-field": "point point point",
       "text-font": "Open Sans Semibold, Arial Unicode MS Bold",
       "text-rotation-alignment": "viewport",
