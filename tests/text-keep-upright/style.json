@@ -56,7 +56,7 @@
       "text-opacity": 1
     }
   }, {
-    "id": "point-placement-true",
+    "id": "point-placement-align-viewport-true",
     "type": "symbol",
     "source": "mapbox",
     "source-layer": "poi_label",
@@ -71,11 +71,11 @@
     "paint": {
       "text-opacity": 0
     },
-    "paint.point-placement-true": {
+    "paint.point-placement-align-viewport-true": {
       "text-opacity": 1
     }
   }, {
-    "id": "point-placement-false",
+    "id": "point-placement-align-viewport-false",
     "type": "symbol",
     "source": "mapbox",
     "source-layer": "poi_label",
@@ -90,7 +90,7 @@
     "paint": {
       "text-opacity": 0
     },
-    "paint.point-placement-false": {
+    "paint.point-placement-align-viewport-false": {
       "text-opacity": 1
     }
   }, {

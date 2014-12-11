@@ -11,17 +11,17 @@
         "height": 256,
         "classes": ["line-placement-false"]
     },
-    "point-placement-true": {
+    "point-placement-align-viewport-true": {
         "zoom": 16,
         "center": [52.499167, 13.418056],
         "height": 256,
-        "classes": ["point-placement-true"]
+        "classes": ["point-placement-align-viewport-true"]
     },
-    "point-placement-false": {
+    "point-placement-align-viewport-false": {
         "zoom": 16,
         "center": [52.499167, 13.418056],
         "height": 256,
-        "classes": ["point-placement-false"]
+        "classes": ["point-placement-align-viewport-false"]
     },
     "point-placement-align-map-true": {
         "zoom": 16,
