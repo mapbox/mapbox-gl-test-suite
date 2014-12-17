@@ -1,0 +1,16 @@
+<tr>
+    <td><img src="{name}/{key}/actual.png" onmouseover="this.src='{name}/{key}/expected.png'" onmouseout="this.src='{name}/{key}/actual.png'"></td>
+    <td><img src="{name}/{key}/expected.png" onmouseover="this.src='{name}/{key}/diff.png'" onmouseout="this.src='{name}/{key}/expected.png'"></td>
+    <td>
+        <h2 style="text-align:center; background:{color}"><a href="{name}/style.json">{name}/{key}</a></h2>
+        {error}
+        <ul>
+            <li>diff: <strong>{difference}</strong></li>
+            <li>zoom: <strong>{zoom}</strong></li>
+            <li>center: <strong>{center}</strong></li>
+            <li>bearing: <strong>{bearing}</strong></li>
+            <li>width: <strong>{width}</strong></li>
+            <li>height: <strong>{height}</strong></li>
+        </ul>
+    </td>
+</tr>

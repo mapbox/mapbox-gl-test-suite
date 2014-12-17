@@ -12,24 +12,13 @@ failures = 0
 
 dirs = [ d for d in os.listdir(base_dir) if path.isdir(path.join(base_dir, d)) ]
 
-result = open(path.join(base_dir, 'index.html'), 'w')
-
-result.write("""
-<style>
-    body { font-family: Helvetica; }
-    h2 a { color:white; text-decoration:none; }
-</style>
-<table>
-<tr>
-    <th>Actual</th>
-    <th>Expected</th>
-    <th>Info</th>
-</tr>
-""")
+results = ''
+result_template = open('templates/result.html.tmpl').read()
 
 def writeResult(name, key, info, error, difference):
     global code
     global failures
+    global results
 
     color = 'green';
     allowedDifference = info['diff'] if 'diff' in info else 0.001
@@ -42,36 +31,18 @@ def writeResult(name, key, info, error, difference):
     else:
         print '\x1B[32mComparing %s/%s: %f < %f\x1B[39m' % (name, key, difference, allowedDifference)
 
-    result.write("""
-<tr>
-    <td><img src="{name}/{key}/actual.png" onmouseover="this.src='{name}/{key}/expected.png'" onmouseout="this.src='{name}/{key}/actual.png'"></td>
-    <td><img src="{name}/{key}/expected.png" onmouseover="this.src='{name}/{key}/diff.png'" onmouseout="this.src='{name}/{key}/expected.png'"></td>
-    <td>
-        <h2 style="text-align:center; background:{color}"><a href="{name}/style.json">{name}/{key}</a></h2>
-        {error}
-        <ul>
-            <li>diff: <strong>{difference}</strong></li>
-            <li>zoom: <strong>{zoom}</strong></li>
-            <li>center: <strong>{center}</strong></li>
-            <li>bearing: <strong>{bearing}</strong></li>
-            <li>width: <strong>{width}</strong></li>
-            <li>height: <strong>{height}</strong></li>
-        </ul>
-    </td>
-</tr>
-""".format(
-    name = name,
-    key = key,
-    color = color,
-    error = ('<p>%s</p>' % error) if error else '',
-    difference = difference,
-    zoom = info['zoom'] if 'zoom' in info else 0,
-    center = info['center'] if 'center' in info else [0, 0],
-    bearing = info['bearing'] if 'bearing' in info else 0,
-    width = info['width'] if 'width' in info else 512,
-    height = info['height'] if 'height' in info else 512
-))
-
+    results += result_template.format(
+        name = name,
+        key = key,
+        color = color,
+        error = ('<p>%s</p>' % error) if error else '',
+        difference = difference,
+        zoom = info['zoom'] if 'zoom' in info else 0,
+        center = info['center'] if 'center' in info else [0, 0],
+        bearing = info['bearing'] if 'bearing' in info else 0,
+        width = info['width'] if 'width' in info else 512,
+        height = info['height'] if 'height' in info else 512
+    )
 
 for name in dirs:
     with open(path.join(base_dir, name, 'info.json'), 'r') as f:
@@ -98,8 +69,8 @@ for name in dirs:
             difference = float(match.group(1) if match else 'inf')
             writeResult(name, key, info[key], '' if match else error, difference);
 
-result.write('</table>\n')
-result.close()
+result = open(path.join(base_dir, 'index.html'), 'w')
+result.write(open('templates/results.html.tmpl').read().format(results = results))
 
 print ''
 print 'Results at: %s' % path.abspath(path.join(base_dir, 'index.html'));
