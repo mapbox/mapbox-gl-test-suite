@@ -21,19 +21,20 @@
     "type": "line",
     "source": "mapbox",
     "source-layer": "road",
-    "paint": {
-      "line-width": 2,
-      "line-color": "#000"
-    },
     "paint.literal": {
-      "line-gap-width": 4
+      "line-width": 5,
+      "line-gap-width": 5
     },
     "paint.constant": {
+      "line-width": "@constant",
       "line-gap-width": "@constant"
     },
     "paint.function": {
+      "line-width": {
+        "stops": [[16, 15], [17, 20]]
+      },
       "line-gap-width": {
-        "stops": [[16, 14], [17, 19]]
+        "stops": [[16, 15], [17, 20]]
       }
     }
   }]
