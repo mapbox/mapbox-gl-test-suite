@@ -1,9 +1,9 @@
 {
   "version": 7,
   "constants": {
-    "@constant": [10, 10],
-    "@small": 5,
-    "@large": 10
+    "@constant": [5, 5],
+    "@small": 2.5,
+    "@large": 5
   },
   "sources": {
     "mapbox": {
@@ -28,7 +28,7 @@
       "line-color": "#000"
     },
     "paint.literal": {
-      "line-dasharray": [5, 5]
+      "line-dasharray": [2.5, 2.5]
     },
     "paint.constant": {
       "line-dasharray": "@constant"
@@ -37,11 +37,11 @@
       "line-dasharray": ["@small", "@large"]
     },
     "paint.function": {
-      "line-dasharray": [{
-        "stops": [[16, 15], [17, 20]]
-      }, {
-        "stops": [[16, 15], [17, 20]]
-      }]
+      "line-dasharray": {
+        "stops": [
+          [16, [7.5, 7.5]],
+          [17, [10, 10]]]
+      }
     }
   }]
 }
