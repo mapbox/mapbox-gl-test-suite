@@ -1,5 +1,6 @@
 {
     "default": {
+        "native": false,
         "zoom": 12.15,
         "center": [38.9014, -77.0305],
         "width": 512,
