@@ -1,0 +1,49 @@
+{
+  "version": 6,
+  "sources": {
+    "mapbox": {
+      "type": "vector",
+      "maxzoom": 14,
+      "tiles": ["local://tiles/{z}-{x}-{y}.vector.pbf"]
+    }
+  },
+  "layers": [
+    {
+      "id": "background",
+      "type": "background",
+      "paint": {
+        "background-color": "white"
+      }
+    },
+    {
+      "id": "line-visible",
+      "type": "line",
+      "source": "mapbox",
+      "source-layer": "road",
+      "layout": {
+        "visibility": "visible"
+      },
+      "paint": {
+        "line-opacity": 0
+      },
+      "paint.visible": {
+        "line-opacity": 1
+      }
+    },
+    {
+      "id": "line-none",
+      "type": "line",
+      "source": "mapbox",
+      "source-layer": "road",
+      "layout": {
+        "visibility": "none"
+      },
+      "paint": {
+        "line-opacity": 0
+      },
+      "paint.none": {
+        "line-opacity": 1
+      }
+    }
+  ]
+}

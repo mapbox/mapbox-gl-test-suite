@@ -1,0 +1,58 @@
+{
+  "version": 6,
+  "sources": {
+    "mapbox": {
+      "type": "vector",
+      "maxzoom": 14,
+      "tiles": ["local://tiles/{z}-{x}-{y}.vector.pbf"]
+    }
+  },
+  "glyphs": "local://glyphs/{fontstack}/{range}.pbf",
+  "layers": [
+    {
+      "id": "background",
+      "type": "background",
+      "paint": {
+        "background-color": "white"
+      }
+    },
+    {
+      "id": "icon-visible",
+      "type": "symbol",
+      "source": "mapbox",
+      "source-layer": "poi_label",
+      "filter": ["==", "maki", "restaurant"],
+      "layout": {
+        "symbol-placement": "point",
+        "text-field": "Test",
+        "text-font": "Open Sans Semibold, Arial Unicode MS Bold",
+        "visibility": "visible"
+      },
+      "paint": {
+        "text-opacity": 0
+      },
+      "paint.visible": {
+        "text-opacity": 1
+      }
+    },
+    {
+      "id": "icon-none",
+      "type": "symbol",
+      "source": "mapbox",
+      "source-layer": "poi_label",
+      "filter": ["==", "maki", "restaurant"],
+      "layout": {
+        "symbol-placement": "point",
+        "text-field": "Test",
+        "text-font": "Open Sans Semibold, Arial Unicode MS Bold",
+        "visibility": "none"
+      },
+      "paint": {
+        "text-opacity": 0
+      },
+      "paint.none": {
+        "text-opacity": 1
+      }
+    }
+  ]
+}
