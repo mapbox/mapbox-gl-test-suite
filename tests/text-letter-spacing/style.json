@@ -57,5 +57,30 @@
     "paint.constant": {
       "text-opacity": 1
     }
+  }, {
+    "id": "functions",
+    "type": "symbol",
+    "source": "mapbox",
+    "source-layer": "poi_label",
+    "filter": ["==", "maki", "restaurant"],
+    "layout": {
+      "symbol-placement": "point",
+      "text-allow-overlap": true,
+      "text-ignore-placement": true,
+      "text-field": "Test",
+      "text-font": "Open Sans Semibold, Arial Unicode MS Bold",
+      "text-letter-spacing": {
+        "stops": [[14, -4], [15, 4]]
+      }
+    },
+    "paint": {
+      "text-opacity": 0
+    },
+    "paint.function-close": {
+      "text-opacity": 1
+    },
+    "paint.function-far": {
+      "text-opacity": 1
+    }
   }]
 }

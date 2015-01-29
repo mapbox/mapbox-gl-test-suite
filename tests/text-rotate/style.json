@@ -162,5 +162,27 @@
       "icon-opacity": 1,
       "text-opacity": 1
     }
+  }, {
+    "id": "function",
+    "type": "symbol",
+    "source": "mapbox",
+    "source-layer": "poi_label",
+    "filter": ["==", "maki", "restaurant"],
+    "layout": {
+      "symbol-placement": "point",
+      "text-field": "Test",
+      "text-font": "Open Sans Semibold, Arial Unicode MS Bold",
+      "text-rotate": {
+        "stops": [[10, 0], [16, 270]]
+      }
+    },
+    "paint": {
+      "icon-opacity": 0,
+      "text-opacity": 0
+    },
+    "paint.function": {
+      "icon-opacity": 1,
+      "text-opacity": 1
+    }
   }]
 }
