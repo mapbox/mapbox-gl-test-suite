@@ -22,6 +22,9 @@
     "paint": {
       "line-width": 20,
       "line-image": "beer-12"
+    },
+    "paint.opacity": {
+      "line-opacity": 0.5
     }
   }]
 }
