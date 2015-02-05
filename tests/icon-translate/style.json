@@ -36,11 +36,9 @@
       "icon-translate": "@constant"
     },
     "paint.function": {
-      "icon-translate": [{
-        "stops": [[16, 15], [17, 20]]
-      }, {
-        "stops": [[16, 15], [17, 20]]
-      }]
+      "icon-translate": {
+        "stops": [[16, [15, 15]], [17, [20, 20]]]
+      }
     }
   }]
 }

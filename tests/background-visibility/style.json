@@ -7,34 +7,31 @@
       "tiles": ["local://tiles/{z}-{x}-{y}.vector.pbf"]
     }
   },
-  "layers": [
-    {
-      "id": "background-visible",
-      "type": "background",
-      "layout": {
-        "visibility": "visible"
-      },
-      "paint": {
-        "background-color": "red",
-        "background-opacity": 0
-      },
-      "paint.visible": {
-        "background-opacity": 1
-      }
+  "layers": [{
+    "id": "background-visible",
+    "type": "background",
+    "layout": {
+      "visibility": "visible"
     },
-    {
-      "id": "background-none",
-      "type": "background",
-      "layout": {
-        "visibility": "none"
-      },
-      "paint": {
-        "background-color": "red",
-        "background-opacity": 0
-      },
-      "paint.none": {
-        "background-opacity": 1
-      }
+    "paint": {
+      "background-color": "red",
+      "background-opacity": 0
+    },
+    "paint.visible": {
+      "background-opacity": 1
     }
-  ]
+  }, {
+    "id": "background-none",
+    "type": "background",
+    "layout": {
+      "visibility": "none"
+    },
+    "paint": {
+      "background-color": "red",
+      "background-opacity": 0
+    },
+    "paint.none": {
+      "background-opacity": 1
+    }
+  }]
 }

@@ -32,11 +32,9 @@
       "line-translate": "@constant"
     },
     "paint.function": {
-      "line-translate": [{
-        "stops": [[16, 15], [17, 20]]
-      }, {
-        "stops": [[16, 15], [17, 20]]
-      }]
+      "line-translate": {
+        "stops": [[16, [15, 15]], [17, [20, 20]]]
+      }
     }
   }]
 }

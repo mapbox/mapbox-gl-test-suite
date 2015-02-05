@@ -19,17 +19,20 @@
       "raster-fade-duration": 0
     },
     "paint.literal": {
-      "raster-brightness": [0.2, 0.8]
+      "raster-brightness-min": 0.2,
+      "raster-brightness-max": 0.8
     },
     "paint.constant": {
-      "raster-brightness": "@constant"
+      "raster-brightness-min": 0.4,
+      "raster-brightness-max": 0.6
     },
     "paint.function": {
-      "raster-brightness": [{
+      "raster-brightness-min": {
         "stops": [[16, 0.5], [17, 0.5]]
-      }, {
+      },
+      "raster-brightness-max": {
         "stops": [[16, 0.6], [17, 0.4]]
-      }]
+      }
     }
   }]
 }

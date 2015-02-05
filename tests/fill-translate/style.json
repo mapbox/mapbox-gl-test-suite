@@ -29,11 +29,9 @@
       "fill-translate": "@constant"
     },
     "paint.function": {
-      "fill-translate": [{
-        "stops": [[16, 15], [17, 20]]
-      }, {
-        "stops": [[16, 15], [17, 20]]
-      }]
+      "fill-translate": {
+        "stops": [[16, [15, 15]], [17, [20, 20]]]
+      }
     }
   }]
 }

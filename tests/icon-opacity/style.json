@@ -30,8 +30,8 @@
       "icon-ignore-placement": true,
       "icon-image": "building-12"
     },
-    "paint.icon-only": {
-      "icon-opacity": 0
+    "paint.literal": {
+      "icon-opacity": 0.3
     },
     "paint.constant": {
       "icon-opacity": "@constant"
@@ -47,8 +47,8 @@
     "paint.text-only": {
       "icon-opacity": 0
     },
-    "paint.literal": {
-      "icon-opacity": 0.3
+    "paint.icon-only": {
+      "icon-opacity": 0
     }
   }, {
     "id": "text-and-icon",
