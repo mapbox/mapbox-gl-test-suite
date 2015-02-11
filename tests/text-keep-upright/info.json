@@ -1,12 +1,12 @@
 {
     "line-placement-true": {
-        "zoom": 16,
+        "zoom": 15,
         "center": [52.499167, 13.418056],
         "height": 256,
         "classes": ["line-placement-true"]
     },
     "line-placement-false": {
-        "zoom": 16,
+        "zoom": 15,
         "center": [52.499167, 13.418056],
         "height": 256,
         "classes": ["line-placement-false"]
