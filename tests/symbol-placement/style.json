@@ -34,9 +34,10 @@
     "id": "line",
     "type": "symbol",
     "source": "mapbox",
-    "source-layer": "road",
+    "source-layer": "road_label",
     "layout": {
       "icon-image": "triangle-stroked-12",
+      "symbol-min-distance": 20,
       "symbol-placement": "line"
     },
     "paint": {
