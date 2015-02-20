@@ -27,5 +27,11 @@
         "center": [52.499167, 13.418056],
         "height": 256,
         "classes": ["function"]
+    },
+    "overscaled": {
+        "zoom": 17,
+        "center": [52.499167, 13.418056],
+        "height": 256,
+        "classes": ["literal"]
     }
 }
