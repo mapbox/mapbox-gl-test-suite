@@ -27,6 +27,7 @@
       "symbol-placement": "point",
       "icon-allow-overlap": true,
       "icon-ignore-placement": true,
+      "icon-max-size": 5,
       "icon-image": "{maki}-12"
     },
     "paint.literal": {
