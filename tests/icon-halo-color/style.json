@@ -28,9 +28,7 @@
       "symbol-placement": "point",
       "icon-allow-overlap": true,
       "icon-ignore-placement": true,
-      "icon-image": "dot.sdf",
-      "text-field": "Test",
-      "text-font": "Open Sans Semibold, Arial Unicode MS Bold"
+      "icon-image": "dot.sdf"
     },
     "paint": {
       "icon-halo-width": 4,
