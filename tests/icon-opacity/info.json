@@ -1,40 +1,47 @@
 {
     "default": {
+        "ignored": [ "native" ],
         "zoom": 14,
         "center": [52.499167, 13.418056],
         "height": 256
     },
     "literal": {
+        "ignored": [ "native" ],
         "zoom": 14,
         "center": [52.499167, 13.418056],
         "height": 256,
         "classes": ["literal"]
     },
     "constant": {
+        "ignored": [ "native" ],
         "zoom": 14,
         "center": [52.499167, 13.418056],
         "height": 256,
         "classes": ["constant"]
     },
     "function": {
+        "ignored": [ "native" ],
         "zoom": 14,
         "center": [52.499167, 13.418056],
         "height": 256,
         "classes": ["function"]
     },
     "text-and-icon": {
+        "ignored": [ "native" ],
         "zoom": 14,
         "center": [52.499167, 13.418056],
         "height": 256,
         "classes": ["text-and-icon"]
     },
     "text-only": {
+        "ignored": [ "native" ],
         "zoom": 14,
         "center": [52.499167, 13.418056],
         "height": 256,
         "classes": ["text-only"]
     },
     "icon-only": {
+        "ignored": [ "native" ],
         "zoom": 14,
         "center": [52.499167, 13.418056],
         "height": 256,

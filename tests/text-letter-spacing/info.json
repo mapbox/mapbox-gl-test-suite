@@ -1,23 +1,27 @@
 {
     "literal": {
+        "ignored": [ "native" ],
         "zoom": 14,
         "center": [52.499167, 13.418056],
         "height": 256,
         "classes": ["literal"]
     },
     "constant": {
+        "ignored": [ "native" ],
         "zoom": 14,
         "center": [52.499167, 13.418056],
         "height": 256,
         "classes": ["constant"]
     },
     "function-close": {
+        "ignored": [ "native" ],
         "zoom": 14,
         "center": [52.499167, 13.418056],
         "height": 256,
         "classes": ["function-close"]
     },
     "function-far": {
+        "ignored": [ "native" ],
         "zoom": 14,
         "center": [52.499167, 13.418056],
         "height": 256,

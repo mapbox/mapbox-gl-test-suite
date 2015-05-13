@@ -1,5 +1,6 @@
 {
     "literal": {
+        "ignored": [ "native" ],
         "center": [0, 0],
         "zoom": 0,
         "width": 64,
@@ -7,6 +8,7 @@
         "diff": 0.001
     },
     "zoomed": {
+        "ignored": [ "native" ],
         "center": [0, 0],
         "zoom": 0.5,
         "width": 64,

@@ -1,19 +1,25 @@
 {
     "default": {
+        "diff": { "native": 0.0025 }
     },
     "literal": {
+        "diff": { "native": 0.0025 },
         "classes": ["literal"]
     },
     "constant": {
+        "diff": { "native": 0.0025 },
         "classes": ["constant"]
     },
     "function": {
+        "diff": { "native": 0.0025 },
         "classes": ["function"]
     },
     "opacity": {
+        "diff": { "native": 0.0025 },
         "classes": ["opacity"]
     },
     "multiply": {
+        "diff": { "native": 0.0025 },
         "classes": ["multiply"]
     }
 }

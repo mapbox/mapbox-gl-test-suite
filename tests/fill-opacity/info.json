@@ -1,13 +1,17 @@
 {
     "default": {
+        "diff": { "native": 0.0025 }
     },
     "literal": {
+        "diff": { "native": 0.0025 },
         "classes": ["literal"]
     },
     "constant": {
+        "diff": { "native": 0.0025 },
         "classes": ["constant"]
     },
     "function": {
+        "ignored": [ "native" ],
         "classes": ["function"]
     }
 }

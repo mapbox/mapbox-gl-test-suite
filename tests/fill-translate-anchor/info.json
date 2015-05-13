@@ -1,9 +1,11 @@
 {
     "map": {
+        "diff": { "native": 0.0015 },
         "bearing": 90,
         "classes": ["map"]
     },
     "viewport": {
+        "diff": { "native": 0.0015 },
         "bearing": 90,
         "classes": ["viewport"]
     }

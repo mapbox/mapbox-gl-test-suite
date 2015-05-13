@@ -5,30 +5,35 @@
         "height": 256
     },
     "literal": {
+        "diff": { "native": 0.0035 },
         "zoom": 14,
         "center": [52.499167, 13.418056],
         "height": 256,
         "classes": ["literal"]
     },
     "constant": {
+        "diff": { "native": 0.002 },
         "zoom": 14,
         "center": [52.499167, 13.418056],
         "height": 256,
         "classes": ["constant"]
     },
     "array-constant": {
+        "diff": { "native": 0.0025 },
         "zoom": 14,
         "center": [52.499167, 13.418056],
         "height": 256,
         "classes": ["array-constant"]
     },
     "function": {
+        "diff": { "native": 0.0015 },
         "zoom": 14,
         "center": [52.499167, 13.418056],
         "height": 256,
         "classes": ["function"]
     },
     "overscaled": {
+        "diff": { "native": 0.002 },
         "zoom": 17,
         "center": [52.499167, 13.418056],
         "height": 256,

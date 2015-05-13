@@ -1,53 +1,62 @@
 {
     "center": {
+        "ignored": [ "native" ],
         "zoom": 14,
         "center": [52.499167, 13.418056],
         "height": 256,
         "classes": ["center"]
     },
     "left": {
+        "ignored": [ "native" ],
         "zoom": 14,
         "center": [52.499167, 13.418056],
         "height": 256,
         "classes": ["left"]
     },
     "right": {
+        "ignored": [ "native" ],
         "zoom": 14,
         "center": [52.499167, 13.418056],
         "height": 256,
         "classes": ["right"]
     },
     "top": {
+        "ignored": [ "native" ],
         "zoom": 14,
         "center": [52.499167, 13.418056],
         "height": 256,
         "classes": ["top"]
     },
     "bottom": {
+        "ignored": [ "native" ],
         "zoom": 14,
         "center": [52.499167, 13.418056],
         "height": 256,
         "classes": ["bottom"]
     },
     "top-left": {
+        "ignored": [ "native" ],
         "zoom": 14,
         "center": [52.499167, 13.418056],
         "height": 256,
         "classes": ["top-left"]
     },
     "top-right": {
+        "ignored": [ "native" ],
         "zoom": 14,
         "center": [52.499167, 13.418056],
         "height": 256,
         "classes": ["top-right"]
     },
     "bottom-left": {
+        "ignored": [ "native" ],
         "zoom": 14,
         "center": [52.499167, 13.418056],
         "height": 256,
         "classes": ["bottom-left"]
     },
     "bottom-right": {
+        "ignored": [ "native" ],
         "zoom": 14,
         "center": [52.499167, 13.418056],
         "height": 256,
