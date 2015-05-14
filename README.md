@@ -30,7 +30,7 @@ Native:
 ```
 cd mapbox-gl-native
 git submodule update --init test/suite
-make test-Headless* && (cd ./test/suite/ && ./bin/compare_images.py)
+make test-Headless* && (cd ./test/suite/ && ./bin/compare_images.py native)
 open ./test/suite/tests/index.html
 ```
 
