@@ -14,6 +14,7 @@ base_dir = 'tests'
 code = 0
 failureCount = 0
 ignoredCount = 0
+ignoredMatchCount = 0
 matchCount = 0
 
 dirs = [ d for d in os.listdir(base_dir) if path.isdir(path.join(base_dir, d)) ]
@@ -25,6 +26,7 @@ def writeResult(name, key, info, error, difference):
     global code
     global failureCount
     global ignoredCount
+    global ignoredMatchCount
     global matchCount
     global results
 
@@ -45,10 +47,14 @@ def writeResult(name, key, info, error, difference):
         else:
             ignored = info['ignored']
 
-    if ignored:
+    if ignored and difference > allowedDifference:
         color = 'grey'
         ignoredCount += 1
-        print '\x1B[37mo [Comparing %s/%s: %f o %f]\x1B[39m' % (name, key, difference, allowedDifference)
+        print '\x1B[37mo [Comparing %s/%s: %f > %f]\x1B[39m' % (name, key, difference, allowedDifference)
+    elif ignored:
+        color = 'yellow'
+        ignoredMatchCount += 1
+        print '\x1B[33m* [Comparing %s/%s: %f <= %f]\x1B[39m' % (name, key, difference, allowedDifference)
     elif difference > allowedDifference:
         color = 'red'
         if code < 1:
@@ -112,10 +118,13 @@ result.write(open('templates/results.html.tmpl').read().format(results = results
 print ''
 print 'Results at: %s' % path.abspath(path.join(base_dir, 'index.html'))
 
-totalCount = matchCount + ignoredCount + failureCount
+totalCount = matchCount + ignoredMatchCount + ignoredCount + failureCount
 
 if matchCount > 0:
     print '\x1B[1m\x1B[32m%d %s match\x1B[39m\x1B[22m (%.1f%%)' % (matchCount, 'image' if matchCount == 1 else 'images', 100 * matchCount / totalCount)
+
+if ignoredMatchCount > 0:
+    print '\x1B[1m\x1B[33m%d %s match but were ignored\x1B[39m\x1B[22m (%.1f%%)' % (ignoredMatchCount, 'image' if ignoredMatchCount == 1 else 'images', 100 * ignoredMatchCount / totalCount)
 
 if ignoredCount > 0:
     print '\x1B[1m\x1B[37m%d %s ignored\x1B[39m\x1B[22m (%.1f%%)' % (ignoredCount, 'image' if ignoredCount == 1 else 'images', 100 * ignoredCount / totalCount)
