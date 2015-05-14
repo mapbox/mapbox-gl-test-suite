@@ -1,13 +1,17 @@
 {
     "left": {
-        "ignored": [ "native" ],
+        "ignored": {
+            "native": ""
+        },
         "zoom": 14,
         "center": [52.499167, 13.418056],
         "height": 256,
         "classes": ["left"]
     },
     "right": {
-        "ignored": [ "native" ],
+        "ignored": {
+            "native": ""
+        },
         "zoom": 14,
         "center": [52.499167, 13.418056],
         "height": 256,

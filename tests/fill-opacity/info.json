@@ -11,7 +11,9 @@
         "classes": ["constant"]
     },
     "function": {
-        "ignored": [ "native" ],
+        "ignored": {
+            "native": "https://github.com/mapbox/mapbox-gl-native/issues/1542"
+        },
         "classes": ["function"]
     }
 }

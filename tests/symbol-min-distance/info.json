@@ -1,34 +1,44 @@
 {
     "point-close": {
-        "ignored": [ "native" ],
+        "ignored": {
+            "native": "https://github.com/mapbox/mapbox-gl-native/issues/1554, https://github.com/mapbox/mapbox-gl-native/issues/1139, https://github.com/mapbox/mapbox-gl-native/issues/1540"
+        },
         "zoom": 14,
         "center": [52.499167, 13.418056],
         "height": 256,
         "classes": ["point-close"]
     },
     "point-far": {
-        "ignored": [ "native" ],
+        "ignored": {
+            "native": "https://github.com/mapbox/mapbox-gl-native/issues/1554, https://github.com/mapbox/mapbox-gl-native/issues/1139, https://github.com/mapbox/mapbox-gl-native/issues/1540"
+        },
         "zoom": 14,
         "center": [52.499167, 13.418056],
         "height": 256,
         "classes": ["point-far"]
     },
     "line-close": {
-        "ignored": [ "native" ],
+        "ignored": {
+            "native": "https://github.com/mapbox/mapbox-gl-native/issues/1554, https://github.com/mapbox/mapbox-gl-native/issues/1139, https://github.com/mapbox/mapbox-gl-native/issues/1540"
+        },
         "zoom": 14,
         "center": [52.499167, 13.418056],
         "height": 256,
         "classes": ["line-close"]
     },
     "line-far": {
-        "ignored": [ "native" ],
+        "ignored": {
+            "native": "https://github.com/mapbox/mapbox-gl-native/issues/1554, https://github.com/mapbox/mapbox-gl-native/issues/1139, https://github.com/mapbox/mapbox-gl-native/issues/1540"
+        },
         "zoom": 14,
         "center": [52.499167, 13.418056],
         "height": 256,
         "classes": ["line-far"]
     },
     "line-overscaled": {
-        "ignored": [ "native" ],
+        "ignored": {
+            "native": "https://github.com/mapbox/mapbox-gl-native/issues/1554, https://github.com/mapbox/mapbox-gl-native/issues/1139, https://github.com/mapbox/mapbox-gl-native/issues/1540"
+        },
         "zoom": 17,
         "center": [52.499167, 13.418056],
         "height": 256,

@@ -40,7 +40,7 @@ def writeResult(name, key, info, error, difference):
 
     ignored = False
     if 'ignored' in info:
-        if type(info['ignored']) == list:
+        if type(info['ignored']) == dict:
             ignored = mode in info['ignored']
         else:
             ignored = info['ignored']

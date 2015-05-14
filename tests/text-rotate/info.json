@@ -1,48 +1,62 @@
 {
     "literal": {
-        "ignored": [ "native" ],
+        "ignored": {
+            "native": ""
+        },
         "zoom": 14,
         "center": [52.499167, 13.418056],
         "height": 256,
         "classes": ["literal"]
     },
     "constant": {
-        "ignored": [ "native" ],
+        "ignored": {
+            "native": ""
+        },
         "zoom": 14,
         "center": [52.499167, 13.418056],
         "height": 256,
         "classes": ["constant"]
     },
     "anchor-left": {
-        "ignored": [ "native" ],
+        "ignored": {
+            "native": ""
+        },
         "zoom": 14,
         "center": [52.499167, 13.418056],
         "height": 256,
         "classes": ["anchor-left"]
     },
     "anchor-right": {
-        "ignored": [ "native" ],
+        "ignored": {
+            "native": ""
+        },
         "zoom": 14,
         "center": [52.499167, 13.418056],
         "height": 256,
         "classes": ["anchor-right"]
     },
     "anchor-top": {
-        "ignored": [ "native" ],
+        "ignored": {
+            "native": ""
+        },
         "zoom": 14,
         "center": [52.499167, 13.418056],
         "height": 256,
         "classes": ["anchor-top"]
     },
     "anchor-bottom": {
-        "ignored": [ "native" ],
+        "ignored": {
+            "native": ""
+        },
         "zoom": 14,
         "center": [52.499167, 13.418056],
         "height": 256,
         "classes": ["anchor-bottom"]
     },
     "function": {
-        "ignored": [ "native" ],
+        "ignored": {
+            "native": ""
+        },
         "zoom": 14,
         "center": [52.499167, 13.418056],
         "height": 256,
