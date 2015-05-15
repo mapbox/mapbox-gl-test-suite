@@ -1,8 +1,5 @@
 {
     "color": {
-        "ignored": {
-            "native": "https://github.com/mapbox/mapbox-gl-native/issues/1514"
-        },
         "center": [0, 0],
         "zoom": 0,
         "width": 64,
@@ -10,9 +7,6 @@
         "classes": ["color"]
     },
     "image": {
-        "ignored": {
-            "native": "https://github.com/mapbox/mapbox-gl-native/issues/1514"
-        },
         "center": [0, 0],
         "zoom": 0,
         "width": 64,
