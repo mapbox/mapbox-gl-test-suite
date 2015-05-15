@@ -1,16 +1,10 @@
 {
     "fractional": {
-        "ignored": {
-            "native": "https://github.com/mapbox/mapbox-gl-native/issues/1554"
-        },
         "zoom": 16.1,
         "center": [52.499167, 13.418056],
         "height": 256
     },
     "overzoom": {
-        "ignored": {
-            "native": "https://github.com/mapbox/mapbox-gl-native/issues/1554"
-        },
         "zoom": 17,
         "center": [52.499167, 13.418056],
         "height": 256

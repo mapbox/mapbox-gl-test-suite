@@ -1,7 +1,7 @@
 {
     "literal": {
         "ignored": {
-            "native": "https://github.com/mapbox/mapbox-gl-native/issues/1554"
+            "native": "?"
         },
         "center": [0, 0],
         "zoom": 0,
@@ -10,9 +10,6 @@
         "diff": 0.001
     },
     "zoomed": {
-        "ignored": {
-            "native": "https://github.com/mapbox/mapbox-gl-native/issues/1554"
-        },
         "center": [0, 0],
         "zoom": 0.5,
         "width": 64,
@@ -20,9 +17,6 @@
         "diff": 0.001
     },
     "rotated": {
-        "ignored": {
-            "native": "https://github.com/mapbox/mapbox-gl-native/issues/1554"
-        },
         "center": [0, 0],
         "zoom": 0,
         "width": 64,

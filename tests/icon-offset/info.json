@@ -1,7 +1,7 @@
 {
     "literal": {
         "ignored": {
-            "native": "https://github.com/mapbox/mapbox-gl-native/issues/1544, https://github.com/mapbox/mapbox-gl-native/issues/1554"
+            "native": "https://github.com/mapbox/mapbox-gl-native/issues/1544"
         },
         "zoom": 14,
         "center": [52.499167, 13.418056],
@@ -10,7 +10,7 @@
     },
     "constant": {
         "ignored": {
-            "native": "https://github.com/mapbox/mapbox-gl-native/issues/1544, https://github.com/mapbox/mapbox-gl-native/issues/1554"
+            "native": "https://github.com/mapbox/mapbox-gl-native/issues/1544"
         },
         "zoom": 14,
         "center": [52.499167, 13.418056],

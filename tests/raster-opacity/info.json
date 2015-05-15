@@ -8,9 +8,6 @@
         "height": 256
     },
     "literal": {
-        "ignored": {
-            "native": "https://github.com/mapbox/mapbox-gl-native/issues/1554"
-        },
         "diff": 0.0015,
         "zoom": 16,
         "center": [52.499167, 13.418056],

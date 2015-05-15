@@ -1,19 +1,11 @@
 {
     "literal": {
-        "ignored": {
-            "native": "https://github.com/mapbox/mapbox-gl-native/issues/1554"
-        }
     },
     "zoomed": {
-        "ignored": {
-            "native": "https://github.com/mapbox/mapbox-gl-native/issues/1554"
-        },
+        "diff": { "native": 0.002 },
         "zoom": 0.5
     },
     "opacity": {
-        "ignored": {
-            "native": "https://github.com/mapbox/mapbox-gl-native/issues/1554"
-        },
         "classes": ["opacity"]
     }
 }
