@@ -42,7 +42,7 @@
         "classes": ["point-placement-align-map-true"]
     },
     "point-placement-align-map-false": {
-        "diff": { "native": 0.005 },
+        "diff": { "native": 0.0055 },
         "zoom": 14,
         "center": [52.499167, 13.418056],
         "height": 256,
