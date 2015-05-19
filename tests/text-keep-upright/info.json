@@ -18,18 +18,14 @@
         "classes": ["line-placement-false"]
     },
     "point-placement-align-viewport-true": {
-        "ignored": {
-            "native": ""
-        },
+        "diff": { "native": 0.0055 },
         "zoom": 14,
         "center": [52.499167, 13.418056],
         "height": 256,
         "classes": ["point-placement-align-viewport-true"]
     },
     "point-placement-align-viewport-false": {
-        "ignored": {
-            "native": ""
-        },
+        "diff": { "native": 0.0055 },
         "zoom": 14,
         "center": [52.499167, 13.418056],
         "height": 256,
@@ -46,9 +42,7 @@
         "classes": ["point-placement-align-map-true"]
     },
     "point-placement-align-map-false": {
-        "ignored": {
-            "native": ""
-        },
+        "diff": { "native": 0.005 },
         "zoom": 14,
         "center": [52.499167, 13.418056],
         "height": 256,

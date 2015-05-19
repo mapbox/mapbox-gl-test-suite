@@ -1,17 +1,13 @@
 {
     "literal": {
-        "ignored": {
-            "native": ""
-        },
+        "diff": { "native": 0.0025 },
         "zoom": 14,
         "center": [52.499167, 13.418056],
         "height": 256,
         "classes": ["literal"]
     },
     "constant": {
-        "ignored": {
-            "native": ""
-        },
+        "diff": { "native": 0.0025 },
         "zoom": 14,
         "center": [52.499167, 13.418056],
         "height": 256,

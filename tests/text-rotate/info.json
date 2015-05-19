@@ -1,17 +1,11 @@
 {
     "literal": {
-        "ignored": {
-            "native": ""
-        },
         "zoom": 14,
         "center": [52.499167, 13.418056],
         "height": 256,
         "classes": ["literal"]
     },
     "constant": {
-        "ignored": {
-            "native": ""
-        },
         "zoom": 14,
         "center": [52.499167, 13.418056],
         "height": 256,
@@ -36,18 +30,12 @@
         "classes": ["anchor-right"]
     },
     "anchor-top": {
-        "ignored": {
-            "native": ""
-        },
         "zoom": 14,
         "center": [52.499167, 13.418056],
         "height": 256,
         "classes": ["anchor-top"]
     },
     "anchor-bottom": {
-        "ignored": {
-            "native": ""
-        },
         "zoom": 14,
         "center": [52.499167, 13.418056],
         "height": 256,
