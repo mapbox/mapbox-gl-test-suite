@@ -12,18 +12,12 @@
         "classes": ["constant"]
     },
     "anchor-left": {
-        "ignored": {
-            "native": ""
-        },
         "zoom": 14,
         "center": [52.499167, 13.418056],
         "height": 256,
         "classes": ["anchor-left"]
     },
     "anchor-right": {
-        "ignored": {
-            "native": ""
-        },
         "zoom": 14,
         "center": [52.499167, 13.418056],
         "height": 256,
@@ -42,9 +36,6 @@
         "classes": ["anchor-bottom"]
     },
     "function": {
-        "ignored": {
-            "native": ""
-        },
         "zoom": 14,
         "center": [52.499167, 13.418056],
         "height": 256,
