@@ -1,62 +1,83 @@
 {
-  "version": 7,
+  "version": 8,
   "constants": {
-    "@constant": "green"
+    "@constant": {
+      "type": "color",
+      "value": "green"
+    }
   },
   "sources": {
     "mapbox": {
       "type": "vector",
       "maxzoom": 14,
-      "tiles": ["local://tiles/{z}-{x}-{y}.vector.pbf"]
+      "tiles": [
+        "local://tiles/{z}-{x}-{y}.vector.pbf"
+      ]
     }
   },
   "sprite": "local://sprites/sprite",
   "glyphs": "local://glyphs/{fontstack}/{range}.pbf",
-  "layers": [{
-    "id": "background",
-    "type": "background",
-    "paint": {
-      "background-color": "white"
-    }
-  }, {
-    "id": "icon",
-    "type": "symbol",
-    "source": "mapbox",
-    "source-layer": "poi_label",
-    "filter": ["==", "maki", "restaurant"],
-    "layout": {
-      "symbol-placement": "point",
-      "icon-allow-overlap": true,
-      "icon-ignore-placement": true,
-      "icon-image": "dot.sdf"
-    },
-    "paint": {
-      "icon-halo-width": 4,
-      "text-opacity": 0
-    },
-    "paint.literal": {
-      "icon-halo-color": "red"
-    },
-    "paint.constant": {
-      "icon-halo-color": "@constant"
-    },
-    "paint.function": {
-      "icon-halo-color": {
-        "stops": [[16, "blue"], [17, "red"]]
+  "layers": [
+    {
+      "id": "background",
+      "type": "background",
+      "paint": {
+        "background-color": "white"
       }
     },
-    "paint.opacity": {
-      "icon-halo-color": "rgba(255,0,0,1)",
-      "icon-opacity": 0.5
-    },
-    "paint.multiply": {
-      "icon-halo-color": "rgba(255,0,0,0.5)",
-      "icon-opacity": 0.5
-    },
-    "paint.transparent": {
-      "icon-halo-color": "rgba(255,0,0,1)",
-      "icon-opacity": 0,
-      "text-opacity": 0.01
+    {
+      "id": "icon",
+      "type": "symbol",
+      "source": "mapbox",
+      "source-layer": "poi_label",
+      "filter": [
+        "==",
+        "maki",
+        "restaurant"
+      ],
+      "layout": {
+        "symbol-placement": "point",
+        "icon-allow-overlap": true,
+        "icon-ignore-placement": true,
+        "icon-image": "dot.sdf"
+      },
+      "paint": {
+        "icon-halo-width": 4,
+        "text-opacity": 0
+      },
+      "paint.literal": {
+        "icon-halo-color": "red"
+      },
+      "paint.constant": {
+        "icon-halo-color": "@constant"
+      },
+      "paint.function": {
+        "icon-halo-color": {
+          "stops": [
+            [
+              16,
+              "blue"
+            ],
+            [
+              17,
+              "red"
+            ]
+          ]
+        }
+      },
+      "paint.opacity": {
+        "icon-halo-color": "rgba(255,0,0,1)",
+        "icon-opacity": 0.5
+      },
+      "paint.multiply": {
+        "icon-halo-color": "rgba(255,0,0,0.5)",
+        "icon-opacity": 0.5
+      },
+      "paint.transparent": {
+        "icon-halo-color": "rgba(255,0,0,1)",
+        "icon-opacity": 0,
+        "text-opacity": 0.01
+      }
     }
-  }]
+  ]
 }

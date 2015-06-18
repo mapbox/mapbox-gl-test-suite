@@ -1,45 +1,83 @@
 {
-  "version": 7,
+  "version": 8,
   "constants": {
-    "@constant": [5, 5],
-    "@small": 2.5,
-    "@large": 5
+    "@constant": {
+      "type": "dash-array",
+      "value": [
+        5,
+        5
+      ]
+    },
+    "@small": {
+      "type": "number",
+      "value": 2.5
+    },
+    "@large": {
+      "type": "number",
+      "value": 5
+    }
   },
   "sources": {
     "mapbox": {
       "type": "vector",
       "maxzoom": 14,
-      "tiles": ["local://tiles/{z}-{x}-{y}.vector.pbf"]
+      "tiles": [
+        "local://tiles/{z}-{x}-{y}.vector.pbf"
+      ]
     }
   },
-  "layers": [{
-    "id": "background",
-    "type": "background",
-    "paint": {
-      "background-color": "white"
-    }
-  }, {
-    "id": "road",
-    "type": "line",
-    "source": "mapbox",
-    "source-layer": "road",
-    "paint": {
-      "line-width": 2,
-      "line-color": "#000"
+  "layers": [
+    {
+      "id": "background",
+      "type": "background",
+      "paint": {
+        "background-color": "white"
+      }
     },
-    "paint.literal": {
-      "line-dasharray": [2.5, 2.5]
-    },
-    "paint.constant": {
-      "line-dasharray": "@constant"
-    },
-    "paint.array-constant": {
-      "line-dasharray": ["@small", "@large"]
-    },
-    "paint.function": {
-      "line-dasharray": {
-        "stops": [[16, [7.5, 7.5]], [17, [10, 10]]]
+    {
+      "id": "road",
+      "type": "line",
+      "source": "mapbox",
+      "source-layer": "road",
+      "paint": {
+        "line-width": 2,
+        "line-color": "#000"
+      },
+      "paint.literal": {
+        "line-dasharray": [
+          2.5,
+          2.5
+        ]
+      },
+      "paint.constant": {
+        "line-dasharray": "@constant"
+      },
+      "paint.array-constant": {
+        "line-dasharray": [
+          "@small",
+          "@large"
+        ]
+      },
+      "paint.function": {
+        "line-dasharray": {
+          "stops": [
+            [
+              16,
+              [
+                7.5,
+                7.5
+              ]
+            ],
+            [
+              17,
+              [
+                10,
+                10
+              ]
+            ]
+          ]
+        }
       }
     }
-  }]
+  ]
 }

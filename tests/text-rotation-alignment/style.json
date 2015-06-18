@@ -1,61 +1,79 @@
 {
-  "version": 7,
-  "constants": {
-    "@constant": "Open Sans Semibold, Arial Unicode MS Bold"
-  },
+  "version": 8,
+  "constants": {},
   "sources": {
     "mapbox": {
       "type": "vector",
       "maxzoom": 14,
-      "tiles": ["local://tiles/{z}-{x}-{y}.vector.pbf"]
+      "tiles": [
+        "local://tiles/{z}-{x}-{y}.vector.pbf"
+      ]
     }
   },
   "glyphs": "local://glyphs/{fontstack}/{range}.pbf",
-  "layers": [{
-    "id": "background",
-    "type": "background",
-    "paint": {
-      "background-color": "white"
+  "layers": [
+    {
+      "id": "background",
+      "type": "background",
+      "paint": {
+        "background-color": "white"
+      }
+    },
+    {
+      "id": "viewport",
+      "type": "symbol",
+      "source": "mapbox",
+      "source-layer": "poi_label",
+      "filter": [
+        "==",
+        "maki",
+        "restaurant"
+      ],
+      "layout": {
+        "symbol-placement": "point",
+        "text-allow-overlap": true,
+        "text-ignore-placement": true,
+        "text-field": "Test",
+        "text-font": [
+          "Open Sans Semibold",
+          "Arial Unicode MS Bold"
+        ],
+        "text-rotation-alignment": "viewport"
+      },
+      "paint": {
+        "text-opacity": 0
+      },
+      "paint.viewport": {
+        "text-opacity": 1
+      }
+    },
+    {
+      "id": "map",
+      "type": "symbol",
+      "source": "mapbox",
+      "source-layer": "poi_label",
+      "filter": [
+        "==",
+        "maki",
+        "restaurant"
+      ],
+      "layout": {
+        "symbol-placement": "point",
+        "text-allow-overlap": true,
+        "text-ignore-placement": true,
+        "text-field": "Test",
+        "text-font": [
+          "Open Sans Semibold",
+          "Arial Unicode MS Bold"
+        ],
+        "text-rotation-alignment": "map"
+      },
+      "paint": {
+        "text-opacity": 0
+      },
+      "paint.map": {
+        "text-opacity": 1
+      }
     }
-  }, {
-    "id": "viewport",
-    "type": "symbol",
-    "source": "mapbox",
-    "source-layer": "poi_label",
-    "filter": ["==", "maki", "restaurant"],
-    "layout": {
-      "symbol-placement": "point",
-      "text-allow-overlap": true,
-      "text-ignore-placement": true,
-      "text-field": "Test",
-      "text-font": "Open Sans Semibold, Arial Unicode MS Bold",
-      "text-rotation-alignment": "viewport"
-    },
-    "paint": {
-      "text-opacity": 0
-    },
-    "paint.viewport": {
-      "text-opacity": 1
-    }
-  }, {
-    "id": "map",
-    "type": "symbol",
-    "source": "mapbox",
-    "source-layer": "poi_label",
-    "filter": ["==", "maki", "restaurant"],
-    "layout": {
-      "symbol-placement": "point",
-      "text-allow-overlap": true,
-      "text-ignore-placement": true,
-      "text-field": "Test",
-      "text-font": "Open Sans Semibold, Arial Unicode MS Bold",
-      "text-rotation-alignment": "map"
-    },
-    "paint": {
-      "text-opacity": 0
-    },
-    "paint.map": {
-      "text-opacity": 1
-    }
-  }]
+  ]
 }

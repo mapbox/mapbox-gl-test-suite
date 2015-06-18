@@ -1,45 +1,62 @@
 {
-  "version": 7,
+  "version": 8,
   "constants": {
-    "@constant": "red"
+    "@constant": {
+      "type": "color",
+      "value": "red"
+    }
   },
   "sources": {
     "mapbox": {
       "type": "vector",
       "maxzoom": 14,
-      "tiles": ["local://tiles/{z}-{x}-{y}.vector.pbf"]
+      "tiles": [
+        "local://tiles/{z}-{x}-{y}.vector.pbf"
+      ]
     }
   },
-  "layers": [{
-    "id": "background",
-    "type": "background",
-    "paint": {
-      "background-color": "white"
-    }
-  }, {
-    "id": "land",
-    "type": "fill",
-    "source": "mapbox",
-    "source-layer": "water",
-    "paint": {},
-    "paint.literal": {
-      "fill-color": "blue"
-    },
-    "paint.constant": {
-      "fill-color": "@constant"
-    },
-    "paint.function": {
-      "fill-color": {
-        "stops": [[0, "green"], [1, "blue"]]
+  "layers": [
+    {
+      "id": "background",
+      "type": "background",
+      "paint": {
+        "background-color": "white"
       }
     },
-    "paint.opacity": {
-      "fill-color": "rgba(255,0,0,1)",
-      "fill-opacity": 0.5
-    },
-    "paint.multiply": {
-      "fill-color": "rgba(255,0,0,0.5)",
-      "fill-opacity": 0.5
+    {
+      "id": "land",
+      "type": "fill",
+      "source": "mapbox",
+      "source-layer": "water",
+      "paint": {},
+      "paint.literal": {
+        "fill-color": "blue"
+      },
+      "paint.constant": {
+        "fill-color": "@constant"
+      },
+      "paint.function": {
+        "fill-color": {
+          "stops": [
+            [
+              0,
+              "green"
+            ],
+            [
+              1,
+              "blue"
+            ]
+          ]
+        }
+      },
+      "paint.opacity": {
+        "fill-color": "rgba(255,0,0,1)",
+        "fill-opacity": 0.5
+      },
+      "paint.multiply": {
+        "fill-color": "rgba(255,0,0,0.5)",
+        "fill-opacity": 0.5
+      }
     }
-  }]
+  ]
 }

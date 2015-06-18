@@ -1,38 +1,58 @@
 {
-  "version": 7,
-  "constants": {
-    "@constant": [0.4, 0.6]
-  },
+  "version": 8,
+  "constants": {},
   "sources": {
     "satellite": {
       "type": "raster",
-      "tiles": ["local://tiles/{z}-{x}-{y}.satellite.png"],
+      "tiles": [
+        "local://tiles/{z}-{x}-{y}.satellite.png"
+      ],
       "maxzoom": 17,
       "tileSize": 256
     }
   },
-  "layers": [{
-    "id": "raster",
-    "type": "raster",
-    "source": "satellite",
-    "paint": {
-      "raster-fade-duration": 0
-    },
-    "paint.literal": {
-      "raster-brightness-min": 0.2,
-      "raster-brightness-max": 0.8
-    },
-    "paint.constant": {
-      "raster-brightness-min": 0.4,
-      "raster-brightness-max": 0.6
-    },
-    "paint.function": {
-      "raster-brightness-min": {
-        "stops": [[16, 0.5], [17, 0.5]]
+  "layers": [
+    {
+      "id": "raster",
+      "type": "raster",
+      "source": "satellite",
+      "paint": {
+        "raster-fade-duration": 0
       },
-      "raster-brightness-max": {
-        "stops": [[16, 0.6], [17, 0.4]]
+      "paint.literal": {
+        "raster-brightness-min": 0.2,
+        "raster-brightness-max": 0.8
+      },
+      "paint.constant": {
+        "raster-brightness-min": 0.4,
+        "raster-brightness-max": 0.6
+      },
+      "paint.function": {
+        "raster-brightness-min": {
+          "stops": [
+            [
+              16,
+              0.5
+            ],
+            [
+              17,
+              0.5
+            ]
+          ]
+        },
+        "raster-brightness-max": {
+          "stops": [
+            [
+              16,
+              0.6
+            ],
+            [
+              17,
+              0.4
+            ]
+          ]
+        }
       }
     }
-  }]
+  ]
 }

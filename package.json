@@ -1,13 +1,14 @@
 {
-    "name": "mapbox-gl-test-suite",
-    "description": "Rendering tests for Mapbox GL",
-    "version": "0.0.0",
-    "license": "BSD",
-    "dependencies": {},
-    "devDependencies": {
-      "mapbox-gl-style-spec": "git+https://github.com/mapbox/mapbox-gl-style-spec.git#e9a261ed918ee8711f257a8d4acb5624daa48a24"
-    },
-    "scripts": {
-      "migrate": "for file in tests/*/style.json; do gl-style-migrate $file | sponge $file; done"
-    }
+  "name": "mapbox-gl-test-suite",
+  "description": "Rendering tests for Mapbox GL",
+  "version": "0.0.0",
+  "license": "BSD",
+  "dependencies": {},
+  "devDependencies": {
+    "mapbox-gl-style-spec": "git+https://github.com/mapbox/mapbox-gl-style-spec.git#e9a261ed918ee8711f257a8d4acb5624daa48a24",
+    "sponge": "^0.1.0"
+  },
+  "scripts": {
+    "migrate": "for file in tests/*/style.json; do gl-style-migrate $file | sponge $file; done"
+  }
 }

@@ -1,65 +1,72 @@
 {
-  "version": 7,
+  "version": 8,
   "sources": {
     "mapbox": {
       "type": "vector",
       "maxzoom": 14,
-      "tiles": ["local://tiles/{z}-{x}-{y}.vector.pbf"]
+      "tiles": [
+        "local://tiles/{z}-{x}-{y}.vector.pbf"
+      ]
     }
   },
-  "layers": [{
-    "id": "background",
-    "type": "background",
-    "paint": {
-      "background-color": "white"
+  "layers": [
+    {
+      "id": "background",
+      "type": "background",
+      "paint": {
+        "background-color": "white"
+      }
+    },
+    {
+      "id": "butt",
+      "type": "line",
+      "source": "mapbox",
+      "source-layer": "road",
+      "layout": {
+        "line-cap": "butt"
+      },
+      "paint": {
+        "line-width": 10,
+        "line-color": "#000",
+        "line-opacity": 0
+      },
+      "paint.butt": {
+        "line-opacity": 1
+      }
+    },
+    {
+      "id": "round",
+      "type": "line",
+      "source": "mapbox",
+      "source-layer": "road",
+      "layout": {
+        "line-cap": "round"
+      },
+      "paint": {
+        "line-width": 10,
+        "line-color": "#000",
+        "line-opacity": 0
+      },
+      "paint.round": {
+        "line-opacity": 1
+      }
+    },
+    {
+      "id": "square",
+      "type": "line",
+      "source": "mapbox",
+      "source-layer": "road",
+      "layout": {
+        "line-cap": "square"
+      },
+      "paint": {
+        "line-width": 10,
+        "line-color": "#000",
+        "line-opacity": 0
+      },
+      "paint.square": {
+        "line-opacity": 1
+      }
     }
-  }, {
-    "id": "butt",
-    "type": "line",
-    "source": "mapbox",
-    "source-layer": "road",
-    "layout": {
-      "line-cap": "butt"
-    },
-    "paint": {
-      "line-width": 10,
-      "line-color": "#000",
-      "line-opacity": 0
-    },
-    "paint.butt": {
-      "line-opacity": 1
-    }
-  }, {
-    "id": "round",
-    "type": "line",
-    "source": "mapbox",
-    "source-layer": "road",
-    "layout": {
-      "line-cap": "round"
-    },
-    "paint": {
-      "line-width": 10,
-      "line-color": "#000",
-      "line-opacity": 0
-    },
-    "paint.round": {
-      "line-opacity": 1
-    }
-  }, {
-    "id": "square",
-    "type": "line",
-    "source": "mapbox",
-    "source-layer": "road",
-    "layout": {
-      "line-cap": "square"
-    },
-    "paint": {
-      "line-width": 10,
-      "line-color": "#000",
-      "line-opacity": 0
-    },
-    "paint.square": {
-      "line-opacity": 1
-    }
-  }]
+  ]
 }

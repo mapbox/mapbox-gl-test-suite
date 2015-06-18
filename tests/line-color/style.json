@@ -1,39 +1,56 @@
 {
-  "version": 7,
+  "version": 8,
   "constants": {
-    "@constant": "red"
+    "@constant": {
+      "type": "color",
+      "value": "red"
+    }
   },
   "sources": {
     "mapbox": {
       "type": "vector",
       "maxzoom": 14,
-      "tiles": ["local://tiles/{z}-{x}-{y}.vector.pbf"]
+      "tiles": [
+        "local://tiles/{z}-{x}-{y}.vector.pbf"
+      ]
     }
   },
-  "layers": [{
-    "id": "background",
-    "type": "background",
-    "paint": {
-      "background-color": "white"
-    }
-  }, {
-    "id": "road",
-    "type": "line",
-    "source": "mapbox",
-    "source-layer": "road",
-    "paint": {
-      "line-width": 10
+  "layers": [
+    {
+      "id": "background",
+      "type": "background",
+      "paint": {
+        "background-color": "white"
+      }
     },
-    "paint.literal": {
-      "line-color": "blue"
-    },
-    "paint.constant": {
-      "line-color": "@constant"
-    },
-    "paint.function": {
-      "line-color": {
-        "stops": [[16, "green"], [17, "blue"]]
+    {
+      "id": "road",
+      "type": "line",
+      "source": "mapbox",
+      "source-layer": "road",
+      "paint": {
+        "line-width": 10
+      },
+      "paint.literal": {
+        "line-color": "blue"
+      },
+      "paint.constant": {
+        "line-color": "@constant"
+      },
+      "paint.function": {
+        "line-color": {
+          "stops": [
+            [
+              16,
+              "green"
+            ],
+            [
+              17,
+              "blue"
+            ]
+          ]
+        }
       }
     }
-  }]
+  ]
 }

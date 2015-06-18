@@ -1,20 +1,24 @@
 {
-  "version": 7,
+  "version": 8,
   "sources": {
     "satellite": {
       "type": "raster",
-      "tiles": ["local://tiles/{z}-{x}-{y}.satellite.png"],
+      "tiles": [
+        "local://tiles/{z}-{x}-{y}.satellite.png"
+      ],
       "minzoom": 17,
       "maxzoom": 17,
       "tileSize": 256
     }
   },
-  "layers": [{
-    "id": "raster",
-    "type": "raster",
-    "source": "satellite",
-    "paint": {
-      "raster-fade-duration": 0
+  "layers": [
+    {
+      "id": "raster",
+      "type": "raster",
+      "source": "satellite",
+      "paint": {
+        "raster-fade-duration": 0
+      }
     }
-  }]
+  ]
 }

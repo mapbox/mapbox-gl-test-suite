@@ -1,86 +1,126 @@
 {
-  "version": 7,
+  "version": 8,
   "constants": {
-    "@constant": 0.4
+    "@constant": {
+      "type": "number",
+      "value": 0.4
+    }
   },
   "sources": {
     "mapbox": {
       "type": "vector",
       "maxzoom": 14,
-      "tiles": ["local://tiles/{z}-{x}-{y}.vector.pbf"]
+      "tiles": [
+        "local://tiles/{z}-{x}-{y}.vector.pbf"
+      ]
     }
   },
   "glyphs": "local://glyphs/{fontstack}/{range}.pbf",
-  "layers": [{
-    "id": "background",
-    "type": "background",
-    "paint": {
-      "background-color": "white"
-    }
-  }, {
-    "id": "literal",
-    "type": "symbol",
-    "source": "mapbox",
-    "source-layer": "poi_label",
-    "filter": ["==", "maki", "restaurant"],
-    "layout": {
-      "symbol-placement": "point",
-      "text-allow-overlap": true,
-      "text-ignore-placement": true,
-      "text-field": "Test",
-      "text-font": "Open Sans Semibold, Arial Unicode MS Bold",
-      "text-letter-spacing": 0.3
-    },
-    "paint": {
-      "text-opacity": 0
-    },
-    "paint.literal": {
-      "text-opacity": 1
-    }
-  }, {
-    "id": "constant",
-    "type": "symbol",
-    "source": "mapbox",
-    "source-layer": "poi_label",
-    "filter": ["==", "maki", "restaurant"],
-    "layout": {
-      "symbol-placement": "point",
-      "text-allow-overlap": true,
-      "text-ignore-placement": true,
-      "text-field": "Test",
-      "text-font": "Open Sans Semibold, Arial Unicode MS Bold",
-      "text-letter-spacing": "@constant"
-    },
-    "paint": {
-      "text-opacity": 0
-    },
-    "paint.constant": {
-      "text-opacity": 1
-    }
-  }, {
-    "id": "functions",
-    "type": "symbol",
-    "source": "mapbox",
-    "source-layer": "poi_label",
-    "filter": ["==", "maki", "restaurant"],
-    "layout": {
-      "symbol-placement": "point",
-      "text-allow-overlap": true,
-      "text-ignore-placement": true,
-      "text-field": "Test",
-      "text-font": "Open Sans Semibold, Arial Unicode MS Bold",
-      "text-letter-spacing": {
-        "stops": [[14, -4], [15, 4]]
+  "layers": [
+    {
+      "id": "background",
+      "type": "background",
+      "paint": {
+        "background-color": "white"
       }
     },
-    "paint": {
-      "text-opacity": 0
+    {
+      "id": "literal",
+      "type": "symbol",
+      "source": "mapbox",
+      "source-layer": "poi_label",
+      "filter": [
+        "==",
+        "maki",
+        "restaurant"
+      ],
+      "layout": {
+        "symbol-placement": "point",
+        "text-allow-overlap": true,
+        "text-ignore-placement": true,
+        "text-field": "Test",
+        "text-font": [
+          "Open Sans Semibold",
+          "Arial Unicode MS Bold"
+        ],
+        "text-letter-spacing": 0.3
+      },
+      "paint": {
+        "text-opacity": 0
+      },
+      "paint.literal": {
+        "text-opacity": 1
+      }
     },
-    "paint.function-close": {
-      "text-opacity": 1
+    {
+      "id": "constant",
+      "type": "symbol",
+      "source": "mapbox",
+      "source-layer": "poi_label",
+      "filter": [
+        "==",
+        "maki",
+        "restaurant"
+      ],
+      "layout": {
+        "symbol-placement": "point",
+        "text-allow-overlap": true,
+        "text-ignore-placement": true,
+        "text-field": "Test",
+        "text-font": [
+          "Open Sans Semibold",
+          "Arial Unicode MS Bold"
+        ],
+        "text-letter-spacing": "@constant"
+      },
+      "paint": {
+        "text-opacity": 0
+      },
+      "paint.constant": {
+        "text-opacity": 1
+      }
     },
-    "paint.function-far": {
-      "text-opacity": 1
+    {
+      "id": "functions",
+      "type": "symbol",
+      "source": "mapbox",
+      "source-layer": "poi_label",
+      "filter": [
+        "==",
+        "maki",
+        "restaurant"
+      ],
+      "layout": {
+        "symbol-placement": "point",
+        "text-allow-overlap": true,
+        "text-ignore-placement": true,
+        "text-field": "Test",
+        "text-font": [
+          "Open Sans Semibold",
+          "Arial Unicode MS Bold"
+        ],
+        "text-letter-spacing": {
+          "stops": [
+            [
+              14,
+              -4
+            ],
+            [
+              15,
+              4
+            ]
+          ]
+        }
+      },
+      "paint": {
+        "text-opacity": 0
+      },
+      "paint.function-close": {
+        "text-opacity": 1
+      },
+      "paint.function-far": {
+        "text-opacity": 1
+      }
     }
-  }]
+  ]
 }

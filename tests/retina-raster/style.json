@@ -1,25 +1,27 @@
 {
-  "version": 7,
-  "constants": {
-    "@constant": 10
-  },
+  "version": 8,
+  "constants": {},
   "sources": {
     "satellite": {
       "type": "raster",
-      "tiles": ["local://tiles/{z}-{x}-{y}.satellite.png"],
+      "tiles": [
+        "local://tiles/{z}-{x}-{y}.satellite.png"
+      ],
       "maxzoom": 17,
       "tileSize": 256
     }
   },
-  "layers": [{
-    "id": "raster",
-    "type": "raster",
-    "source": "satellite",
-    "paint": {
-      "raster-fade-duration": 0
-    },
-    "paint.literal": {
-      "raster-opacity": 0.5
+  "layers": [
+    {
+      "id": "raster",
+      "type": "raster",
+      "source": "satellite",
+      "paint": {
+        "raster-fade-duration": 0
+      },
+      "paint.literal": {
+        "raster-opacity": 0.5
+      }
     }
-  }]
+  ]
 }

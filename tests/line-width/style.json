@@ -1,36 +1,53 @@
 {
-  "version": 7,
+  "version": 8,
   "constants": {
-    "@constant": 10
+    "@constant": {
+      "type": "number",
+      "value": 10
+    }
   },
   "sources": {
     "mapbox": {
       "type": "vector",
       "maxzoom": 14,
-      "tiles": ["local://tiles/{z}-{x}-{y}.vector.pbf"]
+      "tiles": [
+        "local://tiles/{z}-{x}-{y}.vector.pbf"
+      ]
     }
   },
-  "layers": [{
-    "id": "background",
-    "type": "background",
-    "paint": {
-      "background-color": "white"
-    }
-  }, {
-    "id": "road",
-    "type": "line",
-    "source": "mapbox",
-    "source-layer": "road",
-    "paint.literal": {
-      "line-width": 5
+  "layers": [
+    {
+      "id": "background",
+      "type": "background",
+      "paint": {
+        "background-color": "white"
+      }
     },
-    "paint.constant": {
-      "line-width": "@constant"
-    },
-    "paint.function": {
-      "line-width": {
-        "stops": [[16, 15], [17, 20]]
+    {
+      "id": "road",
+      "type": "line",
+      "source": "mapbox",
+      "source-layer": "road",
+      "paint.literal": {
+        "line-width": 5
+      },
+      "paint.constant": {
+        "line-width": "@constant"
+      },
+      "paint.function": {
+        "line-width": {
+          "stops": [
+            [
+              16,
+              15
+            ],
+            [
+              17,
+              20
+            ]
+          ]
+        }
       }
     }
-  }]
+  ]
 }

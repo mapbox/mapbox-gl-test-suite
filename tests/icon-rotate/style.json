@@ -1,59 +1,76 @@
 {
-  "version": 7,
+  "version": 8,
   "constants": {
-    "@constant": 50
+    "@constant": {
+      "type": "number",
+      "value": 50
+    }
   },
   "sources": {
     "mapbox": {
       "type": "vector",
       "maxzoom": 14,
-      "tiles": ["local://tiles/{z}-{x}-{y}.vector.pbf"]
+      "tiles": [
+        "local://tiles/{z}-{x}-{y}.vector.pbf"
+      ]
     }
   },
   "sprite": "local://sprites/sprite",
-  "layers": [{
-    "id": "background",
-    "type": "background",
-    "paint": {
-      "background-color": "white"
+  "layers": [
+    {
+      "id": "background",
+      "type": "background",
+      "paint": {
+        "background-color": "white"
+      }
+    },
+    {
+      "id": "literal",
+      "type": "symbol",
+      "source": "mapbox",
+      "source-layer": "poi_label",
+      "filter": [
+        "==",
+        "maki",
+        "restaurant"
+      ],
+      "layout": {
+        "symbol-placement": "point",
+        "icon-allow-overlap": true,
+        "icon-ignore-placement": true,
+        "icon-image": "{maki}-12",
+        "icon-rotate": 25
+      },
+      "paint": {
+        "icon-opacity": 0
+      },
+      "paint.literal": {
+        "icon-opacity": 1
+      }
+    },
+    {
+      "id": "constant",
+      "type": "symbol",
+      "source": "mapbox",
+      "source-layer": "poi_label",
+      "filter": [
+        "==",
+        "maki",
+        "restaurant"
+      ],
+      "layout": {
+        "symbol-placement": "point",
+        "icon-allow-overlap": true,
+        "icon-ignore-placement": true,
+        "icon-image": "{maki}-12",
+        "icon-rotate": "@constant"
+      },
+      "paint": {
+        "icon-opacity": 0
+      },
+      "paint.constant": {
+        "icon-opacity": 1
+      }
     }
-  }, {
-    "id": "literal",
-    "type": "symbol",
-    "source": "mapbox",
-    "source-layer": "poi_label",
-    "filter": ["==", "maki", "restaurant"],
-    "layout": {
-      "symbol-placement": "point",
-      "icon-allow-overlap": true,
-      "icon-ignore-placement": true,
-      "icon-image": "{maki}-12",
-      "icon-rotate": 25
-    },
-    "paint": {
-      "icon-opacity": 0
-    },
-    "paint.literal": {
-      "icon-opacity": 1
-    }
-  }, {
-    "id": "constant",
-    "type": "symbol",
-    "source": "mapbox",
-    "source-layer": "poi_label",
-    "filter": ["==", "maki", "restaurant"],
-    "layout": {
-      "symbol-placement": "point",
-      "icon-allow-overlap": true,
-      "icon-ignore-placement": true,
-      "icon-image": "{maki}-12",
-      "icon-rotate": "@constant"
-    },
-    "paint": {
-      "icon-opacity": 0
-    },
-    "paint.constant": {
-      "icon-opacity": 1
-    }
-  }]
+  ]
 }

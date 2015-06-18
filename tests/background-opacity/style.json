@@ -1,27 +1,29 @@
 {
-  "version": 7,
-  "constants": {
-    "@constant": "0.4"
-  },
+  "version": 8,
+  "constants": {},
   "sources": {
     "mapbox": {
       "type": "vector",
       "maxzoom": 14,
-      "tiles": ["local://tiles/{z}-{x}-{y}.vector.pbf"]
+      "tiles": [
+        "local://tiles/{z}-{x}-{y}.vector.pbf"
+      ]
     }
   },
   "sprite": "local://sprites/sprite",
-  "layers": [{
-    "id": "background",
-    "type": "background",
-    "paint": {
-      "background-opacity": 0.5
-    },
-    "paint.color": {
-      "background-color": "red"
-    },
-    "paint.image": {
-      "background-image": "wetland-17"
+  "layers": [
+    {
+      "id": "background",
+      "type": "background",
+      "paint": {
+        "background-opacity": 0.5
+      },
+      "paint.color": {
+        "background-color": "red"
+      },
+      "paint.image": {
+        "background-pattern": "wetland-17"
+      }
     }
-  }]
+  ]
 }

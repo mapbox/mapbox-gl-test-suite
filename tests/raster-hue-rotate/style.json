@@ -1,33 +1,49 @@
 {
-  "version": 7,
+  "version": 8,
   "constants": {
-    "@constant": 180
+    "@constant": {
+      "type": "number",
+      "value": 180
+    }
   },
   "sources": {
     "satellite": {
       "type": "raster",
-      "tiles": ["local://tiles/{z}-{x}-{y}.satellite.png"],
+      "tiles": [
+        "local://tiles/{z}-{x}-{y}.satellite.png"
+      ],
       "maxzoom": 17,
       "tileSize": 256
     }
   },
-  "layers": [{
-    "id": "raster",
-    "type": "raster",
-    "source": "satellite",
-    "paint": {
-      "raster-fade-duration": 0
-    },
-    "paint.literal": {
-      "raster-hue-rotate": 90
-    },
-    "paint.constant": {
-      "raster-hue-rotate": "@constant"
-    },
-    "paint.function": {
-      "raster-hue-rotate": {
-        "stops": [[16, 270], [17, 365]]
+  "layers": [
+    {
+      "id": "raster",
+      "type": "raster",
+      "source": "satellite",
+      "paint": {
+        "raster-fade-duration": 0
+      },
+      "paint.literal": {
+        "raster-hue-rotate": 90
+      },
+      "paint.constant": {
+        "raster-hue-rotate": "@constant"
+      },
+      "paint.function": {
+        "raster-hue-rotate": {
+          "stops": [
+            [
+              16,
+              270
+            ],
+            [
+              17,
+              365
+            ]
+          ]
+        }
       }
     }
-  }]
+  ]
 }

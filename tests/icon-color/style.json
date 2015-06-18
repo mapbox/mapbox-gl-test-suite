@@ -1,44 +1,65 @@
 {
-  "version": 7,
+  "version": 8,
   "constants": {
-    "@constant": "green"
+    "@constant": {
+      "type": "color",
+      "value": "green"
+    }
   },
   "sources": {
     "mapbox": {
       "type": "vector",
       "maxzoom": 14,
-      "tiles": ["local://tiles/{z}-{x}-{y}.vector.pbf"]
+      "tiles": [
+        "local://tiles/{z}-{x}-{y}.vector.pbf"
+      ]
     }
   },
   "sprite": "local://sprites/sprite",
-  "layers": [{
-    "id": "background",
-    "type": "background",
-    "paint": {
-      "background-color": "white"
-    }
-  }, {
-    "id": "icon",
-    "type": "symbol",
-    "source": "mapbox",
-    "source-layer": "poi_label",
-    "filter": ["==", "maki", "restaurant"],
-    "layout": {
-      "symbol-placement": "point",
-      "icon-allow-overlap": true,
-      "icon-ignore-placement": true,
-      "icon-image": "dot.sdf"
+  "layers": [
+    {
+      "id": "background",
+      "type": "background",
+      "paint": {
+        "background-color": "white"
+      }
     },
-    "paint.literal": {
-      "icon-color": "red"
-    },
-    "paint.constant": {
-      "icon-color": "@constant"
-    },
-    "paint.function": {
-      "icon-color": {
-        "stops": [[16, "blue"], [17, "red"]]
+    {
+      "id": "icon",
+      "type": "symbol",
+      "source": "mapbox",
+      "source-layer": "poi_label",
+      "filter": [
+        "==",
+        "maki",
+        "restaurant"
+      ],
+      "layout": {
+        "symbol-placement": "point",
+        "icon-allow-overlap": true,
+        "icon-ignore-placement": true,
+        "icon-image": "dot.sdf"
+      },
+      "paint.literal": {
+        "icon-color": "red"
+      },
+      "paint.constant": {
+        "icon-color": "@constant"
+      },
+      "paint.function": {
+        "icon-color": {
+          "stops": [
+            [
+              16,
+              "blue"
+            ],
+            [
+              17,
+              "red"
+            ]
+          ]
+        }
       }
     }
-  }]
+  ]
 }

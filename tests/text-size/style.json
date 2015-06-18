@@ -1,45 +1,69 @@
 {
-  "version": 7,
+  "version": 8,
   "constants": {
-    "@constant": 12
+    "@constant": {
+      "type": "number",
+      "value": 12
+    }
   },
   "sources": {
     "mapbox": {
       "type": "vector",
       "maxzoom": 14,
-      "tiles": ["local://tiles/{z}-{x}-{y}.vector.pbf"]
+      "tiles": [
+        "local://tiles/{z}-{x}-{y}.vector.pbf"
+      ]
     }
   },
   "glyphs": "local://glyphs/{fontstack}/{range}.pbf",
-  "layers": [{
-    "id": "background",
-    "type": "background",
-    "paint": {
-      "background-color": "white"
-    }
-  }, {
-    "id": "text",
-    "type": "symbol",
-    "source": "mapbox",
-    "source-layer": "poi_label",
-    "filter": ["==", "maki", "restaurant"],
-    "layout": {
-      "symbol-placement": "point",
-      "text-allow-overlap": true,
-      "text-ignore-placement": true,
-      "text-field": "Test",
-      "text-font": "Open Sans Semibold, Arial Unicode MS Bold"
+  "layers": [
+    {
+      "id": "background",
+      "type": "background",
+      "paint": {
+        "background-color": "white"
+      }
     },
-    "paint.literal": {
-      "text-size": 10
-    },
-    "paint.constant": {
-      "text-size": "@constant"
-    },
-    "paint.function": {
-      "text-size": {
-        "stops": [[16, 14], [17, 16]]
+    {
+      "id": "text",
+      "type": "symbol",
+      "source": "mapbox",
+      "source-layer": "poi_label",
+      "filter": [
+        "==",
+        "maki",
+        "restaurant"
+      ],
+      "layout": {
+        "symbol-placement": "point",
+        "text-allow-overlap": true,
+        "text-ignore-placement": true,
+        "text-field": "Test",
+        "text-font": [
+          "Open Sans Semibold",
+          "Arial Unicode MS Bold"
+        ]
+      },
+      "paint.literal": {
+        "text-size": 10
+      },
+      "paint.constant": {
+        "text-size": "@constant"
+      },
+      "paint.function": {
+        "text-size": {
+          "stops": [
+            [
+              16,
+              14
+            ],
+            [
+              17,
+              16
+            ]
+          ]
+        }
       }
     }
-  }]
+  ]
 }

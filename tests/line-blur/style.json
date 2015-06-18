@@ -1,40 +1,57 @@
 {
-  "version": 7,
+  "version": 8,
   "constants": {
-    "@constant": 10
+    "@constant": {
+      "type": "number",
+      "value": 10
+    }
   },
   "sources": {
     "mapbox": {
       "type": "vector",
       "maxzoom": 14,
-      "tiles": ["local://tiles/{z}-{x}-{y}.vector.pbf"]
+      "tiles": [
+        "local://tiles/{z}-{x}-{y}.vector.pbf"
+      ]
     }
   },
-  "layers": [{
-    "id": "background",
-    "type": "background",
-    "paint": {
-      "background-color": "white"
-    }
-  }, {
-    "id": "road",
-    "type": "line",
-    "source": "mapbox",
-    "source-layer": "road",
-    "paint": {
-      "line-width": 2,
-      "line-color": "#000"
+  "layers": [
+    {
+      "id": "background",
+      "type": "background",
+      "paint": {
+        "background-color": "white"
+      }
     },
-    "paint.literal": {
-      "line-blur": 5
-    },
-    "paint.constant": {
-      "line-blur": "@constant"
-    },
-    "paint.function": {
-      "line-blur": {
-        "stops": [[16, 15], [17, 20]]
+    {
+      "id": "road",
+      "type": "line",
+      "source": "mapbox",
+      "source-layer": "road",
+      "paint": {
+        "line-width": 2,
+        "line-color": "#000"
+      },
+      "paint.literal": {
+        "line-blur": 5
+      },
+      "paint.constant": {
+        "line-blur": "@constant"
+      },
+      "paint.function": {
+        "line-blur": {
+          "stops": [
+            [
+              16,
+              15
+            ],
+            [
+              17,
+              20
+            ]
+          ]
+        }
       }
     }
-  }]
+  ]
 }

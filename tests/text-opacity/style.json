@@ -1,45 +1,69 @@
 {
-  "version": 7,
+  "version": 8,
   "constants": {
-    "@constant": 0.4
+    "@constant": {
+      "type": "opacity",
+      "value": 0.4
+    }
   },
   "sources": {
     "mapbox": {
       "type": "vector",
       "maxzoom": 14,
-      "tiles": ["local://tiles/{z}-{x}-{y}.vector.pbf"]
+      "tiles": [
+        "local://tiles/{z}-{x}-{y}.vector.pbf"
+      ]
     }
   },
   "glyphs": "local://glyphs/{fontstack}/{range}.pbf",
-  "layers": [{
-    "id": "background",
-    "type": "background",
-    "paint": {
-      "background-color": "white"
-    }
-  }, {
-    "id": "text",
-    "type": "symbol",
-    "source": "mapbox",
-    "source-layer": "poi_label",
-    "filter": ["==", "maki", "restaurant"],
-    "layout": {
-      "symbol-placement": "point",
-      "text-allow-overlap": true,
-      "text-ignore-placement": true,
-      "text-field": "Test",
-      "text-font": "Open Sans Semibold, Arial Unicode MS Bold"
+  "layers": [
+    {
+      "id": "background",
+      "type": "background",
+      "paint": {
+        "background-color": "white"
+      }
     },
-    "paint.literal": {
-      "text-opacity": 0.3
-    },
-    "paint.constant": {
-      "text-opacity": "@constant"
-    },
-    "paint.function": {
-      "text-opacity": {
-        "stops": [[16, 0.5], [17, 0.6]]
+    {
+      "id": "text",
+      "type": "symbol",
+      "source": "mapbox",
+      "source-layer": "poi_label",
+      "filter": [
+        "==",
+        "maki",
+        "restaurant"
+      ],
+      "layout": {
+        "symbol-placement": "point",
+        "text-allow-overlap": true,
+        "text-ignore-placement": true,
+        "text-field": "Test",
+        "text-font": [
+          "Open Sans Semibold",
+          "Arial Unicode MS Bold"
+        ]
+      },
+      "paint.literal": {
+        "text-opacity": 0.3
+      },
+      "paint.constant": {
+        "text-opacity": "@constant"
+      },
+      "paint.function": {
+        "text-opacity": {
+          "stops": [
+            [
+              16,
+              0.5
+            ],
+            [
+              17,
+              0.6
+            ]
+          ]
+        }
       }
     }
-  }]
+  ]
 }

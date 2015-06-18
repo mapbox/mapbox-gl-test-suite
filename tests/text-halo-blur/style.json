@@ -1,49 +1,73 @@
 {
-  "version": 7,
+  "version": 8,
   "constants": {
-    "@constant": 3
+    "@constant": {
+      "type": "number",
+      "value": 3
+    }
   },
   "sources": {
     "mapbox": {
       "type": "vector",
       "maxzoom": 14,
-      "tiles": ["local://tiles/{z}-{x}-{y}.vector.pbf"]
+      "tiles": [
+        "local://tiles/{z}-{x}-{y}.vector.pbf"
+      ]
     }
   },
   "glyphs": "local://glyphs/{fontstack}/{range}.pbf",
-  "layers": [{
-    "id": "background",
-    "type": "background",
-    "paint": {
-      "background-color": "white"
-    }
-  }, {
-    "id": "text",
-    "type": "symbol",
-    "source": "mapbox",
-    "source-layer": "poi_label",
-    "filter": ["==", "maki", "restaurant"],
-    "layout": {
-      "symbol-placement": "point",
-      "text-allow-overlap": true,
-      "text-ignore-placement": true,
-      "text-field": "Test",
-      "text-font": "Open Sans Semibold, Arial Unicode MS Bold"
+  "layers": [
+    {
+      "id": "background",
+      "type": "background",
+      "paint": {
+        "background-color": "white"
+      }
     },
-    "paint": {
-      "text-halo-color": "red",
-      "text-halo-width": 2
-    },
-    "paint.literal": {
-      "text-halo-blur": 2
-    },
-    "paint.constant": {
-      "text-halo-blur": "@constant"
-    },
-    "paint.function": {
-      "text-halo-blur": {
-        "stops": [[16, 4], [17, 5]]
+    {
+      "id": "text",
+      "type": "symbol",
+      "source": "mapbox",
+      "source-layer": "poi_label",
+      "filter": [
+        "==",
+        "maki",
+        "restaurant"
+      ],
+      "layout": {
+        "symbol-placement": "point",
+        "text-allow-overlap": true,
+        "text-ignore-placement": true,
+        "text-field": "Test",
+        "text-font": [
+          "Open Sans Semibold",
+          "Arial Unicode MS Bold"
+        ]
+      },
+      "paint": {
+        "text-halo-color": "red",
+        "text-halo-width": 2
+      },
+      "paint.literal": {
+        "text-halo-blur": 2
+      },
+      "paint.constant": {
+        "text-halo-blur": "@constant"
+      },
+      "paint.function": {
+        "text-halo-blur": {
+          "stops": [
+            [
+              16,
+              4
+            ],
+            [
+              17,
+              5
+            ]
+          ]
+        }
       }
     }
-  }]
+  ]
 }

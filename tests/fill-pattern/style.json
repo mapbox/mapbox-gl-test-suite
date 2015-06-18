@@ -1,11 +1,5 @@
 {
   "version": 8,
-  "constants": {
-    "@constant": {
-      "type": "color",
-      "value": "red"
-    }
-  },
   "sources": {
     "mapbox": {
       "type": "vector",
@@ -15,6 +9,7 @@
       ]
     }
   },
+  "sprite": "local://sprites/sprite",
   "layers": [
     {
       "id": "background",
@@ -24,12 +19,15 @@
       }
     },
     {
-      "id": "fill",
+      "id": "land",
       "type": "fill",
       "source": "mapbox",
-      "source-layer": "building",
+      "source-layer": "water",
       "paint": {
-        "fill-color": "black"
+        "fill-pattern": "beer-12"
+      },
+      "paint.opacity": {
+        "fill-opacity": 0.5
       }
     }
   ]

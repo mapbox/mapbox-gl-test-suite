@@ -1,11 +1,5 @@
 {
   "version": 8,
-  "constants": {
-    "@constant": {
-      "type": "color",
-      "value": "red"
-    }
-  },
   "sources": {
     "mapbox": {
       "type": "vector",
@@ -15,6 +9,7 @@
       ]
     }
   },
+  "sprite": "local://sprites/sprite",
   "layers": [
     {
       "id": "background",
@@ -24,12 +19,16 @@
       }
     },
     {
-      "id": "fill",
-      "type": "fill",
+      "id": "road",
+      "type": "line",
       "source": "mapbox",
-      "source-layer": "building",
+      "source-layer": "road",
       "paint": {
-        "fill-color": "black"
+        "line-width": 20,
+        "line-pattern": "beer-12"
+      },
+      "paint.opacity": {
+        "line-opacity": 0.5
       }
     }
   ]
