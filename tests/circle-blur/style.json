@@ -1,0 +1,40 @@
+{
+  "version": 8,
+  "constants": {
+    "@constant": { "type": "number", "value": 10 }
+  },
+  "sources": {
+    "mapbox": {
+      "type": "vector",
+      "maxzoom": 14,
+      "tiles": ["local://tiles/{z}-{x}-{y}.vector.pbf"]
+    }
+  },
+  "layers": [{
+    "id": "background",
+    "type": "background",
+    "paint": {
+      "background-color": "white"
+    }
+  }, {
+    "id": "road",
+    "type": "circle",
+    "source": "mapbox",
+    "source-layer": "road",
+    "paint": {
+      "circle-radius": 5,
+      "circle-color": "#000"
+    },
+    "paint.literal": {
+      "circle-blur": 5
+    },
+    "paint.constant": {
+      "circle-blur": "@constant"
+    },
+    "paint.function": {
+      "circle-blur": {
+        "stops": [[16, 15], [17, 20]]
+      }
+    }
+  }]
+}
