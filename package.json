@@ -5,7 +5,7 @@
     "license": "BSD",
     "dependencies": {},
     "devDependencies": {
-      "mapbox-gl-style-lint": "git+https://github.com/mapbox/mapbox-gl-style-lint.git"
+      "mapbox-gl-style-spec": "git+https://github.com/mapbox/mapbox-gl-style-spec.git#e9a261ed918ee8711f257a8d4acb5624daa48a24"
     },
     "scripts": {
       "migrate": "for file in tests/*/style.json; do gl-style-migrate $file | sponge $file; done"
