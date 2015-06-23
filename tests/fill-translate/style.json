@@ -43,22 +43,21 @@
       },
       "paint.function": {
         "fill-translate": {
-          "stops": [
+          "domain": [
+            16,
+            17
+          ],
+          "range": [
             [
-              16,
-              [
-                15,
-                15
-              ]
+              15,
+              15
             ],
             [
-              17,
-              [
-                20,
-                20
-              ]
+              20,
+              20
             ]
-          ]
+          ],
+          "type": "exponential"
         }
       }
     }

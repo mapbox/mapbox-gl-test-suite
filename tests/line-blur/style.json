@@ -40,16 +40,15 @@
       },
       "paint.function": {
         "line-blur": {
-          "stops": [
-            [
-              16,
-              15
-            ],
-            [
-              17,
-              20
-            ]
-          ]
+          "domain": [
+            16,
+            17
+          ],
+          "range": [
+            15,
+            20
+          ],
+          "type": "exponential"
         }
       }
     }

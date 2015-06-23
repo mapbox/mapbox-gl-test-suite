@@ -32,16 +32,15 @@
       },
       "paint.function": {
         "raster-contrast": {
-          "stops": [
-            [
-              16,
-              0.6
-            ],
-            [
-              17,
-              0.8
-            ]
-          ]
+          "domain": [
+            16,
+            17
+          ],
+          "range": [
+            0.6,
+            0.8
+          ],
+          "type": "exponential"
         }
       }
     }

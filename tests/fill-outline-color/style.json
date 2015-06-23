@@ -37,16 +37,15 @@
       },
       "paint.function": {
         "fill-outline-color": {
-          "stops": [
-            [
-              0,
-              "green"
-            ],
-            [
-              1,
-              "blue"
-            ]
-          ]
+          "domain": [
+            0,
+            1
+          ],
+          "range": [
+            "green",
+            "blue"
+          ],
+          "type": "exponential"
         }
       },
       "paint.opacity": {

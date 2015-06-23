@@ -52,16 +52,15 @@
       },
       "paint.function": {
         "text-size": {
-          "stops": [
-            [
-              16,
-              14
-            ],
-            [
-              17,
-              16
-            ]
-          ]
+          "domain": [
+            16,
+            17
+          ],
+          "range": [
+            14,
+            16
+          ],
+          "type": "exponential"
         }
       }
     }

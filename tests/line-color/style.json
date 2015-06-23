@@ -39,16 +39,15 @@
       },
       "paint.function": {
         "line-color": {
-          "stops": [
-            [
-              16,
-              "green"
-            ],
-            [
-              17,
-              "blue"
-            ]
-          ]
+          "domain": [
+            16,
+            17
+          ],
+          "range": [
+            "green",
+            "blue"
+          ],
+          "type": "exponential"
         }
       }
     }

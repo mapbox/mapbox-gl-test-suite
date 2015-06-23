@@ -48,16 +48,15 @@
       },
       "paint.function": {
         "icon-color": {
-          "stops": [
-            [
-              16,
-              "blue"
-            ],
-            [
-              17,
-              "red"
-            ]
-          ]
+          "domain": [
+            16,
+            17
+          ],
+          "range": [
+            "blue",
+            "red"
+          ],
+          "type": "exponential"
         }
       }
     }

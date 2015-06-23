@@ -49,16 +49,15 @@
       },
       "paint.function": {
         "icon-size": {
-          "stops": [
-            [
-              16,
-              4
-            ],
-            [
-              17,
-              5
-            ]
-          ]
+          "domain": [
+            16,
+            17
+          ],
+          "range": [
+            4,
+            5
+          ],
+          "type": "exponential"
         }
       }
     }

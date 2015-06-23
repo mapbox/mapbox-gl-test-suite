@@ -37,16 +37,15 @@
       },
       "paint.function": {
         "fill-opacity": {
-          "stops": [
-            [
-              0,
-              0.5
-            ],
-            [
-              1,
-              0.6
-            ]
-          ]
+          "domain": [
+            0,
+            1
+          ],
+          "range": [
+            0.5,
+            0.6
+          ],
+          "type": "exponential"
         }
       }
     }
