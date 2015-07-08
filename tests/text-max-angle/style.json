@@ -26,7 +26,7 @@
       "symbol-placement": "line",
       "text-allow-overlap": true,
       "text-ignore-placement": true,
-      "text-field": "line line line line",
+      "text-field": "{class} {class}",
       "text-font": "Open Sans Semibold, Arial Unicode MS Bold",
       "text-max-angle": 60
     },
@@ -45,7 +45,7 @@
       "symbol-placement": "line",
       "text-allow-overlap": true,
       "text-ignore-placement": true,
-      "text-field": "line line line line",
+      "text-field": "{class} {class}",
       "text-font": "Open Sans Semibold, Arial Unicode MS Bold",
       "text-max-angle": "@constant"
     },
