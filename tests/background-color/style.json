@@ -27,15 +27,16 @@
       },
       "paint.function": {
         "background-color": {
-          "domain": [
-            0,
-            10
-          ],
-          "range": [
-            "blue",
-            "white"
-          ],
-          "type": "exponential"
+          "stops": [
+            [
+              0,
+              "blue"
+            ],
+            [
+              10,
+              "white"
+            ]
+          ]
         }
       }
     }

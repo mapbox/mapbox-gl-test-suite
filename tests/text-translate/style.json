@@ -58,21 +58,22 @@
       },
       "paint.function": {
         "text-translate": {
-          "domain": [
-            16,
-            17
-          ],
-          "range": [
+          "stops": [
             [
-              15,
-              15
+              16,
+              [
+                15,
+                15
+              ]
             ],
             [
-              20,
-              20
+              17,
+              [
+                20,
+                20
+              ]
             ]
-          ],
-          "type": "exponential"
+          ]
         }
       }
     }

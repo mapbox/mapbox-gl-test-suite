@@ -32,15 +32,16 @@
       },
       "paint.function": {
         "raster-saturation": {
-          "domain": [
-            16,
-            17
-          ],
-          "range": [
-            0.6,
-            0.8
-          ],
-          "type": "exponential"
+          "stops": [
+            [
+              16,
+              0.6
+            ],
+            [
+              17,
+              0.8
+            ]
+          ]
         }
       }
     }
