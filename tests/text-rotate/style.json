@@ -235,15 +235,16 @@
           "Arial Unicode MS Bold"
         ],
         "text-rotate": {
-          "domain": [
-            10,
-            16
-          ],
-          "range": [
-            0,
-            270
-          ],
-          "type": "exponential"
+          "stops": [
+            [
+              10,
+              0
+            ],
+            [
+              16,
+              270
+            ]
+          ]
         }
       },
       "paint": {

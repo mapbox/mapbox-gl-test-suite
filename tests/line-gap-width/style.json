@@ -38,26 +38,28 @@
       },
       "paint.function": {
         "line-width": {
-          "domain": [
-            16,
-            17
-          ],
-          "range": [
-            15,
-            20
-          ],
-          "type": "exponential"
+          "stops": [
+            [
+              16,
+              15
+            ],
+            [
+              17,
+              20
+            ]
+          ]
         },
         "line-gap-width": {
-          "domain": [
-            16,
-            17
-          ],
-          "range": [
-            15,
-            20
-          ],
-          "type": "exponential"
+          "stops": [
+            [
+              16,
+              15
+            ],
+            [
+              17,
+              20
+            ]
+          ]
         }
       }
     }

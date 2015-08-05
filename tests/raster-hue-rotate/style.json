@@ -32,15 +32,16 @@
       },
       "paint.function": {
         "raster-hue-rotate": {
-          "domain": [
-            16,
-            17
-          ],
-          "range": [
-            270,
-            365
-          ],
-          "type": "exponential"
+          "stops": [
+            [
+              16,
+              270
+            ],
+            [
+              17,
+              365
+            ]
+          ]
         }
       }
     }

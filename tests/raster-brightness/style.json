@@ -29,26 +29,28 @@
       },
       "paint.function": {
         "raster-brightness-min": {
-          "domain": [
-            16,
-            17
-          ],
-          "range": [
-            0.5,
-            0.5
-          ],
-          "type": "exponential"
+          "stops": [
+            [
+              16,
+              0.5
+            ],
+            [
+              17,
+              0.5
+            ]
+          ]
         },
         "raster-brightness-max": {
-          "domain": [
-            16,
-            17
-          ],
-          "range": [
-            0.6,
-            0.4
-          ],
-          "type": "exponential"
+          "stops": [
+            [
+              16,
+              0.6
+            ],
+            [
+              17,
+              0.4
+            ]
+          ]
         }
       }
     }

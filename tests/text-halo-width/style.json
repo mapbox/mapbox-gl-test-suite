@@ -55,15 +55,16 @@
       },
       "paint.function": {
         "text-halo-width": {
-          "domain": [
-            16,
-            17
-          ],
-          "range": [
-            4,
-            5
-          ],
-          "type": "exponential"
+          "stops": [
+            [
+              16,
+              4
+            ],
+            [
+              17,
+              5
+            ]
+          ]
         }
       }
     }
