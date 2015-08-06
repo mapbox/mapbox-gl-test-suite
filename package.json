@@ -5,7 +5,7 @@
   "license": "BSD",
   "dependencies": {},
   "devDependencies": {
-    "mapbox-gl-style-spec": "git+https://github.com/mapbox/mapbox-gl-style-spec.git#3325402513adfb8c7b14235099ce33316a354ae8",
+    "mapbox-gl-style-spec": "git+https://github.com/mapbox/mapbox-gl-style-spec.git#66963c5023fb65c989fac0f443b0b46f39a5a6fe",
     "sponge": "^0.1.0"
   },
   "scripts": {
