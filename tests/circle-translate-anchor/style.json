@@ -1,0 +1,38 @@
+{
+  "version": 8,
+  "constants": {},
+  "sources": {
+    "mapbox": {
+      "type": "vector",
+      "maxzoom": 14,
+      "tiles": [
+        "local://tiles/{z}-{x}-{y}.vector.pbf"
+      ]
+    }
+  },
+  "layers": [
+    {
+      "id": "background",
+      "type": "background",
+      "paint": {}
+    },
+    {
+      "id": "road",
+      "type": "circle",
+      "source": "mapbox",
+      "source-layer": "road",
+      "paint": {
+        "fill-translate": [
+          10,
+          10
+        ]
+      },
+      "paint.map": {
+        "fill-translate-anchor": "map"
+      },
+      "paint.viewport": {
+        "fill-translate-anchor": "viewport"
+      }
+    }
+  ]
+}
