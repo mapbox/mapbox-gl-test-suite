@@ -32,11 +32,10 @@
         "symbol-placement": "point",
         "icon-allow-overlap": true,
         "icon-ignore-placement": true,
-        "icon-max-size": 3,
+        "icon-size": 3,
         "icon-image": "squares-18"
       },
       "paint.literal": {
-        "icon-size": 3
       }
     }
   ]

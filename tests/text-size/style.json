@@ -38,10 +38,60 @@
           "Arial Unicode MS Bold"
         ]
       },
-      "paint.literal": {
+      "paint": {
+          "text-opacity": 0
+      },
+      "paint.default": {
+          "text-opacity": 1
+      }
+    },
+    {
+      "id": "text-literal",
+      "type": "symbol",
+      "source": "mapbox",
+      "source-layer": "poi_label",
+      "filter": [
+        "==",
+        "maki",
+        "restaurant"
+      ],
+      "layout": {
+        "symbol-placement": "point",
+        "text-allow-overlap": true,
+        "text-ignore-placement": true,
+        "text-field": "Test",
+        "text-font": [
+          "Open Sans Semibold",
+          "Arial Unicode MS Bold"
+        ],
         "text-size": 10
       },
-      "paint.function": {
+      "paint": {
+          "text-opacity": 0
+      },
+      "paint.literal": {
+          "text-opacity": 1
+      }
+    },
+    {
+      "id": "text-function",
+      "type": "symbol",
+      "source": "mapbox",
+      "source-layer": "poi_label",
+      "filter": [
+        "==",
+        "maki",
+        "restaurant"
+      ],
+      "layout": {
+        "symbol-placement": "point",
+        "text-allow-overlap": true,
+        "text-ignore-placement": true,
+        "text-field": "Test",
+        "text-font": [
+          "Open Sans Semibold",
+          "Arial Unicode MS Bold"
+        ],
         "text-size": {
           "stops": [
             [
@@ -54,6 +104,12 @@
             ]
           ]
         }
+      },
+      "paint": {
+          "text-opacity": 0
+      },
+      "paint.function": {
+          "text-opacity": 1
       }
     }
   ]
