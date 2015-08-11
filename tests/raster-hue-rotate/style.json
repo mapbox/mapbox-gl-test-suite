@@ -1,11 +1,5 @@
 {
   "version": 8,
-  "constants": {
-    "@constant": {
-      "type": "number",
-      "value": 180
-    }
-  },
   "sources": {
     "satellite": {
       "type": "raster",
@@ -26,9 +20,6 @@
       },
       "paint.literal": {
         "raster-hue-rotate": 90
-      },
-      "paint.constant": {
-        "raster-hue-rotate": "@constant"
       },
       "paint.function": {
         "raster-hue-rotate": {

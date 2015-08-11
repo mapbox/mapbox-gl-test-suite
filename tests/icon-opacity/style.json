@@ -1,11 +1,5 @@
 {
   "version": 8,
-  "constants": {
-    "@constant": {
-      "type": "opacity",
-      "value": 0.4
-    }
-  },
   "sources": {
     "mapbox": {
       "type": "vector",
@@ -43,9 +37,6 @@
       },
       "paint.icon-only": {
         "icon-opacity": 0
-      },
-      "paint.constant": {
-        "icon-opacity": "@constant"
       },
       "paint.function": {
         "icon-opacity": {

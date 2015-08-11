@@ -1,11 +1,5 @@
 {
   "version": 8,
-  "constants": {
-    "@constant": {
-      "type": "opacity",
-      "value": 0.4
-    }
-  },
   "sources": {
     "mapbox": {
       "type": "vector",
@@ -34,9 +28,6 @@
       },
       "paint.literal": {
         "circle-opacity": 0.3
-      },
-      "paint.constant": {
-        "circle-opacity": "@constant"
       },
       "paint.function": {
         "circle-opacity": {

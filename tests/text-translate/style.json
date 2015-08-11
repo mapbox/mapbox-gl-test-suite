@@ -1,14 +1,5 @@
 {
   "version": 8,
-  "constants": {
-    "@constant": {
-      "type": "translate-array",
-      "value": [
-        10,
-        10
-      ]
-    }
-  },
   "sources": {
     "mapbox": {
       "type": "vector",
@@ -52,9 +43,6 @@
           5,
           5
         ]
-      },
-      "paint.constant": {
-        "text-translate": "@constant"
       },
       "paint.function": {
         "text-translate": {

@@ -1,11 +1,5 @@
 {
   "version": 8,
-  "constants": {
-    "@constant": {
-      "type": "color",
-      "value": "green"
-    }
-  },
   "sources": {
     "mapbox": {
       "type": "vector",
@@ -47,9 +41,6 @@
       },
       "paint.literal": {
         "icon-halo-color": "red"
-      },
-      "paint.constant": {
-        "icon-halo-color": "@constant"
       },
       "paint.function": {
         "icon-halo-color": {

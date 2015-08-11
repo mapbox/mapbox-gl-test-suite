@@ -1,11 +1,5 @@
 {
   "version": 8,
-  "constants": {
-    "@constant": {
-      "type": "color",
-      "value": "red"
-    }
-  },
   "sources": {
     "mapbox": {
       "type": "vector",

@@ -9,13 +9,6 @@
         "diff": { "native": 0.0025 },
         "classes": ["literal"]
     },
-    "constant": {
-        "ignored": {
-            "native": "https://github.com/mapbox/mapbox-gl-native/issues/1555"
-        },
-        "diff": { "native": 0.0025 },
-        "classes": ["constant"]
-    },
     "function": {
         "ignored": {
             "native": "https://github.com/mapbox/mapbox-gl-native/issues/1555"

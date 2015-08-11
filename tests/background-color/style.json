@@ -1,11 +1,5 @@
 {
   "version": 8,
-  "constants": {
-    "@green": {
-      "type": "color",
-      "value": "green"
-    }
-  },
   "sources": {
     "mapbox": {
       "type": "vector",
@@ -21,9 +15,6 @@
       "type": "background",
       "paint.literal": {
         "background-color": "red"
-      },
-      "paint.constant": {
-        "background-color": "@green"
       },
       "paint.function": {
         "background-color": {

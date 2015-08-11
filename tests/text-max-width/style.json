@@ -1,11 +1,5 @@
 {
   "version": 8,
-  "constants": {
-    "@constant": {
-      "type": "number",
-      "value": 5
-    }
-  },
   "sources": {
     "mapbox": {
       "type": "vector",
@@ -49,34 +43,6 @@
         "text-opacity": 0
       },
       "paint.literal": {
-        "text-opacity": 1
-      }
-    },
-    {
-      "id": "constant",
-      "type": "symbol",
-      "source": "mapbox",
-      "source-layer": "poi_label",
-      "filter": [
-        "==",
-        "maki",
-        "restaurant"
-      ],
-      "layout": {
-        "symbol-placement": "point",
-        "text-allow-overlap": true,
-        "text-ignore-placement": true,
-        "text-field": "Test Test Test",
-        "text-font": [
-          "Open Sans Semibold",
-          "Arial Unicode MS Bold"
-        ],
-        "text-max-width": "@constant"
-      },
-      "paint": {
-        "text-opacity": 0
-      },
-      "paint.constant": {
         "text-opacity": 1
       }
     }

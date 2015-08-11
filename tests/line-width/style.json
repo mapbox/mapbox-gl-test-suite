@@ -1,11 +1,5 @@
 {
   "version": 8,
-  "constants": {
-    "@constant": {
-      "type": "number",
-      "value": 10
-    }
-  },
   "sources": {
     "mapbox": {
       "type": "vector",
@@ -30,9 +24,6 @@
       "source-layer": "road",
       "paint.literal": {
         "line-width": 5
-      },
-      "paint.constant": {
-        "line-width": "@constant"
       },
       "paint.function": {
         "line-width": {
