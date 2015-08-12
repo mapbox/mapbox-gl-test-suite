@@ -19,6 +19,23 @@
       }
     },
     {
+      "id": "line",
+      "type": "symbol",
+      "source": "mapbox",
+      "source-layer": "road_label",
+      "layout": {
+        "icon-image": "triangle-stroked-12",
+        "symbol-placement": "line",
+        "symbol-spacing": 20
+      },
+      "paint": {
+        "icon-opacity": 0
+      },
+      "paint.line": {
+        "icon-opacity": 1
+      }
+    },
+    {
       "id": "point",
       "type": "symbol",
       "source": "mapbox",
@@ -36,23 +53,6 @@
         "icon-opacity": 0
       },
       "paint.point": {
-        "icon-opacity": 1
-      }
-    },
-    {
-      "id": "line",
-      "type": "symbol",
-      "source": "mapbox",
-      "source-layer": "road_label",
-      "layout": {
-        "icon-image": "triangle-stroked-12",
-        "symbol-placement": "line",
-        "symbol-spacing": 20
-      },
-      "paint": {
-        "icon-opacity": 0
-      },
-      "paint.line": {
         "icon-opacity": 1
       }
     }
