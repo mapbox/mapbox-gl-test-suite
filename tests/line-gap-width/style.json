@@ -1,11 +1,5 @@
 {
   "version": 8,
-  "constants": {
-    "@constant": {
-      "type": "number",
-      "value": 10
-    }
-  },
   "sources": {
     "mapbox": {
       "type": "vector",
@@ -31,10 +25,6 @@
       "paint.literal": {
         "line-width": 5,
         "line-gap-width": 5
-      },
-      "paint.constant": {
-        "line-width": "@constant",
-        "line-gap-width": "@constant"
       },
       "paint.function": {
         "line-width": {

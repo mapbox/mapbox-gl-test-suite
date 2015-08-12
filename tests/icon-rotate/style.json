@@ -1,11 +1,5 @@
 {
   "version": 8,
-  "constants": {
-    "@constant": {
-      "type": "number",
-      "value": 50
-    }
-  },
   "sources": {
     "mapbox": {
       "type": "vector",
@@ -45,30 +39,6 @@
         "icon-opacity": 0
       },
       "paint.literal": {
-        "icon-opacity": 1
-      }
-    },
-    {
-      "id": "constant",
-      "type": "symbol",
-      "source": "mapbox",
-      "source-layer": "poi_label",
-      "filter": [
-        "==",
-        "maki",
-        "restaurant"
-      ],
-      "layout": {
-        "symbol-placement": "point",
-        "icon-allow-overlap": true,
-        "icon-ignore-placement": true,
-        "icon-image": "{maki}-12",
-        "icon-rotate": "@constant"
-      },
-      "paint": {
-        "icon-opacity": 0
-      },
-      "paint.constant": {
         "icon-opacity": 1
       }
     }

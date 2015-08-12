@@ -1,8 +1,5 @@
 {
   "version": 8,
-  "constants": {
-    "@constant": { "type": "string", "value": "red" }
-  },
   "sources": {
     "mapbox": {
       "type": "vector",
@@ -26,9 +23,6 @@
     },
     "paint.literal": {
       "circle-color": "blue"
-    },
-    "paint.constant": {
-      "circle-color": "@constant"
     },
     "paint.function": {
       "circle-color": {

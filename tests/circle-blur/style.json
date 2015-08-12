@@ -1,8 +1,5 @@
 {
   "version": 8,
-  "constants": {
-    "@constant": { "type": "number", "value": 10 }
-  },
   "sources": {
     "mapbox": {
       "type": "vector",
@@ -27,9 +24,6 @@
     },
     "paint.literal": {
       "circle-blur": 5
-    },
-    "paint.constant": {
-      "circle-blur": "@constant"
     },
     "paint.function": {
       "circle-blur": {

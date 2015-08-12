@@ -1,11 +1,5 @@
 {
   "version": 8,
-  "constants": {
-    "@constant": {
-      "type": "number",
-      "value": 3
-    }
-  },
   "sources": {
     "mapbox": {
       "type": "vector",
@@ -43,9 +37,6 @@
       },
       "paint.literal": {
         "icon-size": 2
-      },
-      "paint.constant": {
-        "icon-size": "@constant"
       },
       "paint.function": {
         "icon-size": {

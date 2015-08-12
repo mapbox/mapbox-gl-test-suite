@@ -1,11 +1,5 @@
 {
   "version": 8,
-  "constants": {
-    "@constant": {
-      "type": "color",
-      "value": "green"
-    }
-  },
   "sources": {
     "mapbox": {
       "type": "vector",
@@ -46,9 +40,6 @@
       },
       "paint.literal": {
         "text-color": "blue"
-      },
-      "paint.constant": {
-        "text-color": "@constant"
       },
       "paint.function": {
         "text-color": {

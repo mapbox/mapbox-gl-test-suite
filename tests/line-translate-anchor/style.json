@@ -1,6 +1,5 @@
 {
   "version": 8,
-  "constants": {},
   "sources": {
     "mapbox": {
       "type": "vector",

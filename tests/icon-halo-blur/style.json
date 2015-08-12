@@ -1,11 +1,5 @@
 {
   "version": 8,
-  "constants": {
-    "@constant": {
-      "type": "number",
-      "value": 3
-    }
-  },
   "sources": {
     "mapbox": {
       "type": "vector",
@@ -46,9 +40,6 @@
       },
       "paint.literal": {
         "icon-halo-blur": 2
-      },
-      "paint.constant": {
-        "icon-halo-blur": "@constant"
       },
       "paint.function": {
         "icon-halo-blur": {

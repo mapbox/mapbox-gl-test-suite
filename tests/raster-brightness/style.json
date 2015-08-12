@@ -1,6 +1,5 @@
 {
   "version": 8,
-  "constants": {},
   "sources": {
     "satellite": {
       "type": "raster",
@@ -22,10 +21,6 @@
       "paint.literal": {
         "raster-brightness-min": 0.2,
         "raster-brightness-max": 0.8
-      },
-      "paint.constant": {
-        "raster-brightness-min": 0.4,
-        "raster-brightness-max": 0.6
       },
       "paint.function": {
         "raster-brightness-min": {

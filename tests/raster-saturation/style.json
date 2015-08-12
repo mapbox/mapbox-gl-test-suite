@@ -1,11 +1,5 @@
 {
   "version": 8,
-  "constants": {
-    "@constant": {
-      "type": "number",
-      "value": 0.4
-    }
-  },
   "sources": {
     "satellite": {
       "type": "raster",
@@ -26,9 +20,6 @@
       },
       "paint.literal": {
         "raster-saturation": 0.2
-      },
-      "paint.constant": {
-        "raster-saturation": "@constant"
       },
       "paint.function": {
         "raster-saturation": {

@@ -1,11 +1,5 @@
 {
   "version": 8,
-  "constants": {
-    "@constant": {
-      "type": "number",
-      "value": 15
-    }
-  },
   "sources": {
     "mapbox": {
       "type": "vector",
@@ -33,9 +27,6 @@
       },
       "paint.literal": {
         "circle-radius": 10
-      },
-      "paint.constant": {
-        "circle-radius": "@constant"
       },
       "paint.function": {
         "circle-radius": {
