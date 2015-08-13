@@ -184,7 +184,27 @@
       "source": "geojson",
       "paint": {
         "line-color": "#EC8D8D",
+        "line-opacity": 0,
         "line-width": 8
+      },
+      "paint.default": {
+        "line-opacity": 1
+      }
+    },
+    {
+      "id": "line-round",
+      "type": "line",
+      "source": "geojson",
+      "layout": {
+        "line-join": "round"
+      },
+      "paint": {
+        "line-color": "#EC8D8D",
+        "line-opacity": 0,
+        "line-width": 16
+      },
+      "paint.round": {
+        "line-opacity": 0.5
       }
     }
   ]
