@@ -35,10 +35,10 @@
         "icon-image": "{maki}-12"
       },
       "paint": {
-          "icon-opacity": 0
+        "icon-opacity": 0
       },
       "paint.default": {
-          "icon-opacity": 1
+        "icon-opacity": 1
       }
     },
     {
@@ -59,10 +59,10 @@
         "icon-size": 2
       },
       "paint": {
-          "icon-opacity": 0
+        "icon-opacity": 0
       },
       "paint.literal": {
-          "icon-opacity": 1
+        "icon-opacity": 1
       }
     },
     {
@@ -94,10 +94,10 @@
         }
       },
       "paint": {
-          "icon-opacity": 0
+        "icon-opacity": 0
       },
       "paint.function": {
-          "icon-opacity": 1
+        "icon-opacity": 1
       }
     }
   ]
