@@ -4,13 +4,15 @@
         "classes": ["map"],
         "zoom": 14,
         "center": [52.499167, 13.418056],
-        "height": 256
+        "height": 256,
+        "diff": { "native": 0.0015 }
     },
     "viewport": {
         "bearing": 90,
         "classes": ["viewport"],
         "zoom": 14,
         "center": [52.499167, 13.418056],
-        "height": 256
+        "height": 256,
+        "diff": { "native": 0.0015 }
     }
 }
