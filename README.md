@@ -56,3 +56,9 @@ npm link mapbox-gl-test-suite
 UPDATE=1 node test/rendering.test.js
 [review and commit changes to mapbox-gl-test-suite]
 ```
+
+You can use the `read_vector_tile.js` script to inspect the vector tile fixtures
+
+ - `read_vector_tile.js` to display the help message
+ - `read_vector_tile.js [file]` to list all layers within `file` in a human-readable format.
+ - `read_vector_tile.js [file] [layer]` to list all features within `layer` as GeoJSON
