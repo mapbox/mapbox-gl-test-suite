@@ -7,6 +7,9 @@
         "classes": ["viewport"]
     },
     "map": {
+        "ignored": {
+            "native": "https://github.com/mapbox/mapbox-gl-native/issues/1800"
+        },
         "zoom": 14,
         "center": [52.499167, 13.418056],
         "height": 256,
