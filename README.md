@@ -11,33 +11,18 @@ and `info.json`, which contains one or more test cases for the given property. E
 and specifies values such as the map size, coordinates, and style classes. The expected output for a given test case
 is in `{id}/expected.png`, e.g. [`tests/background-color/constant/expected.png`](https://github.com/mapbox/mapbox-gl-test-suite/blob/master/tests/background-color/constant/expected.png).
 
-Supporting files -- glyphs, sprites, and tiles -- live in their own respective subdirectories. The js and native test
-harnesses set up the environment such that requests for these resources are directed to the correct location.
+Supporting files -- glyphs, sprites, and tiles -- live in their own respective subdirectories. The test
+harness sets up the environment such that requests for these resources are directed to the correct location.
 
 ## Running tests
 
-JS:
+Run `npm run test-suite` in mapbox-gl-js or mapbox-gl-native. To view the results graphically, run:
 
 ```
-cd mapbox-gl-js
-npm install
-node test/render.test.js
 open ./node_modules/mapbox-gl-test-suite/tests/index.html
 ```
 
-Native:
-
-```
-cd mapbox-gl-native
-git submodule update --init test/suite
-make test-Headless* && (cd ./test/suite/ && ./bin/compare_images.py native)
-open ./test/suite/tests/index.html
-```
-
-This generates `actual.png` files along side each `expected.png` as well as a `diff.png` showing any differences between
-the two. It also generates `tests/index.html` which allows you to browse the complete results.
-
-When run via Travis, the resulting `tests/` directory tree is uploaded to S3 as a permanent record of results. Near the
+When run via Travis, the test artifacts are uploaded to S3 as a permanent record of results. Near the
 end of the Travis output is a link to the result, for example:
 
 http://mapbox-gl-testing.s3.amazonaws.com/headless/mapbox/mapbox-gl-js/1385.1/index.html
@@ -53,6 +38,6 @@ cd mapbox-gl-test-suite
 npm link
 cd ../mapbox-gl-js
 npm link mapbox-gl-test-suite
-UPDATE=1 node test/rendering.test.js
+UPDATE=1 npm run test-suite
 [review and commit changes to mapbox-gl-test-suite]
 ```
