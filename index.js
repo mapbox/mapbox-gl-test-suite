@@ -211,6 +211,11 @@ exports.run = function (implementation, options, render) {
 
         results = results.slice(1, -1);
 
+        if (process.env.UPDATE) {
+            console.log('Updated ' + results.length + ' tests.');
+            process.exit(0);
+        }
+
         var passedCount = 0,
             ignoreCount = 0,
             ignorePassCount = 0,
