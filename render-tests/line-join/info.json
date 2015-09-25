@@ -1,0 +1,65 @@
+{
+    "default": {
+        "ignored": {
+            "native": ""
+        },
+        "zoom": 14,
+        "center": [52.499167, 13.418056],
+        "height": 256,
+        "classes": ["default"]
+    },
+    "bevel": {
+        "ignored": {
+            "native": ""
+        },
+        "zoom": 14,
+        "center": [52.499167, 13.418056],
+        "height": 256,
+        "classes": ["bevel"]
+    },
+    "bevel-transparent": {
+        "ignored": {
+            "native": ""
+        },
+        "zoom": 14,
+        "center": [52.499167, 13.418056],
+        "height": 256,
+        "classes": ["bevel-transparent"]
+    },
+    "miter": {
+        "ignored": {
+            "native": ""
+        },
+        "zoom": 14,
+        "center": [52.499167, 13.418056],
+        "height": 256,
+        "classes": ["miter"]
+    },
+    "miter-transparent": {
+        "ignored": {
+            "native": ""
+        },
+        "zoom": 14,
+        "center": [52.499167, 13.418056],
+        "height": 256,
+        "classes": ["miter-transparent"]
+    },
+    "round": {
+        "ignored": {
+            "native": ""
+        },
+        "zoom": 14,
+        "center": [52.499167, 13.418056],
+        "height": 256,
+        "classes": ["round"]
+    },
+    "round-transparent": {
+        "ignored": {
+            "native": ""
+        },
+        "zoom": 14,
+        "center": [52.499167, 13.418056],
+        "height": 256,
+        "classes": ["round-transparent"]
+    }
+}

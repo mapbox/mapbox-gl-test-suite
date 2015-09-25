@@ -1,0 +1,24 @@
+{
+    "literal": {
+        "center": [0, 0],
+        "zoom": 0,
+        "width": 64,
+        "height": 64,
+        "diff": 0.001
+    },
+    "zoomed": {
+        "center": [0, 0],
+        "zoom": 0.5,
+        "width": 64,
+        "height": 64,
+        "diff": 0.001
+    },
+    "rotated": {
+        "center": [0, 0],
+        "zoom": 0,
+        "width": 64,
+        "height": 64,
+        "bearing": 45,
+        "diff": 0.001
+    }
+}

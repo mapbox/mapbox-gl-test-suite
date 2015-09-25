@@ -1,0 +1,54 @@
+{
+  "version": 8,
+  "sources": {
+    "mapbox": {
+      "type": "vector",
+      "maxzoom": 14,
+      "tiles": [
+        "local://tiles/{z}-{x}-{y}.vector.pbf"
+      ]
+    }
+  },
+  "layers": [
+    {
+      "id": "background",
+      "type": "background",
+      "paint": {
+        "background-color": "white"
+      }
+    },
+    {
+      "id": "land",
+      "type": "fill",
+      "source": "mapbox",
+      "source-layer": "water",
+      "paint": {},
+      "paint.literal": {
+        "fill-translate": [
+          5,
+          5
+        ]
+      },
+      "paint.function": {
+        "fill-translate": {
+          "stops": [
+            [
+              16,
+              [
+                15,
+                15
+              ]
+            ],
+            [
+              17,
+              [
+                20,
+                20
+              ]
+            ]
+          ]
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,45 @@
+{
+  "version": 8,
+  "sources": {
+    "mapbox": {
+      "type": "vector",
+      "maxzoom": 14,
+      "tiles": [
+        "local://tiles/{z}-{x}-{y}.vector.pbf"
+      ]
+    }
+  },
+  "glyphs": "local://glyphs/{fontstack}/{range}.pbf",
+  "layers": [
+    {
+      "id": "background",
+      "type": "background",
+      "paint": {
+        "background-color": "white"
+      }
+    },
+    {
+      "id": "literal",
+      "type": "symbol",
+      "source": "mapbox",
+      "source-layer": "road",
+      "layout": {
+        "symbol-placement": "line",
+        "text-allow-overlap": true,
+        "text-ignore-placement": true,
+        "text-field": "{class} {class}",
+        "text-font": [
+          "Open Sans Semibold",
+          "Arial Unicode MS Bold"
+        ],
+        "text-max-angle": 60
+      },
+      "paint": {
+        "text-opacity": 0
+      },
+      "paint.literal": {
+        "text-opacity": 1
+      }
+    }
+  ]
+}

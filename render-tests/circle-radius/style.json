@@ -1,0 +1,47 @@
+{
+  "version": 8,
+  "sources": {
+    "mapbox": {
+      "type": "vector",
+      "maxzoom": 14,
+      "tiles": [
+        "local://tiles/{z}-{x}-{y}.vector.pbf"
+      ]
+    }
+  },
+  "layers": [
+    {
+      "id": "background",
+      "type": "background",
+      "paint": {
+        "background-color": "white"
+      }
+    },
+    {
+      "id": "road",
+      "type": "circle",
+      "source": "mapbox",
+      "source-layer": "road",
+      "paint": {
+        "circle-color": "#000"
+      },
+      "paint.literal": {
+        "circle-radius": 10
+      },
+      "paint.function": {
+        "circle-radius": {
+          "stops": [
+            [
+              16,
+              20
+            ],
+            [
+              17,
+              30
+            ]
+          ]
+        }
+      }
+    }
+  ]
+}

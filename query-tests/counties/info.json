@@ -1,0 +1,18 @@
+{
+    "default": {
+        "center": [39.920, -74.522],
+        "zoom": 7,
+        "width": 500,
+        "height": 500,
+        "at": [136, 231],
+        "expected": [{
+            "type": "Feature",
+            "geometry": null,
+            "properties": {
+                "id": "42101",
+                "name": "Philadelphia County",
+                "pop_density": 39142.52658375366
+            }
+        }]
+    }
+}

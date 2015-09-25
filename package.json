@@ -6,6 +6,8 @@
   "main": "index.js",
   "dependencies": {
     "colors": "^1.1.2",
+    "deep-equal": "^1.0.1",
+    "diff": "^2.1.2",
     "extend": "^3.0.0",
     "handlebars": "^4.0.1",
     "mkdirp": "^0.5.1",

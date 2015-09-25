@@ -1,0 +1,95 @@
+{
+  "version": 8,
+  "sources": {
+    "mapbox": {
+      "type": "vector",
+      "maxzoom": 14,
+      "tiles": [
+        "local://tiles/{z}-{x}-{y}.vector.pbf"
+      ]
+    }
+  },
+  "layers": [
+    {
+      "id": "background",
+      "type": "background",
+      "paint": {
+        "background-color": "white"
+      }
+    },
+    {
+      "id": "default",
+      "type": "line",
+      "source": "mapbox",
+      "source-layer": "road",
+      "paint": {
+        "line-width": 10,
+        "line-color": "#000",
+        "line-opacity": 0
+      },
+      "paint.default": {
+        "line-opacity": 1
+      }
+    },
+    {
+      "id": "bevel",
+      "type": "line",
+      "source": "mapbox",
+      "source-layer": "road",
+      "layout": {
+        "line-join": "bevel"
+      },
+      "paint": {
+        "line-width": 10,
+        "line-color": "#000",
+        "line-opacity": 0
+      },
+      "paint.bevel": {
+        "line-opacity": 1
+      },
+      "paint.bevel-transparent": {
+        "line-opacity": 0.5
+      }
+    },
+    {
+      "id": "miter",
+      "type": "line",
+      "source": "mapbox",
+      "source-layer": "road",
+      "layout": {
+        "line-join": "miter"
+      },
+      "paint": {
+        "line-width": 10,
+        "line-color": "#000",
+        "line-opacity": 0
+      },
+      "paint.miter": {
+        "line-opacity": 1
+      },
+      "paint.miter-transparent": {
+        "line-opacity": 0.5
+      }
+    },
+    {
+      "id": "round",
+      "type": "line",
+      "source": "mapbox",
+      "source-layer": "road",
+      "layout": {
+        "line-join": "round"
+      },
+      "paint": {
+        "line-width": 10,
+        "line-color": "#000",
+        "line-opacity": 0
+      },
+      "paint.round": {
+        "line-opacity": 1
+      },
+      "paint.round-transparent": {
+        "line-opacity": 0.5
+      }
+    }
+  ]
+}

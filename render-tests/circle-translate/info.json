@@ -1,0 +1,19 @@
+{
+    "default": {
+        "zoom": 14,
+        "center": [52.499167, 13.418056],
+        "height": 256
+    },
+    "literal": {
+        "classes": ["literal"],
+        "zoom": 14,
+        "center": [52.499167, 13.418056],
+        "height": 256
+    },
+    "function": {
+        "classes": ["function"],
+        "zoom": 14,
+        "center": [52.499167, 13.418056],
+        "height": 256
+    }
+}

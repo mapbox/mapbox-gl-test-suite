@@ -1,0 +1,18 @@
+{
+    "default": {
+        "ignored": {
+            "native": "https://github.com/mapbox/mapbox-gl-native/issues/1555"
+        },
+        "diff": { "native": 0.0025 }
+    },
+    "literal": {
+        "diff": { "native": 0.0025 },
+        "classes": ["literal"]
+    },
+    "function": {
+        "ignored": {
+            "native": "https://github.com/mapbox/mapbox-gl-native/issues/1555"
+        },
+        "classes": ["function"]
+    }
+}

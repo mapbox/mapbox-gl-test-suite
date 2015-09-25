@@ -1,0 +1,22 @@
+{
+    "version": 8,
+    "sources": {
+        "us-counties": {
+            "type": "vector",
+            "maxzoom": 10,
+            "minzoom": 0,
+            "tiles": [
+                "local://tiles/counties-{z}-{x}-{y}.vector.pbf"
+            ]
+        }
+    },
+    "layers": [
+        {
+            "id": "counties",
+            "type": "line",
+            "source": "us-counties",
+            "source-layer": "counties",
+            "interactive": true
+        }
+    ]
+}
