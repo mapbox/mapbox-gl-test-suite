@@ -1,17 +1,17 @@
 {
     "map": {
         "ignored": {
+            "js": "https://github.com/mapbox/mapbox-gl-native/issues/1555",
             "native": "https://github.com/mapbox/mapbox-gl-native/issues/1555"
         },
-        "diff": { "native": 0.0015 },
         "bearing": 90,
         "classes": ["map"]
     },
     "viewport": {
         "ignored": {
+            "js": "https://github.com/mapbox/mapbox-gl-native/issues/1555",
             "native": "https://github.com/mapbox/mapbox-gl-native/issues/1555"
         },
-        "diff": { "native": 0.0015 },
         "bearing": 90,
         "classes": ["viewport"]
     }

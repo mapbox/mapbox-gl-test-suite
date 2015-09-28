@@ -1,6 +1,7 @@
 {
     "visible": {
         "ignored": {
+            "js": "?",
             "native": "?"
         },
         "zoom": 16,

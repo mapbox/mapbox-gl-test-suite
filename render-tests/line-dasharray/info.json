@@ -1,7 +1,8 @@
 {
     "default": {
         "ignored": {
-            "native": ""
+            "js": "?",
+            "native": "?"
         },
         "zoom": 14,
         "center": [52.499167, 13.418056],
@@ -9,7 +10,8 @@
     },
     "literal": {
         "ignored": {
-            "native": ""
+            "js": "?",
+            "native": "?"
         },
         "diff": { "native": 0.0035 },
         "zoom": 14,
@@ -19,7 +21,8 @@
     },
     "function": {
         "ignored": {
-            "native": ""
+            "js": "?",
+            "native": "?"
         },
         "diff": { "native": 0.0015 },
         "zoom": 14,

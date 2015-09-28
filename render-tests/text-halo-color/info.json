@@ -6,6 +6,7 @@
     },
     "literal": {
         "ignored": {
+            "js": "",
             "native": ""
         },
         "zoom": 14,
@@ -15,6 +16,7 @@
     },
     "function": {
         "ignored": {
+            "js": "",
             "native": ""
         },
         "zoom": 14,

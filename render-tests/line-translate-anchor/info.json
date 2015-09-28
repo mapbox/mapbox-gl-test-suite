@@ -1,7 +1,8 @@
 {
     "map": {
         "ignored": {
-            "native": "https://github.com/mapbox/mapbox-gl-native/issues/1450"
+            "js": "?",
+            "native": "?"
         },
         "zoom": 14,
         "center": [52.499167, 13.418056],
@@ -11,7 +12,8 @@
     },
     "viewport": {
         "ignored": {
-            "native": "https://github.com/mapbox/mapbox-gl-native/issues/1450"
+            "js": "?",
+            "native": "?"
         },
         "zoom": 14,
         "center": [52.499167, 13.418056],

@@ -1,6 +1,7 @@
 {
     "visible": {
         "ignored": {
+            "js": "https://github.com/mapbox/mapbox-gl-native/issues/1555",
             "native": "https://github.com/mapbox/mapbox-gl-native/issues/1555"
         },
         "center": [0, 0],

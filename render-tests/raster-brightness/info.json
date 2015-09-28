@@ -1,6 +1,7 @@
 {
     "default": {
         "ignored": {
+            "js": "?",
             "native": "?"
         },
         "zoom": 16,
@@ -9,6 +10,7 @@
     },
     "literal": {
         "ignored": {
+            "js": "?",
             "native": "?"
         },
         "zoom": 16,

@@ -1,6 +1,7 @@
 {
     "literal": {
         "ignored": {
+            "js": "",
             "native": ""
         },
         "zoom": 14,

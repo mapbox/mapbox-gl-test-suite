@@ -19,6 +19,7 @@
     },
     "line-close": {
         "ignored": {
+            "js": "",
             "native": "https://github.com/mapbox/mapbox-gl-native/issues/1139, https://github.com/mapbox/mapbox-gl-native/issues/1540"
         },
         "zoom": 14,
@@ -28,6 +29,7 @@
     },
     "line-far": {
         "ignored": {
+            "js": "",
             "native": "https://github.com/mapbox/mapbox-gl-native/issues/1139, https://github.com/mapbox/mapbox-gl-native/issues/1540"
         },
         "zoom": 14,
@@ -37,6 +39,7 @@
     },
     "line-overscaled": {
         "ignored": {
+            "js": "",
             "native": "https://github.com/mapbox/mapbox-gl-native/issues/1139, https://github.com/mapbox/mapbox-gl-native/issues/1540"
         },
         "zoom": 17,

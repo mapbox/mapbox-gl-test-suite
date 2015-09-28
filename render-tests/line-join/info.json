@@ -1,7 +1,8 @@
 {
     "default": {
         "ignored": {
-            "native": ""
+            "js": "?",
+            "native": "?"
         },
         "zoom": 14,
         "center": [52.499167, 13.418056],
@@ -10,7 +11,8 @@
     },
     "bevel": {
         "ignored": {
-            "native": ""
+            "js": "?",
+            "native": "?"
         },
         "zoom": 14,
         "center": [52.499167, 13.418056],
@@ -19,7 +21,8 @@
     },
     "bevel-transparent": {
         "ignored": {
-            "native": ""
+            "js": "?",
+            "native": "?"
         },
         "zoom": 14,
         "center": [52.499167, 13.418056],
@@ -28,7 +31,8 @@
     },
     "miter": {
         "ignored": {
-            "native": ""
+            "js": "?",
+            "native": "?"
         },
         "zoom": 14,
         "center": [52.499167, 13.418056],
@@ -37,7 +41,8 @@
     },
     "miter-transparent": {
         "ignored": {
-            "native": ""
+            "js": "?",
+            "native": "?"
         },
         "zoom": 14,
         "center": [52.499167, 13.418056],
@@ -46,7 +51,8 @@
     },
     "round": {
         "ignored": {
-            "native": ""
+            "js": "?",
+            "native": "?"
         },
         "zoom": 14,
         "center": [52.499167, 13.418056],
@@ -55,7 +61,8 @@
     },
     "round-transparent": {
         "ignored": {
-            "native": ""
+            "js": "?",
+            "native": "?"
         },
         "zoom": 14,
         "center": [52.499167, 13.418056],

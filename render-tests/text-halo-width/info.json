@@ -12,6 +12,7 @@
     },
     "function": {
         "ignored": {
+            "js": "",
             "native": ""
         },
         "zoom": 14,

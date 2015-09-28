@@ -15,6 +15,7 @@
     },
     "function": {
         "ignored": {
+            "js": "https://github.com/mapbox/mapbox-gl-js/issues/1569",
             "native": "https://github.com/mapbox/mapbox-gl-native/issues/1542"
         },
         "zoom": 14,
@@ -24,6 +25,7 @@
     },
     "text-and-icon": {
         "ignored": {
+            "js": "https://github.com/mapbox/mapbox-gl-js/issues/1569",
             "native": "https://github.com/mapbox/mapbox-gl-native/issues/1542"
         },
         "zoom": 14,
