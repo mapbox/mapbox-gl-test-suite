@@ -14,6 +14,8 @@ is in `{id}/expected.png`, e.g. [`tests/background-color/constant/expected.png`]
 Supporting files -- glyphs, sprites, and tiles -- live in their own respective subdirectories. The test
 harness sets up the environment such that requests for these resources are directed to the correct location.
 
+The contents of vector tile fixtures can be read using the [`vt2geojson`](https://github.com/mapbox/vt2geojson) tool
+
 ## Running tests
 
 Run `npm run test-suite` in mapbox-gl-js or mapbox-gl-native. To view the results graphically, run:
