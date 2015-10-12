@@ -21,7 +21,11 @@ The contents of vector tile fixtures can be read using the [`vt2geojson`](https:
 Run `npm run test-suite` in mapbox-gl-js or mapbox-gl-native. To view the results graphically, run:
 
 ```
-open ./node_modules/mapbox-gl-test-suite/tests/index.html
+open ./node_modules/mapbox-gl-test-suite/render-tests/index.html
+```
+or
+```
+open ./node_modules/mapbox-gl-test-suite/query-tests/index.html
 ```
 
 When run via Travis, the test artifacts are uploaded to S3 as a permanent record of results. Near the
