@@ -3,6 +3,10 @@
   "description": "Rendering tests for Mapbox GL",
   "version": "0.0.0",
   "license": "BSD",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/mapbox/mapbox-gl-test-suite.git"
+  },
   "main": "index.js",
   "dependencies": {
     "colors": "^1.1.2",
