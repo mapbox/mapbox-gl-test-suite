@@ -16,7 +16,7 @@
     "st": "^0.5.5"
   },
   "devDependencies": {
-    "mapbox-gl-style-spec": "git+https://github.com/mapbox/mapbox-gl-style-spec.git#66963c5023fb65c989fac0f443b0b46f39a5a6fe",
+    "mapbox-gl-style-spec": "^8.2.0",
     "sponge": "^0.1.0"
   },
   "scripts": {
