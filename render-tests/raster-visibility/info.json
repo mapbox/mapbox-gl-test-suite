@@ -1,8 +1,8 @@
 {
     "visible": {
         "ignored": {
-            "js": "?",
-            "native": "?"
+            "js": "https://github.com/mapbox/mapbox-gl-native/issues/1600",
+            "native": "https://github.com/mapbox/mapbox-gl-native/issues/1600"
         },
         "zoom": 16,
         "center": [52.499167, 13.418056],
