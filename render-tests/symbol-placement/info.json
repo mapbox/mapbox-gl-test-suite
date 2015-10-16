@@ -10,6 +10,9 @@
         "classes": ["point"]
     },
     "line": {
+        "ignored": {
+            "native": "https://github.com/mapbox/mapbox-gl-native/issues/2648"
+        },
         "zoom": 14,
         "center": [52.499167, 13.418056],
         "height": 256,

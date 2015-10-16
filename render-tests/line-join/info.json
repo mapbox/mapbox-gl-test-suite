@@ -12,6 +12,7 @@
         "classes": ["bevel"]
     },
     "bevel-transparent": {
+        "diff": 0.00015,
         "zoom": 14,
         "center": [52.499167, 13.418056],
         "height": 256,
@@ -24,6 +25,7 @@
         "classes": ["miter"]
     },
     "miter-transparent": {
+        "diff": 0.00015,
         "zoom": 14,
         "center": [52.499167, 13.418056],
         "height": 256,
@@ -36,6 +38,7 @@
         "classes": ["round"]
     },
     "round-transparent": {
+        "diff": 0.00015,
         "zoom": 14,
         "center": [52.499167, 13.418056],
         "height": 256,
