@@ -38,7 +38,7 @@
         "classes": ["round"]
     },
     "round-transparent": {
-        "diff": 0.00015,
+        "diff": 0.0004,
         "zoom": 14,
         "center": [52.499167, 13.418056],
         "height": 256,
