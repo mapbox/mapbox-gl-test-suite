@@ -1,69 +1,41 @@
 {
     "default": {
-        "ignored": {
-            "js": "?",
-            "native": "?"
-        },
         "zoom": 14,
         "center": [52.499167, 13.418056],
         "height": 256,
         "classes": ["default"]
     },
     "bevel": {
-        "ignored": {
-            "js": "?",
-            "native": "?"
-        },
         "zoom": 14,
         "center": [52.499167, 13.418056],
         "height": 256,
         "classes": ["bevel"]
     },
     "bevel-transparent": {
-        "ignored": {
-            "js": "?",
-            "native": "?"
-        },
         "zoom": 14,
         "center": [52.499167, 13.418056],
         "height": 256,
         "classes": ["bevel-transparent"]
     },
     "miter": {
-        "ignored": {
-            "js": "?",
-            "native": "?"
-        },
         "zoom": 14,
         "center": [52.499167, 13.418056],
         "height": 256,
         "classes": ["miter"]
     },
     "miter-transparent": {
-        "ignored": {
-            "js": "?",
-            "native": "?"
-        },
         "zoom": 14,
         "center": [52.499167, 13.418056],
         "height": 256,
         "classes": ["miter-transparent"]
     },
     "round": {
-        "ignored": {
-            "js": "?",
-            "native": "?"
-        },
         "zoom": 14,
         "center": [52.499167, 13.418056],
         "height": 256,
         "classes": ["round"]
     },
     "round-transparent": {
-        "ignored": {
-            "js": "?",
-            "native": "?"
-        },
         "zoom": 14,
         "center": [52.499167, 13.418056],
         "height": 256,

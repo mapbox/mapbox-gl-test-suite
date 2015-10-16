@@ -1,6 +1,7 @@
 {
     "default": {
         "ignored": {
+            "js": "?",
             "native": "?"
         },
         "zoom": 16,
@@ -8,7 +9,10 @@
         "height": 256
     },
     "literal": {
-        "diff": 0.0015,
+        "ignored": {
+            "js": "?",
+            "native": "?"
+        },
         "zoom": 16,
         "center": [52.499167, 13.418056],
         "height": 256,
@@ -16,6 +20,7 @@
     },
     "function": {
         "ignored": {
+            "js": "?",
             "native": "?"
         },
         "zoom": 16,

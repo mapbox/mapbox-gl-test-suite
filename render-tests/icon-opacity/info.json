@@ -1,7 +1,8 @@
 {
     "default": {
         "ignored": {
-            "native": "https://github.com/mapbox/mapbox-gl-native/issues/1542"
+            "js": "https://github.com/mapbox/mapbox-gl-js/issues/1569",
+            "native": "https://github.com/mapbox/mapbox-gl-js/issues/1569"
         },
         "zoom": 14,
         "center": [52.499167, 13.418056],
@@ -10,7 +11,7 @@
     "literal": {
         "ignored": {
             "js": "https://github.com/mapbox/mapbox-gl-js/issues/1569",
-            "native": "https://github.com/mapbox/mapbox-gl-native/issues/1542"
+            "native": "https://github.com/mapbox/mapbox-gl-js/issues/1569"
         },
         "zoom": 14,
         "center": [52.499167, 13.418056],
@@ -20,7 +21,7 @@
     "function": {
         "ignored": {
             "js": "https://github.com/mapbox/mapbox-gl-js/issues/1569",
-            "native": "https://github.com/mapbox/mapbox-gl-native/issues/1542"
+            "native": "https://github.com/mapbox/mapbox-gl-js/issues/1569"
         },
         "zoom": 14,
         "center": [52.499167, 13.418056],
@@ -30,7 +31,7 @@
     "text-and-icon": {
         "ignored": {
             "js": "https://github.com/mapbox/mapbox-gl-js/issues/1569",
-            "native": "https://github.com/mapbox/mapbox-gl-native/issues/1542"
+            "native": "https://github.com/mapbox/mapbox-gl-js/issues/1569"
         },
         "zoom": 14,
         "center": [52.499167, 13.418056],
@@ -45,7 +46,8 @@
     },
     "icon-only": {
         "ignored": {
-            "native": "https://github.com/mapbox/mapbox-gl-native/issues/1542"
+            "js": "https://github.com/mapbox/mapbox-gl-js/issues/1569",
+            "native": "https://github.com/mapbox/mapbox-gl-js/issues/1569"
         },
         "zoom": 14,
         "center": [52.499167, 13.418056],
