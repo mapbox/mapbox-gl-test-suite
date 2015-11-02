@@ -24,23 +24,6 @@
       "source-layer": "road",
       "paint": {
         "line-width": 10
-      },
-      "paint.literal": {
-        "line-color": "blue"
-      },
-      "paint.function": {
-        "line-color": {
-          "stops": [
-            [
-              16,
-              "green"
-            ],
-            [
-              17,
-              "blue"
-            ]
-          ]
-        }
       }
     }
   ]
