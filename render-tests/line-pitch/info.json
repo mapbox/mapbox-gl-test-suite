@@ -1,0 +1,32 @@
+{
+    "default": {
+        "zoom": 14,
+        "center": [52.499167, 13.418056],
+        "height": 256
+    },
+    "pitch0": {
+        "zoom": 14,
+        "pitch": 0,
+        "center": [52.499167, 13.418056],
+        "height": 256
+    },
+    "pitch15": {
+        "zoom": 14,
+        "pitch": 15,
+        "center": [52.499167, 13.418056],
+        "height": 256
+    },
+    "pitch30": {
+        "zoom": 14,
+        "pitch": 30,
+        "center": [52.499167, 13.418056],
+        "height": 256
+    },
+    "pitchAndBearing": {
+        "zoom": 14,
+        "pitch": 30,
+        "bearing": 180,
+        "center": [52.499167, 13.418056],
+        "height": 256
+    }
+}
