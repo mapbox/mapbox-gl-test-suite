@@ -4,7 +4,7 @@
             "native": "https://github.com/mapbox/mapbox-gl-native/issues/2648"
         },
         "zoom": 14,
-        "center": [52.499167, 13.418056],
+        "center": [13.418056, 52.499167],
         "height": 256
     },
     "opacity": {
@@ -12,7 +12,7 @@
             "native": "https://github.com/mapbox/mapbox-gl-native/issues/2648"
         },
         "zoom": 14,
-        "center": [52.499167, 13.418056],
+        "center": [13.418056, 52.499167],
         "height": 256,
         "classes": ["opacity"]
     }

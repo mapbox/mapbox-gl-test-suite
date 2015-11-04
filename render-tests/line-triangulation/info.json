@@ -2,7 +2,7 @@
     "default": {
         "native": false,
         "zoom": 14.0,
-        "center": [37.7060,-122.4393],
+        "center": [-122.4393, 37.7060],
         "width": 512,
         "height": 512,
         "classes": ["default"]
@@ -10,7 +10,7 @@
     "round": {
         "native": false,
         "zoom": 14.0,
-        "center": [37.7060,-122.4393],
+        "center": [-122.4393, 37.7060],
         "width": 512,
         "height": 512,
         "classes": ["round"]

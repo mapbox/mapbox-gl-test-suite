@@ -4,7 +4,7 @@
             "native": "https://github.com/mapbox/mapbox-gl-js/issues/1569"
         },
         "zoom": 14,
-        "center": [52.499167, 13.418056],
+        "center": [13.418056, 52.499167],
         "height": 256,
         "bearing": 90,
         "classes": ["viewport"]
@@ -14,7 +14,7 @@
             "native": "https://github.com/mapbox/mapbox-gl-js/issues/1569"
         },
         "zoom": 14,
-        "center": [52.499167, 13.418056],
+        "center": [13.418056, 52.499167],
         "height": 256,
         "bearing": 90,
         "classes": ["map"]
