@@ -3,14 +3,14 @@
         "bearing": 90,
         "classes": ["map"],
         "zoom": 14,
-        "center": [52.499167, 13.418056],
+        "center": [13.418056, 52.499167],
         "height": 256
     },
     "viewport": {
         "bearing": 90,
         "classes": ["viewport"],
         "zoom": 14,
-        "center": [52.499167, 13.418056],
+        "center": [13.418056, 52.499167],
         "height": 256
     }
 }

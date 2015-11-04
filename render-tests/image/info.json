@@ -5,7 +5,7 @@
             "native": "https://github.com/mapbox/mapbox-gl-native/issues/601"
         },
         "zoom": 17,
-        "center": [37.562984, -122.514426],
+        "center": [-122.514426, 37.562984],
         "width": 512,
         "height": 512
     },
@@ -15,7 +15,7 @@
             "native": "https://github.com/mapbox/mapbox-gl-native/issues/601"
         },
         "zoom": 17,
-        "center": [37.562984, -122.514426],
+        "center": [-122.514426, 37.562984],
         "width": 512,
         "height": 512,
         "classes": ["brightness"]
@@ -26,7 +26,7 @@
             "native": "https://github.com/mapbox/mapbox-gl-native/issues/601"
         },
         "zoom": 17,
-        "center": [37.562984, -122.514426],
+        "center": [-122.514426, 37.562984],
         "width": 512,
         "height": 512,
         "classes": ["contrast"]
@@ -37,7 +37,7 @@
             "native": "https://github.com/mapbox/mapbox-gl-native/issues/601"
         },
         "zoom": 17,
-        "center": [37.562984, -122.514426],
+        "center": [-122.514426, 37.562984],
         "width": 512,
         "height": 512,
         "classes": ["hue-rotate"]
@@ -48,7 +48,7 @@
             "native": "https://github.com/mapbox/mapbox-gl-native/issues/601"
         },
         "zoom": 17,
-        "center": [37.562984, -122.514426],
+        "center": [-122.514426, 37.562984],
         "width": 512,
         "height": 512,
         "classes": ["opacity"]
@@ -59,7 +59,7 @@
             "native": "https://github.com/mapbox/mapbox-gl-native/issues/601"
         },
         "zoom": 17,
-        "center": [37.562984, -122.514426],
+        "center": [-122.514426, 37.562984],
         "width": 512,
         "height": 512,
         "classes": ["saturation"]
@@ -70,7 +70,7 @@
             "native": "https://github.com/mapbox/mapbox-gl-native/issues/601"
         },
         "zoom": 17,
-        "center": [37.562984, -122.514426],
+        "center": [-122.514426, 37.562984],
         "width": 512,
         "height": 512,
         "classes": ["visibility"]

@@ -1,55 +1,55 @@
 {
     "center": {
         "zoom": 14,
-        "center": [52.499167, 13.418056],
+        "center": [13.418056, 52.499167],
         "height": 256,
         "classes": ["center"]
     },
     "left": {
         "zoom": 14,
-        "center": [52.499167, 13.418056],
+        "center": [13.418056, 52.499167],
         "height": 256,
         "classes": ["left"]
     },
     "right": {
         "zoom": 14,
-        "center": [52.499167, 13.418056],
+        "center": [13.418056, 52.499167],
         "height": 256,
         "classes": ["right"]
     },
     "top": {
         "zoom": 14,
-        "center": [52.499167, 13.418056],
+        "center": [13.418056, 52.499167],
         "height": 256,
         "classes": ["top"]
     },
     "bottom": {
         "zoom": 14,
-        "center": [52.499167, 13.418056],
+        "center": [13.418056, 52.499167],
         "height": 256,
         "classes": ["bottom"]
     },
     "top-left": {
         "zoom": 14,
-        "center": [52.499167, 13.418056],
+        "center": [13.418056, 52.499167],
         "height": 256,
         "classes": ["top-left"]
     },
     "top-right": {
         "zoom": 14,
-        "center": [52.499167, 13.418056],
+        "center": [13.418056, 52.499167],
         "height": 256,
         "classes": ["top-right"]
     },
     "bottom-left": {
         "zoom": 14,
-        "center": [52.499167, 13.418056],
+        "center": [13.418056, 52.499167],
         "height": 256,
         "classes": ["bottom-left"]
     },
     "bottom-right": {
         "zoom": 14,
-        "center": [52.499167, 13.418056],
+        "center": [13.418056, 52.499167],
         "height": 256,
         "classes": ["bottom-right"]
     }

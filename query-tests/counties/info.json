@@ -1,6 +1,6 @@
 {
     "default": {
-        "center": [39.920, -74.522],
+        "center": [-74.522, 39.920],
         "zoom": 7,
         "width": 500,
         "height": 500,

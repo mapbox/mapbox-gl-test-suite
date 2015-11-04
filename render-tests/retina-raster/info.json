@@ -1,7 +1,7 @@
 {
     "default": {
         "zoom": 16,
-        "center": [52.499167, 13.418056],
+        "center": [13.418056, 52.499167],
         "width": 256,
         "height": 128,
         "pixelRatio": 2
