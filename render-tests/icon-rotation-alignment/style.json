@@ -19,7 +19,7 @@
       }
     },
     {
-      "id": "viewport",
+      "id": "viewport-point",
       "type": "symbol",
       "source": "mapbox",
       "source-layer": "poi_label",
@@ -38,12 +38,31 @@
       "paint": {
         "icon-opacity": 0
       },
-      "paint.viewport": {
+      "paint.viewport-point": {
         "icon-opacity": 1
       }
     },
     {
-      "id": "map",
+      "id": "viewport-line",
+      "type": "symbol",
+      "source": "mapbox",
+      "source-layer": "road",
+      "layout": {
+        "symbol-placement": "line",
+        "icon-allow-overlap": true,
+        "icon-ignore-placement": true,
+        "icon-image": "restaurant-12",
+        "icon-rotation-alignment": "viewport"
+      },
+      "paint": {
+        "icon-opacity": 0
+      },
+      "paint.viewport-line": {
+        "icon-opacity": 1
+      }
+    },
+    {
+      "id": "map-point",
       "type": "symbol",
       "source": "mapbox",
       "source-layer": "poi_label",
@@ -62,7 +81,26 @@
       "paint": {
         "icon-opacity": 0
       },
-      "paint.map": {
+      "paint.map-point": {
+        "icon-opacity": 1
+      }
+    },
+    {
+      "id": "map-line",
+      "type": "symbol",
+      "source": "mapbox",
+      "source-layer": "road",
+      "layout": {
+        "symbol-placement": "line",
+        "icon-allow-overlap": true,
+        "icon-ignore-placement": true,
+        "icon-image": "restaurant-12",
+        "icon-rotation-alignment": "map"
+      },
+      "paint": {
+        "icon-opacity": 0
+      },
+      "paint.map-line": {
         "icon-opacity": 1
       }
     }
