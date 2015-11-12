@@ -5,6 +5,9 @@
         "height": 256
     },
     "literal": {
+        "ignored": {
+            "js": "https://github.com/mapbox/mapbox-gl-js/issues/1702"
+        },
         "zoom": 14,
         "center": [13.418056, 52.499167],
         "height": 256,
