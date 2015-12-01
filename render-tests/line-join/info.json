@@ -12,7 +12,7 @@
         "classes": ["bevel"]
     },
     "bevel-transparent": {
-        "diff": 0.00015,
+        "diff": 0.0002,
         "zoom": 14,
         "center": [13.418056, 52.499167],
         "height": 256,
