@@ -9,7 +9,7 @@
       ]
     }
   },
-  "sprite": "local://sprites/sprite",
+  "sprite": "local://sprites/emerald",
   "layers": [
     {
       "id": "background",
@@ -32,7 +32,7 @@
         "symbol-placement": "point",
         "icon-allow-overlap": true,
         "icon-ignore-placement": true,
-        "icon-image": "{maki}-12"
+        "icon-image": "generic_icon"
       },
       "paint": {
         "icon-opacity": 0
@@ -55,7 +55,7 @@
         "symbol-placement": "point",
         "icon-allow-overlap": true,
         "icon-ignore-placement": true,
-        "icon-image": "{maki}-12",
+        "icon-image": "generic_icon",
         "icon-size": 2
       },
       "paint": {
@@ -79,7 +79,7 @@
         "symbol-placement": "point",
         "icon-allow-overlap": true,
         "icon-ignore-placement": true,
-        "icon-image": "{maki}-12",
+        "icon-image": "generic_icon",
         "icon-size": {
           "stops": [
             [
