@@ -9,13 +9,13 @@
       ]
     }
   },
-  "sprite": "local://sprites/sprite",
+  "sprite": "local://sprites/emerald",
   "layers": [
     {
       "id": "background",
       "type": "background",
       "paint": {
-        "background-pattern": "wetland-17"
+        "background-pattern": "sand_noise"
       }
     }
   ]

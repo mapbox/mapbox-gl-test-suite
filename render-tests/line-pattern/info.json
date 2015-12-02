@@ -15,5 +15,14 @@
         "center": [13.418056, 52.499167],
         "height": 256,
         "classes": ["opacity"]
+    },
+    "@2x": {
+        "ignored": {
+            "native": "https://github.com/mapbox/mapbox-gl-native/issues/2648"
+        },
+        "zoom": 14,
+        "center": [13.418056, 52.499167],
+        "height": 256,
+        "pixelRatio": 2
     }
 }

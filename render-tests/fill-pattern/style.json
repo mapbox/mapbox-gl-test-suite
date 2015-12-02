@@ -9,7 +9,7 @@
       ]
     }
   },
-  "sprite": "local://sprites/sprite",
+  "sprite": "local://sprites/emerald",
   "layers": [
     {
       "id": "background",
@@ -24,7 +24,7 @@
       "source": "mapbox",
       "source-layer": "water",
       "paint": {
-        "fill-pattern": "beer-12"
+        "fill-pattern": "generic_icon"
       },
       "paint.opacity": {
         "fill-opacity": 0.5

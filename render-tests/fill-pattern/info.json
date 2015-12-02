@@ -6,5 +6,8 @@
     },
     "opacity": {
         "classes": ["opacity"]
+    },
+    "@2x": {
+        "pixelRatio": 2
     }
 }
