@@ -1,7 +1,7 @@
 {
     "point-close": {
         "ignored": {
-            "native": "https://github.com/mapbox/mapbox-gl-js/issues/1569"
+            "native": "https://github.com/mapbox/mapbox-gl-native/issues/3175"
         },
         "zoom": 14,
         "center": [13.418056, 52.499167],
@@ -10,7 +10,7 @@
     },
     "point-far": {
         "ignored": {
-            "native": "https://github.com/mapbox/mapbox-gl-js/issues/1569"
+            "native": "https://github.com/mapbox/mapbox-gl-native/issues/3175"
         },
         "zoom": 14,
         "center": [13.418056, 52.499167],
