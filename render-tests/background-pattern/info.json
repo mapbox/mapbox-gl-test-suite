@@ -19,9 +19,6 @@
         "bearing": 45
     },
     "@2x": {
-        "ignored": {
-            "native": "?"
-        },
         "center": [0, 0],
         "zoom": 0,
         "width": 64,
