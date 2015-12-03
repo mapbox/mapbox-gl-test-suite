@@ -1,7 +1,6 @@
 {
     "map": {
         "ignored": {
-            "js": "https://github.com/mapbox/mapbox-gl-native/issues/1555",
             "native": "https://github.com/mapbox/mapbox-gl-native/issues/1555"
         },
         "bearing": 90,
@@ -9,7 +8,6 @@
     },
     "viewport": {
         "ignored": {
-            "js": "https://github.com/mapbox/mapbox-gl-native/issues/1555",
             "native": "https://github.com/mapbox/mapbox-gl-native/issues/1555"
         },
         "bearing": 90,

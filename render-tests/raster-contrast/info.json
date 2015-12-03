@@ -1,7 +1,6 @@
 {
     "default": {
         "ignored": {
-            "js": "https://github.com/mapbox/mapbox-gl-native/issues/1600",
             "native": "https://github.com/mapbox/mapbox-gl-native/issues/1600"
         },
         "zoom": 16,
@@ -10,7 +9,6 @@
     },
     "literal": {
         "ignored": {
-            "js": "https://github.com/mapbox/mapbox-gl-native/issues/1600",
             "native": "https://github.com/mapbox/mapbox-gl-native/issues/1600"
         },
         "zoom": 16,
@@ -20,7 +18,6 @@
     },
     "function": {
         "ignored": {
-            "js": "https://github.com/mapbox/mapbox-gl-native/issues/1600",
             "native": "https://github.com/mapbox/mapbox-gl-native/issues/1600"
         },
         "zoom": 16,
