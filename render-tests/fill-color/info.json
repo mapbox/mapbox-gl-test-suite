@@ -18,12 +18,14 @@
     },
     "opacity": {
         "ignored": {
+            "js": "?",
             "native": "https://github.com/mapbox/mapbox-gl-native/issues/1555"
         },
         "classes": ["opacity"]
     },
     "multiply": {
         "ignored": {
+            "js": "?",
             "native": "https://github.com/mapbox/mapbox-gl-native/issues/1555"
         },
         "classes": ["multiply"]
