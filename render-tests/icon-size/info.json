@@ -21,6 +21,9 @@
         "classes": ["function"]
     },
     "@2x": {
+        "ignored": {
+            "native": "?"
+        },
         "zoom": 14,
         "center": [13.418056, 52.499167],
         "height": 256,
