@@ -1,0 +1,40 @@
+{
+  "version": 8,
+  "metadata": {
+    "test": {
+      "ignored": {
+        "native": "https://github.com/mapbox/mapbox-gl-native/issues/1555"
+      },
+      "diff": 0.00011
+    }
+  },
+  "sources": {
+    "mapbox": {
+      "type": "vector",
+      "maxzoom": 14,
+      "tiles": [
+        "local://tiles/{z}-{x}-{y}.vector.pbf"
+      ]
+    }
+  },
+  "layers": [
+    {
+      "id": "background",
+      "type": "background",
+      "paint": {
+        "background-color": "white"
+      }
+    },
+    {
+      "id": "land",
+      "type": "fill",
+      "source": "mapbox",
+      "source-layer": "water",
+      "paint": {
+        "fill-color": "rgba(0,0,0,0)",
+        "fill-outline-color": "rgba(255,0,0,0.5)",
+        "fill-opacity": 0.5
+      }
+    }
+  ]
+}

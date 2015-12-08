@@ -1,0 +1,52 @@
+{
+  "version": 8,
+  "metadata": {
+    "test": {
+      "ignored": {
+        "native": "https://github.com/mapbox/mapbox-gl-native/issues/1800, https://github.com/mapbox/mapbox-gl-js/issues/1627"
+      },
+      "height": 256
+    }
+  },
+  "center": [
+    13.418056,
+    52.499167
+  ],
+  "zoom": 14,
+  "bearing": 90,
+  "sources": {
+    "mapbox": {
+      "type": "vector",
+      "maxzoom": 14,
+      "tiles": [
+        "local://tiles/{z}-{x}-{y}.vector.pbf"
+      ]
+    }
+  },
+  "sprite": "local://sprites/sprite",
+  "layers": [
+    {
+      "id": "background",
+      "type": "background",
+      "paint": {
+        "background-color": "white"
+      }
+    },
+    {
+      "id": "viewport-line",
+      "type": "symbol",
+      "source": "mapbox",
+      "source-layer": "road",
+      "layout": {
+        "symbol-placement": "line",
+        "icon-allow-overlap": true,
+        "icon-ignore-placement": true,
+        "icon-image": "restaurant-12",
+        "icon-rotation-alignment": "viewport"
+      },
+      "paint": {
+        "icon-opacity": 1
+      }
+    }
+  ]
+}
