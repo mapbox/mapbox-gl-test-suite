@@ -1,0 +1,29 @@
+{
+  "version": 8,
+  "metadata": {
+    "test": {
+      "ignored": {
+        "js": "https://github.com/mapbox/mapbox-gl-js/issues/1851"
+      },
+      "pixelRatio": 2,
+      "width": 64,
+      "height": 64
+    }
+  },
+  "center": [
+    0,
+    0
+  ],
+  "zoom": 0,
+  "sources": {},
+  "sprite": "local://sprites/1x",
+  "layers": [
+    {
+      "id": "default",
+      "type": "background",
+      "paint": {
+        "background-pattern": "icon"
+      }
+    }
+  ]
+}
