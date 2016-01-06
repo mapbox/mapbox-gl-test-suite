@@ -19,6 +19,7 @@
       ]
     }
   },
+  "sprite": "local://sprites/sprite",
   "glyphs": "local://glyphs/{fontstack}/{range}.pbf",
   "layers": [
     {
@@ -40,6 +41,9 @@
       ],
       "layout": {
         "symbol-placement": "point",
+        "icon-allow-overlap": true,
+        "icon-ignore-placement": true,
+        "icon-image": "dot.sdf",
         "text-allow-overlap": true,
         "text-ignore-placement": true,
         "text-field": "Test multiline",
@@ -56,6 +60,7 @@
         "text-anchor": "center"
       },
       "paint": {
+        "icon-opacity": 1,
         "text-opacity": 1
       }
     }
