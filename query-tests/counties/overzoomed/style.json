@@ -4,7 +4,7 @@
         "test": {
             "width": 500,
             "height": 500,
-            "at": [136, 231],
+            "at": [250, 250],
             "expected": [{
                 "type": "Feature",
                 "geometry": null,
@@ -16,8 +16,8 @@
             }]
         }
     },
-    "center": [-74.522, 39.920],
-    "zoom": 7,
+    "center": [-75.197746, 39.985046],
+    "zoom": 8,
     "sources": {
         "us-counties": {
             "type": "vector",
