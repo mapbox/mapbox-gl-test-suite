@@ -1,0 +1,41 @@
+{
+  "version": 8,
+  "metadata": {
+    "test": {
+      "diff": 0.0003
+    }
+  },
+  "center": [
+    0,
+    0
+  ],
+  "zoom": 0,
+  "sources": {
+    "trails": {
+      "type": "vector",
+      "maxzoom": 14,
+      "tiles": [
+        "local://tiles/extent-1024.vector.pbf"
+      ]
+    }
+  },
+  "layers": [
+    {
+      "id": "background",
+      "type": "background",
+      "paint": {
+        "background-color": "white"
+      }
+    },
+    {
+      "id": "trails",
+      "type": "line",
+      "source": "trails",
+      "source-layer": "trailsgeojson",
+      "paint": {
+        "line-color": "black",
+        "line-width": 1
+      }
+    }
+  ]
+}
