@@ -2,6 +2,7 @@
   "version": 8,
   "metadata": {
     "test": {
+      "diff": 0.0002,
       "height": 256
     }
   },
