@@ -14,7 +14,7 @@
       "type": "geojson",
       "data": "local://data/places.geojson",
       "cluster": true,
-      "clusterRadius": 200
+      "clusterRadius": 25
     }
   },
   "glyphs": "local://glyphs/{fontstack}/{range}.pbf",
