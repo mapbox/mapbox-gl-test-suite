@@ -1,0 +1,82 @@
+{
+    "version": 8,
+    "metadata": {
+        "test": {
+            "width": 500,
+            "height": 500,
+            "in": [[50, 70], [112, 145]],
+            "expected": [
+            {
+                "type": "Feature",
+                "geometry": null,
+                "properties": {
+                    "id": "42017",
+                    "name": "Bucks County",
+                    "pop_density": 3662.8124921176313
+                }
+            },
+            {
+                "type": "Feature",
+                "geometry": null,
+                "properties": {
+                    "id": "42091",
+                    "name": "Montgomery County",
+                    "pop_density": 5992.125506526473
+                }
+            },
+            {
+                "type": "Feature",
+                "geometry": null,
+                "properties": {
+                    "id": "42095",
+                    "name": "Northampton County",
+                    "pop_density": 2856.497509082138
+                }
+            },
+            {
+                "type": "Feature",
+                "geometry": null,
+                "properties": {
+                    "id": "42077",
+                    "name": "Lehigh County",
+                    "pop_density": 3641.4496469459136
+                }
+            },
+            {
+                "type": "Feature",
+                "geometry": null,
+                "properties": {
+                    "id": "42011",
+                    "name": "Berks County",
+                    "pop_density": 1729.3147920831748
+                }
+            }
+
+            ]
+        }
+    },
+    "center": [-74.522, 39.920],
+    "zoom": 7,
+    "sources": {
+        "us-counties": {
+            "type": "vector",
+            "maxzoom": 7,
+            "minzoom": 7,
+            "tiles": [
+                "local://tiles/counties-{z}-{x}-{y}.vector.pbf"
+            ]
+        }
+    },
+    "layers": [
+        {
+            "id": "counties",
+            "type": "fill",
+            "source": "us-counties",
+            "source-layer": "counties",
+            "paint": {
+                "fill-outline-color": "white"
+            },
+            "interactive": true
+        }
+    ]
+}
