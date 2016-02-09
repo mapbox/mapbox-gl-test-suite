@@ -1,0 +1,43 @@
+{
+    "version": 8,
+    "metadata": {
+        "test": {
+            "width": 500,
+            "height": 500,
+            "at": [136, 231],
+            "expected": [{
+                "type": "Feature",
+                "geometry": null,
+                "properties": {
+                    "id": "42101",
+                    "name": "Philadelphia County",
+                    "pop_density": 39142.52658375366
+                }
+            }]
+        }
+    },
+    "center": [-74.522, 39.920],
+    "zoom": 7,
+    "sources": {
+        "us-counties": {
+            "type": "vector",
+            "maxzoom": 7,
+            "minzoom": 7,
+            "tiles": [
+                "local://tiles/counties-{z}-{x}-{y}.vector.pbf"
+            ]
+        }
+    },
+    "layers": [
+        {
+            "id": "counties",
+            "type": "fill",
+            "source": "us-counties",
+            "source-layer": "counties",
+            "paint": {
+                "fill-outline-color": "white"
+            },
+            "interactive": true
+        }
+    ]
+}

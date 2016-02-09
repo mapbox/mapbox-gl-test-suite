@@ -4,16 +4,8 @@
         "test": {
             "width": 500,
             "height": 500,
-            "at": [136, 231],
-            "expected": [{
-                "type": "Feature",
-                "geometry": null,
-                "properties": {
-                    "id": "42101",
-                    "name": "Philadelphia County",
-                    "pop_density": 39142.52658375366
-                }
-            }]
+            "at": [376, 270],
+            "expected": []
         }
     },
     "center": [-74.522, 39.920],
@@ -34,6 +26,10 @@
             "type": "line",
             "source": "us-counties",
             "source-layer": "counties",
+            "paint": {
+                "line-translate": [40, 20],
+                "line-width": 10
+            },
             "interactive": true
         }
     ]

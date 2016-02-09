@@ -1,0 +1,46 @@
+{
+    "version": 8,
+    "metadata": {
+        "test": {
+            "width": 500,
+            "height": 500,
+            "at": [136, 231],
+            "expected": [{
+                "type": "Feature",
+                "geometry": null,
+                "properties": {
+                    "id": "42017",
+                    "name": "Bucks County",
+                    "pop_density": 3662.8124921176313
+                }
+            }]
+        }
+    },
+    "center": [-74.522, 39.920],
+    "bearing": 45,
+    "zoom": 8,
+    "sources": {
+        "us-counties": {
+            "type": "vector",
+            "maxzoom": 7,
+            "minzoom": 7,
+            "tiles": [
+                "local://tiles/counties-{z}-{x}-{y}.vector.pbf"
+            ]
+        }
+    },
+    "layers": [
+        {
+            "id": "counties",
+            "type": "fill",
+            "source": "us-counties",
+            "source-layer": "counties",
+            "paint": {
+                "fill-translate": [100, 100],
+                "fill-translate-anchor": "map",
+                "fill-outline-color": "white"
+            },
+            "interactive": true
+        }
+    ]
+}

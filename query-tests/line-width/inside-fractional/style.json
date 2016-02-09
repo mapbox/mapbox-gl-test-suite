@@ -4,20 +4,20 @@
         "test": {
             "width": 500,
             "height": 500,
-            "at": [250, 250],
+            "at": [407, 250],
             "expected": [{
                 "type": "Feature",
                 "geometry": null,
                 "properties": {
-                    "id": "42101",
-                    "name": "Philadelphia County",
-                    "pop_density": 39142.52658375366
+                    "id": "34029",
+                    "name": "Ocean County",
+                    "pop_density": 2310.250993696356
                 }
             }]
         }
     },
-    "center": [-75.197746, 39.985046],
-    "zoom": 8,
+    "center": [-74.522, 39.920],
+    "zoom": 7.8,
     "sources": {
         "us-counties": {
             "type": "vector",
@@ -34,6 +34,9 @@
             "type": "line",
             "source": "us-counties",
             "source-layer": "counties",
+            "paint": {
+                "line-width": 10
+            },
             "interactive": true
         }
     ]
