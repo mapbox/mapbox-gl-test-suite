@@ -1,0 +1,64 @@
+{
+    "version": 8,
+    "metadata": {
+        "test": {
+            "width": 500,
+            "height": 500,
+            "in": [[260, 90], [280, 110]],
+            "expected": [
+            {
+                "type": "Feature",
+                "geometry": null,
+                "properties": {
+                    "id": "34023",
+                    "name": "Middlesex County",
+                    "pop_density": 9125.349561913852
+                }
+            },
+            {
+                "type": "Feature",
+                "geometry": null,
+                "properties": {
+                    "id": "34025",
+                    "name": "Monmouth County",
+                    "pop_density": 3454.220015794825
+                }
+            },
+            {
+                "type": "Feature",
+                "geometry": null,
+                "properties": {
+                    "id": "34021",
+                    "name": "Mercer County",
+                    "pop_density": 5838.068064207171
+                }
+            }
+            ]
+        }
+    },
+    "center": [-74.522, 39.920],
+    "zoom": 9,
+    "pitch": 50,
+    "sources": {
+        "us-counties": {
+            "type": "vector",
+            "maxzoom": 7,
+            "minzoom": 7,
+            "tiles": [
+                "local://tiles/counties-{z}-{x}-{y}.vector.pbf"
+            ]
+        }
+    },
+    "layers": [
+        {
+            "id": "counties",
+            "type": "fill",
+            "source": "us-counties",
+            "source-layer": "counties",
+            "paint": {
+                "fill-outline-color": "white"
+            },
+            "interactive": true
+        }
+    ]
+}
