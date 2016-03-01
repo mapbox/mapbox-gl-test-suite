@@ -15,7 +15,7 @@
       "type": "vector",
       "maxzoom": 14,
       "tiles": [
-        "local://tiles/extent-1024.vector.pbf"
+        "local://tiles/extent-1024.mvt"
       ]
     }
   },
