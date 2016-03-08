@@ -4,19 +4,16 @@
         "test": {
             "width": 500,
             "height": 500,
-            "at": [338, 250],
-            "expected": [{
-                "type": "Feature",
-                "geometry": null,
-                "properties": {
-                    "id": "34029",
-                    "name": "Ocean County",
-                    "pop_density": 2310.250993696356
-                }
-            }]
+            "queryGeometry": [
+                338,
+                250
+            ]
         }
     },
-    "center": [-74.522, 39.920],
+    "center": [
+        -74.522,
+        39.92
+    ],
     "zoom": 7,
     "sources": {
         "us-counties": {

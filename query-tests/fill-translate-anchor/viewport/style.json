@@ -4,19 +4,16 @@
         "test": {
             "width": 500,
             "height": 500,
-            "at": [136, 231],
-            "expected": [{
-                "type": "Feature",
-                "geometry": null,
-                "properties": {
-                    "id": "34035",
-                    "name": "Somerset County",
-                    "pop_density": 3852.3524267234866
-                }
-            }]
+            "queryGeometry": [
+                136,
+                231
+            ]
         }
     },
-    "center": [-74.522, 39.920],
+    "center": [
+        -74.522,
+        39.92
+    ],
     "bearing": 45,
     "zoom": 8,
     "sources": {
@@ -36,7 +33,10 @@
             "source": "us-counties",
             "source-layer": "counties",
             "paint": {
-                "fill-translate": [100, 100],
+                "fill-translate": [
+                    100,
+                    100
+                ],
                 "fill-translate-anchor": "viewport",
                 "fill-outline-color": "white"
             },

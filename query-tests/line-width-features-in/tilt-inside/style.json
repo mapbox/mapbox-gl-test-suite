@@ -4,33 +4,22 @@
         "test": {
             "width": 500,
             "height": 500,
-            "in": [
-                [388, 470],
-                [438, 490]
-            ],
-            "expected": [
-            {
-                "type": "Feature",
-                "geometry": null,
-                "properties": {
-                    "id": "34005",
-                    "name": "Burlington County",
-                    "pop_density": 2007.2920458152796
-                }
-            },
-            {
-                "type": "Feature",
-                "geometry": null,
-                "properties": {
-                    "id": "34029",
-                    "name": "Ocean County",
-                    "pop_density": 2310.250993696356
-                }
-            }
+            "queryGeometry": [
+                [
+                    388,
+                    470
+                ],
+                [
+                    438,
+                    490
+                ]
             ]
         }
     },
-    "center": [-74.522, 39.920],
+    "center": [
+        -74.522,
+        39.92
+    ],
     "pitch": 50,
     "zoom": 9,
     "sources": {

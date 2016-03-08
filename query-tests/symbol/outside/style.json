@@ -5,11 +5,16 @@
             "collisionDebug": true,
             "width": 500,
             "height": 500,
-            "at": [296, 271],
-            "expected": []
+            "queryGeometry": [
+                296,
+                271
+            ]
         }
     },
-    "center": [-74.522, 39.920],
+    "center": [
+        -74.522,
+        39.92
+    ],
     "zoom": 7,
     "sources": {
         "us-counties": {

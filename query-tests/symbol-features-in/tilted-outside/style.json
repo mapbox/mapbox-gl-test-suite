@@ -5,15 +5,22 @@
             "collisionDebug": true,
             "width": 500,
             "height": 500,
-            "in": [
-                [230, 250],
-                [300, 300]
-            ],
-            "expected": [
+            "queryGeometry": [
+                [
+                    230,
+                    250
+                ],
+                [
+                    300,
+                    300
+                ]
             ]
         }
     },
-    "center": [-74.522, 39.920],
+    "center": [
+        -74.522,
+        39.92
+    ],
     "zoom": 9,
     "pitch": 40,
     "sources": {

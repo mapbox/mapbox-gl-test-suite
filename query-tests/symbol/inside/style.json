@@ -5,21 +5,16 @@
             "collisionDebug": true,
             "width": 500,
             "height": 500,
-            "at": [266, 271],
-            "expected": [
-            {
-                "type": "Feature",
-                "geometry": null,
-                "properties": {
-                    "id": "34005",
-                    "name": "Burlington County",
-                    "pop_density": 2007.2920458152796
-                }
-            }
+            "queryGeometry": [
+                266,
+                271
             ]
         }
     },
-    "center": [-74.522, 39.920],
+    "center": [
+        -74.522,
+        39.92
+    ],
     "zoom": 7,
     "sources": {
         "us-counties": {

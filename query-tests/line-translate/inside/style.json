@@ -4,19 +4,16 @@
         "test": {
             "width": 500,
             "height": 500,
-            "at": [378, 270],
-            "expected": [{
-                "type": "Feature",
-                "geometry": null,
-                "properties": {
-                    "id": "34029",
-                    "name": "Ocean County",
-                    "pop_density": 2310.250993696356
-                }
-            }]
+            "queryGeometry": [
+                378,
+                270
+            ]
         }
     },
-    "center": [-74.522, 39.920],
+    "center": [
+        -74.522,
+        39.92
+    ],
     "zoom": 7,
     "sources": {
         "us-counties": {
@@ -35,7 +32,10 @@
             "source": "us-counties",
             "source-layer": "counties",
             "paint": {
-                "line-translate": [40, 20],
+                "line-translate": [
+                    40,
+                    20
+                ],
                 "line-width": 10
             },
             "interactive": true

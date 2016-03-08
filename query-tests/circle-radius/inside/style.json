@@ -1,59 +1,38 @@
 {
-  "version": 8,
-  "metadata": {
-    "test": {
-      "height": 256,
-      "at": [10, 100],
-      "expected": [
-          {
-              "type": "Feature",
-              "geometry": null,
-              "properties": {
-                  "class": "main",
-                  "oneway": 0,
-                  "osm_id": 4612696,
-                  "type": "secondary"
-              },
-              "id": 4612696
-          },
-          {
-              "type": "Feature",
-              "geometry": null,
-              "properties": {
-                  "class": "street",
-                  "oneway": 0,
-                  "osm_id": 4612752,
-                  "type": "residential"
-              },
-              "id": 4612752
-          }
-      ]
-    }
-  },
-  "center": [
-    13.418056,
-    52.499167
-  ],
-  "zoom": 14,
-  "sources": {
-    "mapbox": {
-      "type": "vector",
-      "maxzoom": 14,
-      "tiles": [
-        "local://tiles/{z}-{x}-{y}.vector.pbf"
-      ]
-    }
-  },
-  "layers": [
-    {
-      "id": "road",
-      "type": "circle",
-      "source": "mapbox",
-      "source-layer": "road",
-      "paint": {
-          "circle-radius": 10
-      },
-      "interactive": true
-    }
-  ]
+    "version": 8,
+    "metadata": {
+        "test": {
+            "height": 256,
+            "queryGeometry": [
+                10,
+                100
+            ]
+        }
+    },
+    "center": [
+        13.418056,
+        52.499167
+    ],
+    "zoom": 14,
+    "sources": {
+        "mapbox": {
+            "type": "vector",
+            "maxzoom": 14,
+            "tiles": [
+                "local://tiles/{z}-{x}-{y}.vector.pbf"
+            ]
+        }
+    },
+    "layers": [
+        {
+            "id": "road",
+            "type": "circle",
+            "source": "mapbox",
+            "source-layer": "road",
+            "paint": {
+                "circle-radius": 10
+            },
+            "interactive": true
+        }
+    ]
 }

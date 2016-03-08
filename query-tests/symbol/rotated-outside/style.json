@@ -5,12 +5,16 @@
             "collisionDebug": true,
             "width": 500,
             "height": 500,
-            "at": [366, 321],
-            "expected": [
+            "queryGeometry": [
+                366,
+                321
             ]
         }
     },
-    "center": [-74.522, 39.920],
+    "center": [
+        -74.522,
+        39.92
+    ],
     "zoom": 8,
     "bearing": 45,
     "sources": {

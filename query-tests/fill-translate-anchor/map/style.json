@@ -4,19 +4,16 @@
         "test": {
             "width": 500,
             "height": 500,
-            "at": [136, 231],
-            "expected": [{
-                "type": "Feature",
-                "geometry": null,
-                "properties": {
-                    "id": "42017",
-                    "name": "Bucks County",
-                    "pop_density": 3662.8124921176313
-                }
-            }]
+            "queryGeometry": [
+                136,
+                231
+            ]
         }
     },
-    "center": [-74.522, 39.920],
+    "center": [
+        -74.522,
+        39.92
+    ],
     "bearing": 45,
     "zoom": 8,
     "sources": {
@@ -36,7 +33,10 @@
             "source": "us-counties",
             "source-layer": "counties",
             "paint": {
-                "fill-translate": [100, 100],
+                "fill-translate": [
+                    100,
+                    100
+                ],
                 "fill-translate-anchor": "map",
                 "fill-outline-color": "white"
             },

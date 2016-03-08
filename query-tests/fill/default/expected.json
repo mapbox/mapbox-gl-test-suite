@@ -1,0 +1,11 @@
+[
+    {
+        "type": "Feature",
+        "geometry": null,
+        "properties": {
+            "id": "42101",
+            "name": "Philadelphia County",
+            "pop_density": 39142.52658375366
+        }
+    }
+]
