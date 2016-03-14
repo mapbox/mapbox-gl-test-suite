@@ -29,6 +29,15 @@
       "paint": {
         "background-pattern": "school_striped"
       }
+    },
+    {
+      "id": "land",
+      "type": "fill",
+      "source": "mapbox",
+      "source-layer": "water",
+      "paint": {
+        "fill-color": "red"
+      }
     }
   ]
 }
