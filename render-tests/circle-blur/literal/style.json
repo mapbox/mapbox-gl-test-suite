@@ -2,7 +2,7 @@
   "version": 8,
   "metadata": {
     "test": {
-      "ignored": {
+      "aignored": {
         "js": "https://github.com/mapbox/mapbox-gl-js/issues/1702"
       },
       "height": 256
@@ -31,10 +31,10 @@
       }
     },
     {
-      "id": "road",
+      "id": "poi_label",
       "type": "circle",
       "source": "mapbox",
-      "source-layer": "road",
+      "source-layer": "poi_label",
       "paint": {
         "circle-radius": 5,
         "circle-color": "#000",

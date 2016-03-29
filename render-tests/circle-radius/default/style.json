@@ -28,10 +28,10 @@
       }
     },
     {
-      "id": "road",
+      "id": "poi_label",
       "type": "circle",
       "source": "mapbox",
-      "source-layer": "road",
+      "source-layer": "poi_label",
       "paint": {
         "circle-color": "#000"
       }
