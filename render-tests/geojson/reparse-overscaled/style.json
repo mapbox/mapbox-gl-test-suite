@@ -2,18 +2,15 @@
   "version": 8,
   "metadata": {
     "test": {
-      "ignored": {
-        "native": "https://github.com/mapbox/mapbox-gl-native/issues/3838"
-      },
       "width": 512,
       "height": 512
     }
   },
   "center": [
-      -77.04341,
-      38.90934
+      -77.0424,
+      38.90924
   ],
-  "zoom": 15,
+  "zoom": 19,
   "sources": {
     "geojson": {
       "type": "geojson",
@@ -25,7 +22,7 @@
       "id": "line",
       "type": "line",
       "source": "geojson",
-      "minzoom": 15,
+      "minzoom": 19,
       "paint": {
         "line-color": "#EC8D8D",
         "line-width": 4
