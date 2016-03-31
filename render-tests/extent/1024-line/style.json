@@ -2,7 +2,10 @@
   "version": 8,
   "metadata": {
     "test": {
-      "diff": 0.0003
+      "diff": 0.0005,
+      "ignored": {
+        "native": "needs investigation"
+      }
     }
   },
   "center": [

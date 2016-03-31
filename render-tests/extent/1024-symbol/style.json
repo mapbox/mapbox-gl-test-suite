@@ -4,7 +4,7 @@
     "test": {
         "diff": 0.003,
         "ignored": {
-            "native": "https://github.com/mapbox/mapbox-gl-native/issues/250"
+            "native": "needs investigation"
         }
     }
   },
