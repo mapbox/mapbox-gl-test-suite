@@ -47,3 +47,28 @@ npm link mapbox-gl-test-suite
 UPDATE=1 npm run test-suite
 [review and commit changes to mapbox-gl-test-suite]
 ```
+
+### Reading Vector Tile Fixtures
+
+Install `vt2geojson`, a command line utility which turns vector tiles into geojson, and `harp`, a simple file server.
+
+```
+npm install -g vt2geojson harp
+```
+
+Start a static file server
+```
+harp server .
+```
+
+Read the contents of an entire vector tile
+
+```
+vt2geojson -z 14 -y 8803 -x 5374 http://localhost:9000/tiles/14-8803-5374.vector.pbf
+```
+
+Read the contents of a particular layer in a vector tile
+
+```
+vt2geojson --layer poi_label -z 14 -y 8803 -x 5374 http://localhost:9000/tiles/14-8803-5374.vector.pbf
+```
