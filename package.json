@@ -21,7 +21,7 @@
     "st": "^0.5.5"
   },
   "devDependencies": {
-    "mapbox-gl-style-spec": "^8.2.0",
+    "mapbox-gl-style-spec": "v8.5.0",
     "sponge": "^0.1.0"
   },
   "scripts": {
