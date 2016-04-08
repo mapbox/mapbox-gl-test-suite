@@ -3,6 +3,7 @@
     "metadata": {
 
         "test": {
+            "native": false,
             "width": 2000,
             "height": 500,
             "pixelRatio": 0.25,
