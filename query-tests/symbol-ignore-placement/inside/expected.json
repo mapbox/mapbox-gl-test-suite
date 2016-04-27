@@ -1,0 +1,21 @@
+[
+{
+    "properties": {
+        "id": "34025",
+        "name": "Monmouth County",
+        "pop_density": 3454.220015794825
+    },
+    "type": "Feature",
+    "geometry": null
+},
+{
+    "properties": {
+        "id": "34029",
+        "name": "Ocean County",
+        "pop_density": 2310.250993696356
+    },
+    "type": "Feature",
+    "geometry": null
+}
+
+]
