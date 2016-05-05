@@ -2,21 +2,45 @@
   {
     "properties": {},
     "type": "Feature",
-    "geometry": null
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        0,
+        0
+      ]
+    }
   },
   {
     "properties": {},
     "type": "Feature",
-    "geometry": null
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        0,
+        0
+      ]
+    }
   },
   {
     "properties": {},
     "type": "Feature",
-    "geometry": null
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        0,
+        0
+      ]
+    }
   },
   {
     "properties": {},
     "type": "Feature",
-    "geometry": null
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        0,
+        0
+      ]
+    }
   }
 ]
