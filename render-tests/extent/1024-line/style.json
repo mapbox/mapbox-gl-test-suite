@@ -14,11 +14,11 @@
   ],
   "zoom": 0,
   "sources": {
-    "trails": {
+    "mapbox": {
       "type": "vector",
       "maxzoom": 14,
       "tiles": [
-        "local://tiles/extent-1024.vector.pbf"
+        "local://tiles/extent1024-14-8802-5374.mvt"
       ]
     }
   },
@@ -31,10 +31,10 @@
       }
     },
     {
-      "id": "trails",
+      "id": "mapbox",
       "type": "line",
-      "source": "trails",
-      "source-layer": "trailsgeojson",
+      "source": "mapbox",
+      "source-layer": "road",
       "paint": {
         "line-color": "black",
         "line-width": 1

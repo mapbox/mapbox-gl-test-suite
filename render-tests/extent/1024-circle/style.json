@@ -13,11 +13,11 @@
   ],
   "zoom": 0,
   "sources": {
-    "trails": {
+    "mapbox": {
       "type": "vector",
       "maxzoom": 14,
       "tiles": [
-        "local://tiles/extent-1024.vector.pbf"
+        "local://tiles/extent1024-14-8802-5374.mvt"
       ]
     }
   },
@@ -30,10 +30,10 @@
       }
     },
     {
-      "id": "trails",
+      "id": "mapbox",
       "type": "circle",
-      "source": "trails",
-      "source-layer": "trailsgeojson",
+      "source": "mapbox",
+      "source-layer": "poi_label",
       "paint": {
         "circle-color": "black",
         "circle-radius": 5
