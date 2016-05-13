@@ -1,0 +1,30 @@
+[
+  {
+    "properties": {
+      "id": "B"
+    },
+    "type": "Feature",
+    "geometry": null
+  },
+  {
+    "properties": {
+      "id": "C"
+    },
+    "type": "Feature",
+    "geometry": null
+  },
+  {
+    "properties": {
+      "id": "B"
+    },
+    "type": "Feature",
+    "geometry": null
+  },
+  {
+    "properties": {
+      "id": "C"
+    },
+    "type": "Feature",
+    "geometry": null
+  }
+]
