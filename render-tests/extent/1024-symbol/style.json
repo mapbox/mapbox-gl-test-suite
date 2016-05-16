@@ -16,11 +16,11 @@
   "glyphs": "local://glyphs/{fontstack}/{range}.pbf",
   "zoom": 0,
   "sources": {
-    "trails": {
+    "mapbox": {
       "type": "vector",
       "maxzoom": 14,
       "tiles": [
-        "local://tiles/extent-1024.vector.pbf"
+        "local://tiles/extent1024-14-8802-5374.mvt"
       ]
     }
   },
@@ -33,10 +33,10 @@
       }
     },
     {
-      "id": "trails",
+      "id": "mapbox",
       "type": "symbol",
-      "source": "trails",
-      "source-layer": "trailsgeojson",
+      "source": "mapbox",
+      "source-layer": "poi_label",
       "layout": {
         "icon-image": "dog-park-12",
         "text-field": "mapbox",

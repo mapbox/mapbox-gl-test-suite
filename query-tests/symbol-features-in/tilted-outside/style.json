@@ -29,7 +29,7 @@
             "maxzoom": 7,
             "minzoom": 7,
             "tiles": [
-                "local://tiles/counties-{z}-{x}-{y}.vector.pbf"
+                "local://tiles/counties-{z}-{x}-{y}.mvt"
             ]
         }
     },

@@ -64,11 +64,11 @@ harp server .
 Read the contents of an entire vector tile
 
 ```
-vt2geojson -z 14 -y 8803 -x 5374 http://localhost:9000/tiles/14-8803-5374.vector.pbf
+vt2geojson -z 14 -y 8803 -x 5374 http://localhost:9000/tiles/14-8803-5374.mvt
 ```
 
 Read the contents of a particular layer in a vector tile
 
 ```
-vt2geojson --layer poi_label -z 14 -y 8803 -x 5374 http://localhost:9000/tiles/14-8803-5374.vector.pbf
+vt2geojson --layer poi_label -z 14 -y 8803 -x 5374 http://localhost:9000/tiles/14-8803-5374.mvt
 ```

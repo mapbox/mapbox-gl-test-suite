@@ -24,7 +24,7 @@
             "type": "vector",
             "maxzoom": 14,
             "tiles": [
-                "local://tiles/{z}-{x}-{y}.vector.pbf"
+                "local://tiles/{z}-{x}-{y}.mvt"
                 ]
         }
     },

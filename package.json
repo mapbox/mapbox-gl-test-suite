@@ -21,7 +21,9 @@
     "st": "^0.5.5"
   },
   "devDependencies": {
+    "async": "^2.0.0-rc.4",
     "mapbox-gl-style-spec": "v8.5.0",
+    "mapnik": "^3.5.13",
     "sponge": "^0.1.0"
   },
   "scripts": {
