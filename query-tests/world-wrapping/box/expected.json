@@ -1,29 +1,29 @@
-[  {
+[
+  {
     "properties": {
-        "class": "shadow",
-        "level": 56
+      "class": "shadow",
+      "level": 56
     },
     "id": 958,
     "type": "Feature",
     "geometry": null
-},
-{
+  },
+  {
     "properties": {
-        "class": "shadow",
-        "level": 56
+      "class": "shadow",
+      "level": 56
     },
     "id": 957,
     "type": "Feature",
     "geometry": null
-},
-{
+  },
+  {
     "properties": {
-        "class": "shadow",
-        "level": 56
+      "class": "shadow",
+      "level": 56
     },
     "id": 956,
     "type": "Feature",
     "geometry": null
-}
+  }
 ]
-

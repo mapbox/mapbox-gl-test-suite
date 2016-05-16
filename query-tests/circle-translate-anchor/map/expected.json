@@ -1,24 +1,24 @@
 [
-    {
-        "type": "Feature",
-        "geometry": null,
-        "properties": {
-            "class": "street",
-            "oneway": 0,
-            "osm_id": 4887461,
-            "type": "residential"
-        },
-        "id": 4887461
+  {
+    "properties": {
+      "class": "street",
+      "oneway": 0,
+      "osm_id": 4887461,
+      "type": "residential"
     },
-    {
-        "type": "Feature",
-        "geometry": null,
-        "properties": {
-            "class": "street",
-            "oneway": 0,
-            "osm_id": 4612753,
-            "type": "residential"
-        },
-        "id": 4612753
-    }
+    "id": 4887461,
+    "type": "Feature",
+    "geometry": null
+  },
+  {
+    "properties": {
+      "class": "street",
+      "oneway": 0,
+      "osm_id": 4612753,
+      "type": "residential"
+    },
+    "id": 4612753,
+    "type": "Feature",
+    "geometry": null
+  }
 ]
