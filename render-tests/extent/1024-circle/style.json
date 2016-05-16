@@ -2,9 +2,9 @@
   "version": 8,
   "metadata": {
     "test": {
-        "ignored": {
-            "native": "needs investigation"
-        }
+      "ignored": {
+        "native": "needs investigation"
+      }
     }
   },
   "center": [

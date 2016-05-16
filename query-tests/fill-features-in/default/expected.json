@@ -1,52 +1,52 @@
 [
-    {
-        "properties": {
-            "id": "42017",
-            "name": "Bucks County",
-            "pop_density": 3662.8124921176313
-        },
-        "id": 24,
-        "type": "Feature",
-        "geometry": null
+  {
+    "properties": {
+      "id": "42017",
+      "name": "Bucks County",
+      "pop_density": 3662.8124921176313
     },
-    {
-        "properties": {
-            "id": "42091",
-            "name": "Montgomery County",
-            "pop_density": 5992.125506526473
-        },
-        "id": 18,
-        "type": "Feature",
-        "geometry": null
+    "id": 24,
+    "type": "Feature",
+    "geometry": null
+  },
+  {
+    "properties": {
+      "id": "42091",
+      "name": "Montgomery County",
+      "pop_density": 5992.125506526473
     },
-    {
-        "properties": {
-            "id": "42095",
-            "name": "Northampton County",
-            "pop_density": 2856.497509082138
-        },
-        "id": 16,
-        "type": "Feature",
-        "geometry": null
+    "id": 18,
+    "type": "Feature",
+    "geometry": null
+  },
+  {
+    "properties": {
+      "id": "42095",
+      "name": "Northampton County",
+      "pop_density": 2856.497509082138
     },
-    {
-        "properties": {
-            "id": "42077",
-            "name": "Lehigh County",
-            "pop_density": 3641.4496469459136
-        },
-        "id": 15,
-        "type": "Feature",
-        "geometry": null
+    "id": 16,
+    "type": "Feature",
+    "geometry": null
+  },
+  {
+    "properties": {
+      "id": "42077",
+      "name": "Lehigh County",
+      "pop_density": 3641.4496469459136
     },
-    {
-        "properties": {
-            "id": "42011",
-            "name": "Berks County",
-            "pop_density": 1729.3147920831748
-        },
-        "id": 9,
-        "type": "Feature",
-        "geometry": null
-    }
+    "id": 15,
+    "type": "Feature",
+    "geometry": null
+  },
+  {
+    "properties": {
+      "id": "42011",
+      "name": "Berks County",
+      "pop_density": 1729.3147920831748
+    },
+    "id": 9,
+    "type": "Feature",
+    "geometry": null
+  }
 ]

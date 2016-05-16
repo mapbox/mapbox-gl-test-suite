@@ -1,12 +1,12 @@
 [
-    {
-        "properties": {
-            "id": "34035",
-            "name": "Somerset County",
-            "pop_density": 3852.3524267234866
-        },
-        "id": 23,
-        "type": "Feature",
-        "geometry": null
-    }
+  {
+    "properties": {
+      "id": "34035",
+      "name": "Somerset County",
+      "pop_density": 3852.3524267234866
+    },
+    "id": 23,
+    "type": "Feature",
+    "geometry": null
+  }
 ]

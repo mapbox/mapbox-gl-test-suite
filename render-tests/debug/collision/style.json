@@ -3,8 +3,8 @@
   "metadata": {
     "test": {
       "ignored": {
-          "native": "https://github.com/mapbox/mapbox-gl-native/issues/3841",
-          "js": "https://github.com/mapbox/mapbox-gl-js/issues/2087"
+        "native": "https://github.com/mapbox/mapbox-gl-native/issues/3841",
+        "js": "https://github.com/mapbox/mapbox-gl-js/issues/2087"
       },
       "collisionDebug": true,
       "height": 256
@@ -43,8 +43,8 @@
         "icon-image": "triangle-stroked-12",
         "text-field": "test test",
         "text-font": [
-            "Open Sans Semibold",
-            "Arial Unicode MS Bold"
+          "Open Sans Semibold",
+          "Arial Unicode MS Bold"
         ],
         "symbol-placement": "point",
         "symbol-spacing": 20

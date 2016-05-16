@@ -5,8 +5,8 @@
   },
   "zoom": 0.99,
   "center": [
-      0.7,
-      0
+    0.7,
+    0
   ],
   "sources": {
     "mapbox": {
