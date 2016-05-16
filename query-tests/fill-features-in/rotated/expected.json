@@ -1,32 +1,32 @@
 [
-  {
-    "properties": {
-      "id": "34023",
-      "name": "Middlesex County",
-      "pop_density": 9125.349561913852
+    {
+        "properties": {
+            "id": "34023",
+            "name": "Middlesex County",
+            "pop_density": 9125.349561913852
+        },
+        "id": 46,
+        "type": "Feature",
+        "geometry": null
     },
-    "id": 46,
-    "type": "Feature",
-    "geometry": null
-  },
-  {
-    "properties": {
-      "id": "34021",
-      "name": "Mercer County",
-      "pop_density": 5838.068064207171
+    {
+        "properties": {
+            "id": "34021",
+            "name": "Mercer County",
+            "pop_density": 5838.068064207171
+        },
+        "id": 26,
+        "type": "Feature",
+        "geometry": null
     },
-    "id": 26,
-    "type": "Feature",
-    "geometry": null
-  },
-  {
-    "properties": {
-      "id": "34035",
-      "name": "Somerset County",
-      "pop_density": 3852.3524267234866
-    },
-    "id": 23,
-    "type": "Feature",
-    "geometry": null
-  }
+    {
+        "properties": {
+            "id": "34035",
+            "name": "Somerset County",
+            "pop_density": 3852.3524267234866
+        },
+        "id": 23,
+        "type": "Feature",
+        "geometry": null
+    }
 ]
