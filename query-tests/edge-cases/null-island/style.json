@@ -6,8 +6,14 @@
       "height": 512,
       "debug": true,
       "queryGeometry": [
-        [0, 0],
-        [512, 512]
+        [
+          0,
+          0
+        ],
+        [
+          512,
+          512
+        ]
       ]
     }
   },
@@ -21,7 +27,10 @@
       "type": "geojson",
       "data": {
         "type": "Point",
-        "coordinates": [0, 0]
+        "coordinates": [
+          0,
+          0
+        ]
       }
     }
   },

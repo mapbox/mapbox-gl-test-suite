@@ -2,7 +2,7 @@
   "version": 8,
   "metadata": {
     "test": {
-      "height": 256 
+      "height": 256
     }
   },
   "center": [
@@ -48,7 +48,10 @@
       "source": "geojson",
       "paint": {
         "line-color": "#000",
-        "line-dasharray": [1, 1],
+        "line-dasharray": [
+          1,
+          1
+        ],
         "line-width": 50
       }
     }

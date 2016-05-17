@@ -16,7 +16,10 @@
       "type": "geojson",
       "data": {
         "type": "Model",
-        "geometry": [ -77.050327, 38.909634 ],
+        "geometry": [
+          -77.050327,
+          38.909634
+        ],
         "properties": {
           "name": "P Street Northwest - Massachusetts Avenue Northwest"
         }
