@@ -3,7 +3,10 @@
   "metadata": {
     "test": {
       "height": 256,
-      "diff": 0.003
+      "diff": 0.003,
+      "ignored": {
+        "native": "needs investigation"
+      }
     }
   },
   "center": [
