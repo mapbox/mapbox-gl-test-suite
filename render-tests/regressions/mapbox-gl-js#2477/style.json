@@ -7,7 +7,8 @@
       },
       "operations": [
         ["addClass", "mapbox", {"transition": false}],
-        ["setPaintProperty", "land", "fill-pattern", "zoo_icon"]
+        ["setPaintProperty", "land", "fill-pattern", "zoo_icon"],
+        ["wait"]
       ]
     }
   },

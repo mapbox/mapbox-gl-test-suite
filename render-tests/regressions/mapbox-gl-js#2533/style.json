@@ -6,7 +6,8 @@
         "native": "https://github.com/mapbox/mapbox-gl-native/issues/4593"
       },
       "operations": [
-        ["setPaintProperty", "land", "fill-pattern", "zoo_icon"]
+        ["setPaintProperty", "land", "fill-pattern", "zoo_icon"],
+        ["wait"]
       ]
     }
   },
