@@ -5,8 +5,7 @@
       "ignored": {
         "native": "https://github.com/mapbox/mapbox-gl-native/issues/3841"
       },
-      "showOverdrawInspector": true,
-      "height": 256
+      "showOverdrawInspector": true
     }
   },
   "center": [
@@ -34,23 +33,10 @@
       }
     },
     {
-      "id": "line",
-      "type": "symbol",
+      "id": "road",
+      "type": "line",
       "source": "mapbox",
-      "source-layer": "road_label",
-      "layout": {
-        "icon-image": "triangle-stroked-12",
-        "text-field": "test test",
-        "text-font": [
-          "Open Sans Semibold",
-          "Arial Unicode MS Bold"
-        ],
-        "symbol-placement": "point",
-        "symbol-spacing": 20
-      },
-      "paint": {
-        "icon-opacity": 1
-      }
+      "source-layer": "road"
     }
   ]
 }
