@@ -1,0 +1,58 @@
+{
+  "version": 8,
+  "metadata": {
+    "test": {
+      "ignored": {
+        "native": "https://github.com/mapbox/mapbox-gl-native/issues/1555"
+      }
+    }
+  },
+  "center": [
+    13.418056,
+    52.499167
+  ],
+  "zoom": 14,
+  "sources": {
+    "mapbox": {
+      "type": "vector",
+      "maxzoom": 14,
+      "tiles": [
+        "local://tiles/{z}-{x}-{y}.mvt"
+      ]
+    }
+  },
+  "layers": [
+    {
+      "id": "background",
+      "type": "background",
+      "paint": {
+        "background-color": "white"
+      }
+    },
+    {
+      "id": "land",
+      "type": "fill",
+      "source": "mapbox",
+      "source-layer": "building",
+      "paint": {
+        "fill-color": "#000",
+        "fill-outline-color": {
+            "property": "osm_id",
+            "stops": [
+                [1000100000000, "#15a52f"],
+                [1000110000000, "#b0c93f"],
+                [1000120000000, "#74cf8a"],
+                [1000130000000, "#49250c"],
+                [1000140000000, "#dc6f5c"],
+                [1000150000000, "#ca445e"],
+                [1000160000000, "#bde234"],
+                [1000170000000, "#3e1705"],
+                [1000180000000, "#6573d1"],
+                [1000190000000, "#e3a8c5"],
+                [1000200000000, "#068867"]
+            ]
+        }
+      }
+    }
+  ]
+}
