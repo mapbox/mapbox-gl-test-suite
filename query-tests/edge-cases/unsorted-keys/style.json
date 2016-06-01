@@ -2,11 +2,11 @@
   "version": 8,
   "metadata": {
     "test": {
-      "width": 512,
-      "height": 512,
+      "width": 8,
+      "height": 8,
       "queryGeometry": [
-        256,
-        256
+        4,
+        4
       ]
     }
   },
