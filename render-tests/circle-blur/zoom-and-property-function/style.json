@@ -3,7 +3,9 @@
   "metadata": {
     "test": {
       "ignored": {
-        "native": "https://github.com/mapbox/mapbox-gl-native/issues/4860"
+        "native": "https://github.com/mapbox/mapbox-gl-native/issues/4860",
+        "js": "https://github.com/mapbox/mapbox-gl-js/issues/1702"
+
       },
       "height": 256
     }
@@ -36,8 +38,7 @@
       "source": "mapbox",
       "source-layer": "poi_label",
       "paint": {
-        "circle-opacity": {
-          "base": 1,
+        "circle-blur": {
           "stops": [
             [
               {
@@ -51,21 +52,21 @@
                 "zoom": 13.9,
                 "value": 50
               },
-              0.75
+              10
             ],
             [
               {
                 "zoom": 14.2,
                 "value": 0
               },
-              0.25
+              5
             ],
             [
               {
                 "zoom": 14.2,
                 "value": 50
               },
-              1
+              15
             ]
           ],
           "property": "localrank"
