@@ -6,41 +6,13 @@
       "height": 64
     }
   },
-  "center": [
-    0,
-    0
-  ],
-  "zoom": 0,
-  "sources": {
-    "mapbox": {
-      "type": "vector",
-      "maxzoom": 14,
-      "tiles": [
-        "local://tiles/{z}-{x}-{y}.mvt"
-      ]
-    }
-  },
+  "sources": {},
   "layers": [
     {
-      "id": "background-visible",
+      "id": "background",
       "type": "background",
       "layout": {
         "visibility": "visible"
-      },
-      "paint": {
-        "background-color": "red",
-        "background-opacity": 1
-      }
-    },
-    {
-      "id": "background-none",
-      "type": "background",
-      "layout": {
-        "visibility": "none"
-      },
-      "paint": {
-        "background-color": "red",
-        "background-opacity": 0
       }
     }
   ]
