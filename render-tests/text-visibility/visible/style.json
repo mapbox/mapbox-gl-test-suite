@@ -10,7 +10,6 @@
     52.499167
   ],
   "zoom": 14,
-  "bearing": 90,
   "sources": {
     "mapbox": {
       "type": "vector",
@@ -30,26 +29,17 @@
       }
     },
     {
-      "id": "icon-visible",
+      "id": "icon",
       "type": "symbol",
       "source": "mapbox",
       "source-layer": "poi_label",
-      "filter": [
-        "==",
-        "maki",
-        "restaurant"
-      ],
       "layout": {
-        "symbol-placement": "point",
         "text-field": "Test",
         "text-font": [
           "Open Sans Semibold",
           "Arial Unicode MS Bold"
         ],
-        "visibility": "visible"
-      },
-      "paint": {
-        "text-opacity": 1
+        "symbol-placement": "point"
       }
     }
   ]

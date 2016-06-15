@@ -32,41 +32,13 @@
       }
     },
     {
-      "id": "icon-visible",
+      "id": "icon",
       "type": "symbol",
       "source": "mapbox",
       "source-layer": "poi_label",
-      "filter": [
-        "==",
-        "maki",
-        "restaurant"
-      ],
       "layout": {
         "icon-image": "{maki}-12",
-        "symbol-placement": "point",
-        "visibility": "visible"
-      },
-      "paint": {
-        "icon-opacity": 1
-      }
-    },
-    {
-      "id": "icon-none",
-      "type": "symbol",
-      "source": "mapbox",
-      "source-layer": "poi_label",
-      "filter": [
-        "==",
-        "maki",
-        "restaurant"
-      ],
-      "layout": {
-        "icon-image": "{maki}-12",
-        "symbol-placement": "point",
-        "visibility": "none"
-      },
-      "paint": {
-        "icon-opacity": 0
+        "symbol-placement": "point"
       }
     }
   ]
