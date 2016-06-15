@@ -35,6 +35,10 @@
       "source-layer": "poi_label",
       "layout": {
         "text-field": "Test",
+        "text-font": [
+          "Open Sans Semibold",
+          "Arial Unicode MS Bold"
+        ],
         "symbol-placement": "point",
         "visibility": "none"
       }
