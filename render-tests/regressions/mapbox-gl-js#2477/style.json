@@ -2,6 +2,9 @@
   "version": 8,
   "metadata": {
     "test": {
+      "ignored": {
+        "native": "https://github.com/mapbox/mapbox-gl-native/issues/1555"
+      },
       "operations": [
         ["addClass", "mapbox", {"transition": false}],
         ["setPaintProperty", "land", "fill-pattern", "zoo_icon"],
