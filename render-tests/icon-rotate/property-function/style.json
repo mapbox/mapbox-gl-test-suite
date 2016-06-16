@@ -2,7 +2,10 @@
   "version": 8,
   "metadata": {
     "test": {
-      "height": 256
+      "height": 256,
+      "ignored": {
+        "native": "https://github.com/mapbox/mapbox-gl-native/issues/1555"
+      }
     }
   },
   "center": [
@@ -33,6 +36,7 @@
       "type": "symbol",
       "source": "mapbox",
       "source-layer": "poi_label",
+      "filter": ["has", "maki"],
       "layout": {
         "symbol-placement": "point",
         "icon-allow-overlap": true,

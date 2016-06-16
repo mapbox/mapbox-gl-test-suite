@@ -33,6 +33,7 @@
       "type": "symbol",
       "source": "mapbox",
       "source-layer": "poi_label",
+      "filter": ["has", "maki"],
       "layout": {
         "icon-image": "{maki}-12",
         "symbol-placement": "point",
