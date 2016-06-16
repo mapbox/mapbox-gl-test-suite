@@ -8,6 +8,11 @@
       }
     }
   },
+  "center": [
+    13.418056,
+    52.499167
+  ],
+  "zoom": 14,
   "sources": {
     "mapbox": {
       "type": "vector",
@@ -29,9 +34,17 @@
       "id": "land",
       "type": "fill",
       "source": "mapbox",
-      "source-layer": "water",
+      "source-layer": "building",
       "paint": {
-        "fill-opacity": 0.3
+        "fill-opacity": {
+            "property": "osm_id",
+            "stops": [
+                [{"zoom": 0, "value": 1000100000000}, 0.25],
+                [{"zoom": 0, "value": 1000200000000}, 0.75],
+                [{"zoom": 20, "value": 1000100000000}, 0.5],
+                [{"zoom": 20, "value": 1000200000000}, 1]
+            ]
+        }
       }
     }
   ]
