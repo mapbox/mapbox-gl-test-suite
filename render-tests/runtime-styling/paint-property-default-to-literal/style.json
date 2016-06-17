@@ -5,10 +5,20 @@
       "width": 64,
       "height": 64,
       "operations": [
-        ["setPaintProperty", "background", "background-color", "red"],
-        ["wait"]
+        [
+          "setPaintProperty",
+          "background",
+          "background-color",
+          "red"
+        ],
+        [
+          "wait"
+        ]
       ]
     }
+  },
+  "transition": {
+    "duration": 0
   },
   "sources": {},
   "layers": [
