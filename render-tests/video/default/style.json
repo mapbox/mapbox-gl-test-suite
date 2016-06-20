@@ -47,7 +47,9 @@
       "id": "video",
       "type": "raster",
       "source": "video",
-      "paint": {}
+      "paint": {
+        "raster-fade-duration": 0
+      }
     }
   ]
 }
