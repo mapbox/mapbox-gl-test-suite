@@ -1,0 +1,38 @@
+{
+  "version": 8,
+  "metadata": {
+    "test": {
+      "width": 64,
+      "height": 64,
+      "operations": [
+        [
+          "addSource",
+          "raster",
+          {
+            "type": "raster",
+            "tiles": [
+              "local://tiles/{z}-{x}-{y}.satellite.jpeg"
+            ],
+            "tileSize": 256
+          }
+        ],
+        [
+          "addLayer",
+          {
+            "id": "raster",
+            "type": "raster",
+            "source": "raster"
+          }
+        ],
+        [
+          "wait"
+        ]
+      ]
+    }
+  },
+  "transition": {
+    "duration": 0
+  },
+  "sources": {},
+  "layers": []
+}
