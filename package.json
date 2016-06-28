@@ -28,6 +28,7 @@
   },
   "scripts": {
     "migrate": "for file in tests/*/style.json; do gl-style-migrate $file | sponge $file; done",
-    "jsonlint": "find . -not \\( -path ./node_modules -prune \\) -name \"*.json\" | xargs -n 1 -t jsonlint --in-place --indent \"  \""
+    "jsonlint": "find . -not \\( -path ./node_modules -prune \\) -name \"*.json\" | xargs -n 1 -t jsonlint --in-place --indent \"  \"",
+    "clean": "find *-tests -mindepth 2 -type d  -not \\( -exec test -e \"{}/style.json\" \\; \\) -print | xargs -t rm -r"
   }
 }
