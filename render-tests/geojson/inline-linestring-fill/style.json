@@ -3,7 +3,11 @@
   "metadata": {
     "test": {
       "width": 64,
-      "height": 64
+      "height": 64,
+      "ignored": {
+        "js": "current behavior is arbitrary",
+        "native": "current behavior is arbitrary"
+      }
     }
   },
   "transition": {
