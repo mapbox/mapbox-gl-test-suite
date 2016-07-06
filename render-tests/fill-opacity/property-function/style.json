@@ -2,46 +2,142 @@
   "version": 8,
   "metadata": {
     "test": {
+      "width": 64,
+      "height": 64,
       "ignored": {
-        "js": "https://github.com/mapbox/mapbox-gl-js/issues/1702",
+        "js": "https://github.com/mapbox/mapbox-gl-js/issues/2828",
         "native": "https://github.com/mapbox/mapbox-gl-native/issues/1555"
       }
     }
   },
-  "center": [
-    13.418056,
-    52.499167
-  ],
-  "zoom": 14,
   "sources": {
-    "mapbox": {
-      "type": "vector",
-      "maxzoom": 14,
-      "tiles": [
-        "local://tiles/{z}-{x}-{y}.mvt"
-      ]
+    "geojson": {
+      "type": "geojson",
+      "data": {
+        "type": "FeatureCollection",
+        "features": [
+          {
+            "type": "Feature",
+            "properties": {
+              "property": 0
+            },
+            "geometry": {
+              "type": "Polygon",
+              "coordinates": [
+                [
+                  [
+                    -12,
+                    -12
+                  ],
+                  [
+                    -12,
+                    12
+                  ],
+                  [
+                    -4,
+                    12
+                  ],
+                  [
+                    -4,
+                    -12
+                  ],
+                  [
+                    -12,
+                    -12
+                  ]
+                ]
+              ]
+            }
+          },
+          {
+            "type": "Feature",
+            "properties": {
+              "property": 1
+            },
+            "geometry": {
+              "type": "Polygon",
+              "coordinates": [
+                [
+                  [
+                    -4,
+                    -12
+                  ],
+                  [
+                    -4,
+                    12
+                  ],
+                  [
+                    4,
+                    12
+                  ],
+                  [
+                    4,
+                    -12
+                  ],
+                  [
+                    -4,
+                    -12
+                  ]
+                ]
+              ]
+            }
+          },
+          {
+            "type": "Feature",
+            "properties": {
+              "property": 2
+            },
+            "geometry": {
+              "type": "Polygon",
+              "coordinates": [
+                [
+                  [
+                    4,
+                    -12
+                  ],
+                  [
+                    4,
+                    12
+                  ],
+                  [
+                    12,
+                    12
+                  ],
+                  [
+                    12,
+                    -12
+                  ],
+                  [
+                    4,
+                    -12
+                  ]
+                ]
+              ]
+            }
+          }
+        ]
+      }
     }
   },
   "layers": [
     {
-      "id": "background",
-      "type": "background",
-      "paint": {
-        "background-color": "white"
-      }
-    },
-    {
-      "id": "land",
+      "id": "fill",
       "type": "fill",
-      "source": "mapbox",
-      "source-layer": "building",
+      "source": "geojson",
       "paint": {
+        "fill-antialias": false,
         "fill-opacity": {
-            "property": "osm_id",
-            "stops": [
-                [1000100000000, 0.25],
-                [1000200000000, 1]
+          "property": "property",
+          "stops": [
+            [
+              0,
+              1
+            ],
+            [
+              4,
+              0
             ]
+          ]
         }
       }
     }

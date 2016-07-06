@@ -23,7 +23,8 @@
       "type": "fill",
       "source": "geojson",
       "paint": {
-        "fill-color": "#EC8D8D"
+        "fill-color": "#EC8D8D",
+        "fill-antialias": false
       }
     }
   ]

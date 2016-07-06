@@ -1,20 +1,14 @@
 {
   "version": 8,
   "metadata": {
-    "height": 256,
-    "test": {}
+    "test": {
+      "width": 64,
+      "height": 64
+    }
   },
   "zoom": 2,
   "pitch": 40,
-  "sources": {
-    "mapbox": {
-      "type": "vector",
-      "maxzoom": 14,
-      "tiles": [
-        "local://tiles/{z}-{x}-{y}.mvt"
-      ]
-    }
-  },
+  "sources": {},
   "sprite": "local://sprites/emerald",
   "layers": [
     {

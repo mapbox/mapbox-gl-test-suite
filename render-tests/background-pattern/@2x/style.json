@@ -7,15 +7,7 @@
       "pixelRatio": 2
     }
   },
-  "sources": {
-    "mapbox": {
-      "type": "vector",
-      "maxzoom": 14,
-      "tiles": [
-        "local://tiles/{z}-{x}-{y}.mvt"
-      ]
-    }
-  },
+  "sources": {},
   "sprite": "local://sprites/emerald",
   "layers": [
     {
@@ -23,15 +15,6 @@
       "type": "background",
       "paint": {
         "background-pattern": "school_striped"
-      }
-    },
-    {
-      "id": "land",
-      "type": "fill",
-      "source": "mapbox",
-      "source-layer": "water",
-      "paint": {
-        "fill-color": "red"
       }
     }
   ]

@@ -2,48 +2,163 @@
   "version": 8,
   "metadata": {
     "test": {
+      "width": 64,
+      "height": 64,
       "ignored": {
-        "js": "https://github.com/mapbox/mapbox-gl-js/issues/1702",
+        "js": "https://github.com/mapbox/mapbox-gl-js/issues/2827, https://github.com/mapbox/mapbox-gl-js/issues/2828 (expected result needs to be updated once rendering is correct)",
         "native": "https://github.com/mapbox/mapbox-gl-native/issues/1555"
       }
     }
   },
-  "center": [
-    13.418056,
-    52.499167
-  ],
-  "zoom": 14,
+  "zoom": 0.1,
   "sources": {
-    "mapbox": {
-      "type": "vector",
-      "maxzoom": 14,
-      "tiles": [
-        "local://tiles/{z}-{x}-{y}.mvt"
-      ]
+    "geojson": {
+      "type": "geojson",
+      "data": {
+        "type": "FeatureCollection",
+        "features": [
+          {
+            "type": "Feature",
+            "properties": {
+              "property": 0
+            },
+            "geometry": {
+              "type": "Polygon",
+              "coordinates": [
+                [
+                  [
+                    -12,
+                    -12
+                  ],
+                  [
+                    -12,
+                    12
+                  ],
+                  [
+                    -4,
+                    12
+                  ],
+                  [
+                    -4,
+                    -12
+                  ],
+                  [
+                    -12,
+                    -12
+                  ]
+                ]
+              ]
+            }
+          },
+          {
+            "type": "Feature",
+            "properties": {
+              "property": 1
+            },
+            "geometry": {
+              "type": "Polygon",
+              "coordinates": [
+                [
+                  [
+                    -4,
+                    -12
+                  ],
+                  [
+                    -4,
+                    12
+                  ],
+                  [
+                    4,
+                    12
+                  ],
+                  [
+                    4,
+                    -12
+                  ],
+                  [
+                    -4,
+                    -12
+                  ]
+                ]
+              ]
+            }
+          },
+          {
+            "type": "Feature",
+            "properties": {
+              "property": 2
+            },
+            "geometry": {
+              "type": "Polygon",
+              "coordinates": [
+                [
+                  [
+                    4,
+                    -12
+                  ],
+                  [
+                    4,
+                    12
+                  ],
+                  [
+                    12,
+                    12
+                  ],
+                  [
+                    12,
+                    -12
+                  ],
+                  [
+                    4,
+                    -12
+                  ]
+                ]
+              ]
+            }
+          }
+        ]
+      }
     }
   },
   "layers": [
     {
-      "id": "background",
-      "type": "background",
-      "paint": {
-        "background-color": "white"
-      }
-    },
-    {
-      "id": "land",
+      "id": "fill",
       "type": "fill",
-      "source": "mapbox",
-      "source-layer": "building",
+      "source": "geojson",
       "paint": {
+        "fill-antialias": false,
         "fill-opacity": {
-            "property": "osm_id",
-            "stops": [
-                [{"zoom": 0, "value": 1000100000000}, 0.25],
-                [{"zoom": 0, "value": 1000200000000}, 0.75],
-                [{"zoom": 20, "value": 1000100000000}, 0.5],
-                [{"zoom": 20, "value": 1000200000000}, 1]
+          "property": "property",
+          "stops": [
+            [
+              {
+                "zoom": 0,
+                "value": 0
+              },
+              1
+            ],
+            [
+              {
+                "zoom": 0,
+                "value": 4
+              },
+              0
+            ],
+            [
+              {
+                "zoom": 1,
+                "value": 0
+              },
+              0
+            ],
+            [
+              {
+                "zoom": 1,
+                "value": 4
+              },
+              0
             ]
+          ]
         }
       }
     }

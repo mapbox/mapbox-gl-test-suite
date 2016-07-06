@@ -3,7 +3,10 @@
   "metadata": {
     "test": {
       "width": 512,
-      "height": 512
+      "height": 512,
+      "ignored": {
+        "native": "https://github.com/mapbox/mapbox-gl-native/issues/5600"
+      }
     }
   },
   "center": [

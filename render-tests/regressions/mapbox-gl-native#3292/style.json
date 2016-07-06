@@ -1,28 +1,48 @@
 {
   "version": 8,
   "metadata": {
-    "test": {}
+    "test": {
+      "width": 64,
+      "height": 64
+    }
   },
-  "center": [
-    0,
-    0
-  ],
-  "zoom": 0,
   "sources": {
-    "mapbox": {
-      "type": "vector",
-      "maxzoom": 14,
-      "tiles": [
-        "local://tiles/{z}-{x}-{y}.mvt"
-      ]
+    "geojson": {
+      "type": "geojson",
+      "data": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -10,
+              -10
+            ],
+            [
+              -10,
+              10
+            ],
+            [
+              10,
+              10
+            ],
+            [
+              10,
+              -10
+            ],
+            [
+              -10,
+              -10
+            ]
+          ]
+        ]
+      }
     }
   },
   "layers": [
     {
-      "id": "water",
+      "id": "fill",
       "type": "fill",
-      "source": "mapbox",
-      "source-layer": "water",
+      "source": "geojson",
       "paint": {
         "fill-color": "blue",
         "fill-antialias": false

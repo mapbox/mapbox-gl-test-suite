@@ -2,35 +2,49 @@
   "version": 8,
   "metadata": {
     "test": {
-      "ignored": {
-        "js": "https://github.com/mapbox/mapbox-gl-js/issues/1702",
-        "native": "https://github.com/mapbox/mapbox-gl-native/issues/1555"
-      }
+      "width": 64,
+      "height": 64
     }
   },
   "sources": {
-    "mapbox": {
-      "type": "vector",
-      "maxzoom": 14,
-      "tiles": [
-        "local://tiles/{z}-{x}-{y}.mvt"
-      ]
+    "geojson": {
+      "type": "geojson",
+      "data": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -10,
+              -10
+            ],
+            [
+              -10,
+              10
+            ],
+            [
+              10,
+              10
+            ],
+            [
+              10,
+              -10
+            ],
+            [
+              -10,
+              -10
+            ]
+          ]
+        ]
+      }
     }
   },
   "layers": [
     {
-      "id": "background",
-      "type": "background",
-      "paint": {
-        "background-color": "white"
-      }
-    },
-    {
-      "id": "land",
+      "id": "fill",
       "type": "fill",
-      "source": "mapbox",
-      "source-layer": "water",
+      "source": "geojson",
       "paint": {
+        "fill-antialias": false,
         "fill-color": "rgba(255,0,0,0.5)",
         "fill-opacity": 0.5
       }

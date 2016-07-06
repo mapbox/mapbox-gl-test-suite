@@ -6,9 +6,6 @@
       "height": 64
     }
   },
-  "transition": {
-    "duration": 0
-  },
   "sources": {
     "geojson": {
       "type": "geojson",
