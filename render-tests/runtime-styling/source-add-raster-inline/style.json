@@ -11,7 +11,7 @@
           {
             "type": "raster",
             "tiles": [
-              "local://tiles/{z}-{x}-{y}.satellite.jpeg"
+              "local://tiles/{z}-{x}-{y}.satellite.png"
             ],
             "tileSize": 256
           }
