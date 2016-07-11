@@ -10,7 +10,10 @@
           {
             "id": "raster",
             "type": "raster",
-            "source": "raster"
+            "source": "raster",
+            "paint": {
+                "raster-fade-duration": 0
+            }
           }
         ],
         [
