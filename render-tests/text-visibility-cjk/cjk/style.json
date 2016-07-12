@@ -17,6 +17,7 @@
       "data": "local://data/cjkPts.geojson"
     }
   },
+  "sprite": "local://sprites/sprite",
   "glyphs": "local://glyphs/{fontstack}/{range}.pbf",
   "layers": [
     {
@@ -31,10 +32,10 @@
       "type": "symbol",
       "source": "geojson",
       "layout": {
-        "text-field": "name",
+        "icon-image": "dog-park-12",
+        "text-field": "{name}",
         "text-font": [
-          "Open Sans Semibold",
-          "Arial Unicode MS Bold"
+          "NotoCJK"
         ],
         "symbol-placement": "point"
       }
