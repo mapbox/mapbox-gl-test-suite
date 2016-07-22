@@ -3,15 +3,12 @@ Verify correctness and consistency of [mapbox-gl-js](https://github.com/mapbox/m
 
 ## Organization
 
-Tests are in subdirectories of `tests/`, organized by [style specification](https://github.com/mapbox/mapbox-gl-style-spec)
-property: `background-color`, `line-width`, etc.
+Tests are contained in a directory tree, generally organized by [style specification](https://github.com/mapbox/mapbox-gl-style-spec)
+property: `background-color`, `line-width`, etc., with a second level of directories below that for individual tests.
 
-Within each subdirectory are `style.json`, which contains the minimal style needed to test the given property,
-and `info.json`, which contains one or more test cases for the given property. Each test case is identified by an id,
-and specifies values such as the map size, coordinates, and style classes. The expected output for a given test case
-is in `{id}/expected.png`, e.g. [`tests/background-color/constant/expected.png`](https://github.com/mapbox/mapbox-gl-test-suite/blob/master/tests/background-color/constant/expected.png).
+Within a leaf directory is a `style.json` file, which contains the minimal style needed for the given test case. The style can specify the map size, center, bearing, and pitch, and additional test metadata. The expected output for a given test case is in `expected.png`, e.g. [`tests/background-color/constant/expected.png`](https://github.com/mapbox/mapbox-gl-test-suite/blob/master/tests/background-color/constant/expected.png).
 
-Supporting files -- glyphs, sprites, and tiles -- live in their own respective subdirectories. The test
+Supporting files -- glyphs, sprites, and tiles -- live in their own respective subdirectories at the top level. The test
 harness sets up the environment such that requests for these resources are directed to the correct location.
 
 The contents of vector tile fixtures can be read using the [`vt2geojson`](https://github.com/mapbox/vt2geojson) tool
