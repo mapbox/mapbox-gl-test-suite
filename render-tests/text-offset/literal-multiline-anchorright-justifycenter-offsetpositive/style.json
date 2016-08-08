@@ -2,11 +2,7 @@
   "version": 8,
   "metadata": {
     "test": {
-      "height": 256,
-      "ignored": {
-        "js": "https://github.com/mapbox/mapbox-gl-js/issues/2860"
-      },
-      "js": false
+      "height": 256
     }
   },
   "center": [
