@@ -3,6 +3,19 @@
     h2 a { color:white; text-decoration:none; }
     table td { vertical-align: top; }
 </style>
+<script>
+  document.addEventListener('mouseover', handleHover);
+  document.addEventListener('mouseout', handleHover);
+
+  function handleHover(e) {
+    var el = e.target;
+    if (el.tagName === 'IMG' && el.dataset.altSrc) {
+      var tmp = el.src;
+      el.src = el.dataset.altSrc;
+      el.dataset.altSrc = tmp;
+    }
+  }
+</script>
 <table>
 <tr>
     <th>Actual / Expected</th>
@@ -28,13 +41,3 @@
 </tr>
 {{/each}}
 </table>
-<script>
-  var imgs = document.querySelectorAll('img[data-alt-src]');
-  for (var i = 0; i < imgs.length; i++) {
-    imgs[i].onmouseover = imgs[i].onmouseout = function() {
-      var tmp = this.src;
-      this.src = this.attributes['data-alt-src'].value;
-      this.attributes['data-alt-src'].value = tmp;
-    }
-  }
-</script>
