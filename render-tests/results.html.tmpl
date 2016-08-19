@@ -30,10 +30,10 @@
         <h2 style="text-align:center; background:{{color}}"><a href="{{group}}/style.json">{{group}}/{{test}}</a></h2>
         <ul>
             <li>diff: <strong>{{difference}}</strong></li>
-            <li>zoom: <strong>{{zoom}}</strong></li>
-            <li>center: <strong>{{center}}</strong></li>
-            <li>bearing: <strong>{{bearing}}</strong></li>
-            <li>pitch: <strong>{{pitch}}</strong></li>
+            {{#if zoom}}<li>zoom: <strong>{{zoom}}</strong></li>{{/if}}
+            {{#if center}}<li>center: <strong>{{center}}</strong></li>{{/if}}
+            {{#if bearing}}<li>bearing: <strong>{{bearing}}</strong></li>{{/if}}
+            {{#if pitch}}<li>pitch: <strong>{{pitch}}</strong></li>{{/if}}
             <li>width: <strong>{{width}}</strong></li>
             <li>height: <strong>{{height}}</strong></li>
         </ul>
