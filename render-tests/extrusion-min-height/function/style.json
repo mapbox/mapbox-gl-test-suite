@@ -2,8 +2,7 @@
   "version": 8,
   "metadata": {
     "test": {
-      "width": 64,
-      "height": 64,
+      "height": 512,
       "ignored": {
         "native": "https://github.com/mapbox/mapbox-gl-native/issues/4860"
       }
@@ -141,7 +140,7 @@
     }
   },
   "pitch": 80,
-  "zoom": 19,
+  "zoom": 18,
   "layers": [
     {
       "id": "rect",
@@ -158,7 +157,7 @@
       "paint": {
         "extrusion-height": 40,
         "extrusion-min-height": {
-          "stops": [[18,0],[20,30]],
+          "stops": [[17,0],[19,30]],
           "type": "exponential"
         }
       }

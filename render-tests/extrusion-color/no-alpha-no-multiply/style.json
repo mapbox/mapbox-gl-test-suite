@@ -2,8 +2,7 @@
   "version": 8,
   "metadata": {
     "test": {
-      "width": 64,
-      "height": 64,
+      "height": 256,
       "ignored": {
         "native": "https://github.com/mapbox/mapbox-gl-native/issues/4860"
       }
@@ -119,14 +118,14 @@
     }
   },
   "pitch": 60,
-  "zoom": 19,
+  "zoom": 18,
   "layers": [
     {
       "id": "extrusion",
       "type": "extrusion",
       "source": "geojson",
       "paint": {
-        "extrusion-color": "rgba(100,100,100,0.5)"
+        "extrusion-color": "rgba(100,100,100,0.2)"
       }
     }
   ]
