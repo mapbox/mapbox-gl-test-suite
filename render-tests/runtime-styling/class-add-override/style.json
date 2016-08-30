@@ -4,8 +4,17 @@
     "test": {
       "width": 64,
       "height": 64,
-      "classes": [
-        "override"
+      "ignored": {
+        "js": "https://github.com/mapbox/mapbox-gl-js/issues/3098"
+      },
+      "operations": [
+        [
+          "addClass",
+          "override"
+        ],
+        [
+          "wait"
+        ]
       ]
     }
   },

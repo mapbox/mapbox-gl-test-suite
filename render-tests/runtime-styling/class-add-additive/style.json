@@ -4,8 +4,14 @@
     "test": {
       "width": 64,
       "height": 64,
-      "classes": [
-        "additive"
+      "operations": [
+        [
+          "addClass",
+          "additive"
+        ],
+        [
+          "wait"
+        ]
       ]
     }
   },
