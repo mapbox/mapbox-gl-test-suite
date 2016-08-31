@@ -134,8 +134,7 @@
           "stops": [[10, "rgba(0,255,255,1)"], [30, "rgba(255,0,255,1)"]],
           "property": "property",
           "type": "exponential"
-        },
-        "extrusion-antialias": true
+        }
       }
     }
   ]

@@ -60,8 +60,7 @@
       "source": "geojson",
       "paint": {
         "extrusion-pattern": "generic_icon",
-        "extrusion-antialias": true,
-        "extrusion-outline-color": "red",
+        "extrusion-edge-color": "red",
         "extrusion-height": 10
       }
     }

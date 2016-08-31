@@ -17,7 +17,7 @@
           {
             "type": "Feature",
             "properties": {
-              "property": 30
+              "property": 10
             },
             "geometry": {
               "type": "Polygon",
@@ -83,7 +83,7 @@
           {
             "type": "Feature",
             "properties": {
-              "property": 10
+              "property": 30
             },
             "geometry": {
               "type": "Polygon",
@@ -118,6 +118,7 @@
     }
   },
   "pitch": 90,
+  "bearing": 45,
   "zoom": 18,
   "layers": [
     {
@@ -125,7 +126,10 @@
       "type": "extrusion",
       "source": "geojson",
       "paint": {
-        "extrusion-antialias": true
+        "extrusion-edge-color": {
+          "stops": [[17, "rgba(255,0,255,1)"], [19, "rgba(0,255,255,1)"]],
+          "type": "exponential"
+        }
       }
     }
   ]
