@@ -156,10 +156,9 @@
       "source": "geojson",
       "paint": {
         "extrusion-height": 40,
-        "extrusion-min-height": {
-          "stops": [[0,0],[100,100]],
-          "type": "exponential",
-          "property": "property"
+        "extrusion-base-height": {
+          "stops": [[17,0],[19,30]],
+          "type": "exponential"
         }
       }
     }
