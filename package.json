@@ -10,18 +10,15 @@
   "main": "index.js",
   "dependencies": {
     "colors": "^1.1.2",
-    "diff": "^2.2.2",
-    "extend": "^3.0.0",
+    "d3-queue": "^3.0.3",
+    "diff": "^3.0.0",
     "handlebars": "^4.0.5",
-    "jsonlint": "^1.6.2",
-    "mkdirp": "^0.5.1",
-    "pixelmatch": "^4.0.1",
-    "pngjs": "^2.2.0",
-    "queue-async": "^1.2.0",
+    "pixelmatch": "^4.0.2",
+    "pngjs": "^3.0.0",
     "st": "^1.1.0"
   },
   "devDependencies": {
-    "async": "^2.0.0-rc.4",
+    "jsonlint": "^1.6.2",
     "mapbox-gl-style-spec": "8.5.0",
     "mapnik": "^3.5.13",
     "sponge": "^0.1.0"
