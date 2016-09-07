@@ -122,10 +122,10 @@
   "layers": [
     {
       "id": "extrusion",
-      "type": "extrusion",
+      "type": "fill",
       "source": "geojson",
       "paint": {
-        "extrusion-height": {
+        "fill-extrude-height": {
           "stops": [
             [{
               "zoom": 17.99,

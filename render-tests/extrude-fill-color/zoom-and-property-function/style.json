@@ -2,35 +2,13 @@
   "version": 8,
   "metadata": {
     "test": {
-      "height": 512,
+      "height": 256,
       "ignored": {
         "native": "https://github.com/mapbox/mapbox-gl-native/issues/4860"
       }
     }
   },
   "sources": {
-    "rect": {
-      "type": "geojson",
-      "data": {
-        "type": "FeatureCollection",
-        "features": [
-          {
-            "type": "Feature",
-            "properties": {},
-            "geometry": {
-              "type": "Polygon",
-              "coordinates": [[
-                [ -0.0004, -0.0004 ],
-                [ -0.0004, 0.0000 ],
-                [ 0.0004, 0.0004 ],
-                [ 0.0004, -0.0000 ],
-                [ -0.0004, -0.0004 ]
-              ]]
-            }
-          }
-        ]
-      }
-    },
     "geojson": {
       "type": "geojson",
       "data": {
@@ -39,7 +17,7 @@
           {
             "type": "Feature",
             "properties": {
-              "property": 30
+              "property": 10
             },
             "geometry": {
               "type": "Polygon",
@@ -105,7 +83,7 @@
           {
             "type": "Feature",
             "properties": {
-              "property": 10
+              "property": 30
             },
             "geometry": {
               "type": "Polygon",
@@ -139,24 +117,36 @@
       }
     }
   },
-  "pitch": 80,
+  "pitch": 60,
   "zoom": 18,
   "layers": [
-    {
-      "id": "rect",
-      "type": "fill",
-      "source": "rect",
-      "paint": {
-        "fill-color": "rgba(0,255,255,1)"
-      }
-    },
     {
       "id": "extrusion",
       "type": "fill",
       "source": "geojson",
       "paint": {
-        "fill-extrude-height": 40,
-        "fill-extrude-base": 10
+        "fill-extrude-height": 10,
+        "fill-color": {
+          "property": "property",
+          "stops": [
+            [{
+              "zoom": 17,
+              "value": 10
+            }, "rgba(255,255,0,1)"],
+            [{
+              "zoom": 17,
+              "value": 30
+            }, "rgba(0,0,255,1)"],
+            [{
+              "zoom": 19,
+              "value": 10
+            }, "rgba(0,255,255,1)"],
+            [{
+              "zoom": 19,
+              "value": 30
+            }, "rgba(255,0,0,1)"]
+          ]
+        }
       }
     }
   ]

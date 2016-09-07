@@ -2,35 +2,13 @@
   "version": 8,
   "metadata": {
     "test": {
-      "height": 512,
+      "height": 256,
       "ignored": {
         "native": "https://github.com/mapbox/mapbox-gl-native/issues/4860"
       }
     }
   },
   "sources": {
-    "rect": {
-      "type": "geojson",
-      "data": {
-        "type": "FeatureCollection",
-        "features": [
-          {
-            "type": "Feature",
-            "properties": {},
-            "geometry": {
-              "type": "Polygon",
-              "coordinates": [[
-                [ -0.0004, -0.0004 ],
-                [ -0.0004, 0.0000 ],
-                [ 0.0004, 0.0004 ],
-                [ 0.0004, -0.0000 ],
-                [ -0.0004, -0.0004 ]
-              ]]
-            }
-          }
-        ]
-      }
-    },
     "geojson": {
       "type": "geojson",
       "data": {
@@ -139,24 +117,15 @@
       }
     }
   },
-  "pitch": 80,
+  "pitch": 90,
   "zoom": 18,
   "layers": [
-    {
-      "id": "rect",
-      "type": "fill",
-      "source": "rect",
-      "paint": {
-        "fill-color": "rgba(0,255,255,1)"
-      }
-    },
     {
       "id": "extrusion",
       "type": "fill",
       "source": "geojson",
       "paint": {
-        "fill-extrude-height": 40,
-        "fill-extrude-base": 10
+        "fill-extrude-height": 10
       }
     }
   ]

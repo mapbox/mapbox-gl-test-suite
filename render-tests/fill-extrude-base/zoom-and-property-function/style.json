@@ -152,11 +152,11 @@
     },
     {
       "id": "extrusion",
-      "type": "extrusion",
+      "type": "fill",
       "source": "geojson",
       "paint": {
-        "extrusion-height": 100,
-        "extrusion-base-height": {
+        "fill-extrude-height": 100,
+        "fill-extrude-base": {
           "stops": [
             [{
               "zoom": 17,

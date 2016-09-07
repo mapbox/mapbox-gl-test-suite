@@ -122,7 +122,7 @@
   "layers": [
     {
       "id": "extrusion",
-      "type": "extrusion",
+      "type": "fill",
       "source": "geojson",
       "paint": {}
     }
