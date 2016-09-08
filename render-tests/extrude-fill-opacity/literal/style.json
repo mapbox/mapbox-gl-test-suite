@@ -105,6 +105,7 @@
       "type": "fill",
       "source": "geojson",
       "paint": {
+        "fill-extrude-height": 10,
         "fill-opacity": 0.75
       }
     }
