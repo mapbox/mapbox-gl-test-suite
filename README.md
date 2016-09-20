@@ -15,7 +15,7 @@ The contents of vector tile fixtures can be read using the [`vt2geojson`](https:
 
 ## Running tests
 
-Run `npm run test-suite` in mapbox-gl-js or mapbox-gl-native. To view the results graphically, run:
+Run `npm run test-render` in [mapbox-gl-js](https://github.com/mapbox/mapbox-gl-js/blob/master/CONTRIBUTING.md) or `npm run test-suite` in [mapbox-gl-native](https://github.com/mapbox/mapbox-gl-native/blob/master/platform/node/DEVELOPING.md). To view the results graphically, run:
 
 ```
 open ./node_modules/mapbox-gl-test-suite/render-tests/index.html
