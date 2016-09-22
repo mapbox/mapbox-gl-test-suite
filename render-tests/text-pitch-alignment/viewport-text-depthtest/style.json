@@ -26,11 +26,11 @@
               "type": "LineString",
               "coordinates": [
                 [
-                  0,
+                  -20,
                   -40
                 ],
                 [
-                  0,
+                  20,
                   20
                 ]
               ]
