@@ -3,7 +3,7 @@
   "metadata": {
     "test": {
       "ignored": {
-        "native": "https://github.com/mapbox/mapbox-gl-native/issues/2648"
+        "native": "needs issue"
       },
       "height": 256
     }
