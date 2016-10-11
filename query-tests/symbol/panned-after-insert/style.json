@@ -22,7 +22,10 @@
               256,
               256
           ]
-      ]
+      ],
+      "ignored": {
+        "js": "https://github.com/mapbox/mapbox-gl-js/issues/3346"
+      }
     }
   },
   "center": [
