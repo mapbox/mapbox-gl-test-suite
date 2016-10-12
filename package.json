@@ -20,7 +20,6 @@
   "devDependencies": {
     "jsonlint": "^1.6.2",
     "mapbox-gl-style-spec": "8.5.0",
-    "mapnik": "^3.5.13",
     "sponge": "^0.1.0"
   },
   "scripts": {
