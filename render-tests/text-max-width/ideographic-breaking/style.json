@@ -40,10 +40,9 @@
       "type": "symbol",
       "source": "mapbox",
       "layout": {
-        "text-field": "For every fact there is an infinity of hypotheses.",
+        "text-field": "技指計代式灣文人觀觀人之之易",
         "text-font": [
-          "Open Sans Semibold",
-          "Arial Unicode MS Bold"
+          "NotoCJK"
         ],
         "text-max-width": 7
       }
