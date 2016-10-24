@@ -4,9 +4,6 @@
     "test": {
       "width": 64,
       "height": 64,
-      "ignored": {
-        "js": "https://github.com/mapbox/mapbox-gl-js/issues/3426"
-      },
       "operations": [
         [
           "wait"
