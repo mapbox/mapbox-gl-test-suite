@@ -6,10 +6,10 @@
     }
   },
   "center": [
-    13.418056,
-    52.499167
+    -87.6211,
+    41.8820
   ],
-  "zoom": 17,
+  "zoom": 15,
   "sources": {
     "satellite": {
       "type": "raster",
