@@ -14,8 +14,8 @@
         ],
         [
           "setPaintProperty",
-          "fill",
-          "fill-extrude-height",
+          "fill-extrusion",
+          "fill-extrusion-height",
           10
         ]
       ]
@@ -58,8 +58,8 @@
   },
   "layers": [
     {
-      "id": "fill",
-      "type": "fill",
+      "id": "fill-extrusion",
+      "type": "fill-extrusion",
       "source": "geojson"
     }
   ]
