@@ -2,9 +2,6 @@
   "version": 8,
   "metadata": {
     "test": {
-      "ignored": {
-        "native": "?"
-      },
       "height": 256
     }
   },
