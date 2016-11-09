@@ -180,16 +180,23 @@
       }
     },
     {
-        "id": "lines-symbol",
-        "type": "symbol",
-        "source": "mapbox",
-        "layout": {
-            "text-field": "{name}",
-            "symbol-placement": "line",
-            "symbol-spacing": 150,
-            "text-allow-overlap": true,
-            "text-font": [ "NotoCJK" ]
-        }
+      "id": "lines-symbol",
+      "type": "symbol",
+      "source": "mapbox",
+      "layout": {
+        "text-field": "{name}",
+        "symbol-placement": "line",
+        "symbol-spacing": 150,
+        "text-allow-overlap": true,
+        "text-font": [ "NotoCJK" ]
+      }
+    }, {
+      "id": "lines",
+      "type": "line",
+      "source": "mapbox",
+      "paint": {
+          "line-opacity": 0.25
+      }
     }
   ]
 }

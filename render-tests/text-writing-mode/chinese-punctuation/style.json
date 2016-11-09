@@ -189,6 +189,13 @@
         "text-allow-overlap": true,
         "text-font": [ "NotoCJK" ]
       }
+    }, {
+      "id": "lines",
+      "type": "line",
+      "source": "mapbox",
+      "paint": {
+          "line-opacity": 0.25
+      }
     }
   ]
 }
