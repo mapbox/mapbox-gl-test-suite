@@ -60,7 +60,8 @@
       "source-layer": "landuse",
       "filter": ["==", "class", "park"],
       "paint": {
-        "fill-color": "rgba(0,0,0,0.8)"
+        "fill-color": "rgba(0,0,0,0.8)",
+        "fill-antialias": false
       }
     },
     {
