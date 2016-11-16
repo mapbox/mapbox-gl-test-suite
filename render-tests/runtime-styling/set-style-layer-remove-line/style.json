@@ -45,6 +45,9 @@
           "wait"
         ]
       ]
+    },
+    "ignored": {
+      "native": "https://github.com/mapbox/mapbox-gl-native/issues/2445"
     }
   },
   "transition": {

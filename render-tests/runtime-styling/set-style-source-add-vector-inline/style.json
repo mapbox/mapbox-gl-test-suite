@@ -20,18 +20,23 @@
                 ]
               }
             },
-            "layers": [{
-              "id": "fill",
-              "type": "fill",
-              "source": "vector",
-              "source-layer": "water"
-            }]
+            "layers": [
+              {
+                "id": "fill",
+                "type": "fill",
+                "source": "vector",
+                "source-layer": "water"
+              }
+            ]
           }
         ],
         [
           "wait"
         ]
       ]
+    },
+    "ignored": {
+      "native": "https://github.com/mapbox/mapbox-gl-native/issues/2445"
     }
   },
   "transition": {

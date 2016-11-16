@@ -25,17 +25,22 @@
                 }
               }
             },
-            "layers": [{
-              "id": "circle",
-              "type": "circle",
-              "source": "geojson"
-            }]
+            "layers": [
+              {
+                "id": "circle",
+                "type": "circle",
+                "source": "geojson"
+              }
+            ]
           }
         ],
         [
           "wait"
         ]
       ]
+    },
+    "ignored": {
+      "native": "https://github.com/mapbox/mapbox-gl-native/issues/2445"
     }
   },
   "transition": {

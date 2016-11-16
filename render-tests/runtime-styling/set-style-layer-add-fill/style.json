@@ -44,17 +44,22 @@
                 }
               }
             },
-            "layers": [{
-              "id": "fill",
-              "type": "fill",
-              "source": "geojson"
-            }]
+            "layers": [
+              {
+                "id": "fill",
+                "type": "fill",
+                "source": "geojson"
+              }
+            ]
           }
         ],
         [
           "wait"
         ]
       ]
+    },
+    "ignored": {
+      "native": "https://github.com/mapbox/mapbox-gl-native/issues/2445"
     }
   },
   "transition": {

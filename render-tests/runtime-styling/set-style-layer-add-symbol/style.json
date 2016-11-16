@@ -25,20 +25,25 @@
               }
             },
             "sprite": "local://sprites/sprite",
-            "layers": [{
-              "id": "symbol",
-              "type": "symbol",
-              "source": "geojson",
-              "layout": {
-                "icon-image": "circle-12"
+            "layers": [
+              {
+                "id": "symbol",
+                "type": "symbol",
+                "source": "geojson",
+                "layout": {
+                  "icon-image": "circle-12"
+                }
               }
-            }]
+            ]
           }
         ],
         [
           "wait"
         ]
       ]
+    },
+    "ignored": {
+      "native": "https://github.com/mapbox/mapbox-gl-native/issues/2445"
     }
   },
   "transition": {

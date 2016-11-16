@@ -13,16 +13,21 @@
               "duration": 0
             },
             "sources": {},
-            "layers": [{
-              "id": "background",
-              "type": "background"
-            }]
+            "layers": [
+              {
+                "id": "background",
+                "type": "background"
+              }
+            ]
           }
         ],
         [
           "wait"
         ]
       ]
+    },
+    "ignored": {
+      "native": "https://github.com/mapbox/mapbox-gl-native/issues/2445"
     }
   },
   "transition": {

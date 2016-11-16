@@ -53,7 +53,9 @@
                 "id": "fill-extrusion",
                 "type": "fill-extrusion",
                 "source": "geojson",
-                "paint": { "fill-extrusion-height": 10 }
+                "paint": {
+                  "fill-extrusion-height": 10
+                }
               }
             ]
           }
@@ -62,6 +64,9 @@
           "wait"
         ]
       ]
+    },
+    "ignored": {
+      "native": "https://github.com/mapbox/mapbox-gl-native/issues/2445"
     }
   },
   "transition": {

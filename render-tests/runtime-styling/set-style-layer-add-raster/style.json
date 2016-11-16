@@ -21,20 +21,25 @@
                 "tileSize": 256
               }
             },
-            "layers": [{
-              "id": "raster",
-              "type": "raster",
-              "source": "raster",
-              "paint": {
-                "raster-fade-duration": 0
+            "layers": [
+              {
+                "id": "raster",
+                "type": "raster",
+                "source": "raster",
+                "paint": {
+                  "raster-fade-duration": 0
+                }
               }
-            }]
+            ]
           }
         ],
         [
           "wait"
         ]
       ]
+    },
+    "ignored": {
+      "native": "https://github.com/mapbox/mapbox-gl-native/issues/2445"
     }
   },
   "transition": {
