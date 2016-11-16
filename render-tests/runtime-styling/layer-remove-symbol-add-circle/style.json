@@ -1,0 +1,53 @@
+{
+  "version": 8,
+  "metadata": {
+    "ignored": {
+      "js": "https://github.com/mapbox/mapbox-gl-js/issues/3633"
+    },
+    "test": {
+      "width": 64,
+      "height": 64,
+      "operations": [
+        [ "removeLayer", "circle" ],
+        [
+          "addLayer",
+          {
+            "id": "circle",
+            "type": "circle",
+            "source": "geojson"
+          }
+        ],
+        [
+          "wait"
+        ]
+      ]
+    }
+  },
+  "transition": {
+    "duration": 0
+  },
+  "sources": {
+    "geojson": {
+      "type": "geojson",
+      "data": {
+        "type": "Point",
+        "coordinates": [
+          0,
+          0
+        ]
+      }
+    }
+  },
+  "sprite": "local://sprites/sprite",
+  "layers": [{
+    "id": "circle",
+    "type": "symbol",
+    "source": "geojson",
+    "layout": {
+      "icon-image": "dot.sdf"
+    },
+    "paint": {
+      "icon-color": "red"
+    }
+  }]
+}
