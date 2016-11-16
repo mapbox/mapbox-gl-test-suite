@@ -17,9 +17,7 @@
               {
                 "id": "background",
                 "type": "background",
-                "layout": {
-                  "visibility": null
-                }
+                "layout": {}
               }
             ]
           }

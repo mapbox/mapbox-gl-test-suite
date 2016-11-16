@@ -38,8 +38,7 @@
                 "source": "geojson",
                 "layout": {
                   "icon-image": "circle-12"
-                },
-                "filter": null
+                }
               }
             ]
           }

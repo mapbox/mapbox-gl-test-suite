@@ -57,9 +57,7 @@
                 "id": "circle",
                 "type": "circle",
                 "source": "geojson",
-                "paint": {
-                  "circle-radius": null
-                }
+                "paint": {}
               }
             ]
           }

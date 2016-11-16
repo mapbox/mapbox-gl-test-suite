@@ -59,8 +59,7 @@
                 "type": "symbol",
                 "source": "geojson",
                 "layout": {
-                  "icon-image": "oneway",
-                  "icon-rotate": null
+                  "icon-image": "oneway"
                 }
               }
             ]
