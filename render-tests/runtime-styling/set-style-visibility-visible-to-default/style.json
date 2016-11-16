@@ -6,10 +6,23 @@
       "height": 64,
       "operations": [
         [
-          "setLayoutProperty",
-          "background",
-          "visibility",
-          null
+          "setStyle",
+          {
+            "version": 8,
+            "transition": {
+              "duration": 0
+            },
+            "sources": {},
+            "layers": [
+              {
+                "id": "background",
+                "type": "background",
+                "layout": {
+                  "visibility": null
+                }
+              }
+            ]
+          }
         ],
         [
           "wait"

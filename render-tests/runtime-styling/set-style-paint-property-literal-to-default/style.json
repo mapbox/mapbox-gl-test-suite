@@ -6,10 +6,23 @@
       "height": 64,
       "operations": [
         [
-          "setPaintProperty",
-          "background",
-          "background-color",
-          null
+          "setStyle",
+          {
+            "version": 8,
+            "transition": {
+              "duration": 0
+            },
+            "sources": {},
+            "layers": [
+              {
+                "id": "background",
+                "type": "background",
+                "paint": {
+                  "background-color": null
+                }
+              }
+            ]
+          }
         ],
         [
           "wait"

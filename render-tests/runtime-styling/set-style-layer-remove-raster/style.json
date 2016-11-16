@@ -6,8 +6,23 @@
       "height": 64,
       "operations": [
         [
-          "removeLayer",
-          "raster"
+          "setStyle",
+          {
+            "version": 8,
+            "transition": {
+              "duration": 0
+            },
+            "sources": {
+              "raster": {
+                "type": "raster",
+                "tiles": [
+                  "local://tiles/{z}-{x}-{y}.satellite.png"
+                ],
+                "tileSize": 256
+              }
+            },
+            "layers": []
+          }
         ],
         [
           "wait"

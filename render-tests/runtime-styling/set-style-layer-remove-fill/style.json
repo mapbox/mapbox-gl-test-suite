@@ -6,8 +6,46 @@
       "height": 64,
       "operations": [
         [
-          "removeLayer",
-          "fill"
+          "setStyle",
+          {
+            "version": 8,
+            "transition": {
+              "duration": 0
+            },
+            "sources": {
+              "geojson": {
+                "type": "geojson",
+                "data": {
+                  "type": "Polygon",
+                  "coordinates": [
+                    [
+                      [
+                        -10,
+                        -10
+                      ],
+                      [
+                        -10,
+                        10
+                      ],
+                      [
+                        10,
+                        10
+                      ],
+                      [
+                        10,
+                        -10
+                      ],
+                      [
+                        -10,
+                        -10
+                      ]
+                    ]
+                  ]
+                }
+              }
+            },
+            "layers": []
+          }
         ],
         [
           "wait"

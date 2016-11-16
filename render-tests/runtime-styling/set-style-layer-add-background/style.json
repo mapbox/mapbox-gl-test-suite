@@ -6,10 +6,17 @@
       "height": 64,
       "operations": [
         [
-          "addLayer",
+          "setStyle",
           {
-            "id": "background",
-            "type": "background"
+            "version": 8,
+            "transition": {
+              "duration": 0
+            },
+            "sources": {},
+            "layers": [{
+              "id": "background",
+              "type": "background"
+            }]
           }
         ],
         [

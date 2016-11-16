@@ -6,25 +6,29 @@
       "height": 64,
       "operations": [
         [
-          "addSource",
-          "raster",
+          "setStyle",
           {
-            "type": "raster",
-            "tiles": [
-              "local://tiles/{z}-{x}-{y}.satellite.png"
-            ],
-            "tileSize": 256
-          }
-        ],
-        [
-          "addLayer",
-          {
-            "id": "raster",
-            "type": "raster",
-            "source": "raster",
-            "paint": {
+            "version": 8,
+            "transition": {
+              "duration": 0
+            },
+            "sources": {
+              "raster": {
+                "type": "raster",
+                "tiles": [
+                  "local://tiles/{z}-{x}-{y}.satellite.png"
+                ],
+                "tileSize": 256
+              }
+            },
+            "layers": [{
+              "id": "raster",
+              "type": "raster",
+              "source": "raster",
+              "paint": {
                 "raster-fade-duration": 0
-            }
+              }
+            }]
           }
         ],
         [

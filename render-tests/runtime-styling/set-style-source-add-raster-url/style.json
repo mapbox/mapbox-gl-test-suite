@@ -6,23 +6,27 @@
       "height": 64,
       "operations": [
         [
-          "addSource",
-          "raster",
+          "setStyle",
           {
-            "type": "raster",
-            "url": "local://tilesets/raster.json",
-            "tileSize": 256
-          }
-        ],
-        [
-          "addLayer",
-          {
-            "id": "raster",
-            "type": "raster",
-            "source": "raster",
-            "paint": {
+            "version": 8,
+            "transition": {
+              "duration": 0
+            },
+            "sources": {
+              "raster": {
+                "type": "raster",
+                "url": "local://tilesets/raster.json",
+                "tileSize": 256
+              }
+            },
+            "layers": [{
+              "id": "raster",
+              "type": "raster",
+              "source": "raster",
+              "paint": {
                 "raster-fade-duration": 0
-            }
+              }
+            }]
           }
         ],
         [

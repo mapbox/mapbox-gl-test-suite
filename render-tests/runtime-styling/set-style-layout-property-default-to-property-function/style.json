@@ -10,12 +10,63 @@
       },
       "operations": [
         [
-          "setLayoutProperty",
-          "symbol",
-          "icon-rotate",
+          "setStyle",
           {
-            "type": "identity",
-            "property": "rotate"
+            "version": 8,
+            "transition": {
+              "duration": 0
+            },
+            "sources": {
+              "geojson": {
+                "type": "geojson",
+                "data": {
+                  "type": "FeatureCollection",
+                  "features": [
+                    {
+                      "type": "Feature",
+                      "properties": {
+                        "rotate": -45
+                      },
+                      "geometry": {
+                        "type": "Point",
+                        "coordinates": [
+                          -10,
+                          0
+                        ]
+                      }
+                    },
+                    {
+                      "type": "Feature",
+                      "properties": {
+                        "rotate": 45
+                      },
+                      "geometry": {
+                        "type": "Point",
+                        "coordinates": [
+                          10,
+                          0
+                        ]
+                      }
+                    }
+                  ]
+                }
+              }
+            },
+            "sprite": "local://sprites/sprite",
+            "layers": [
+              {
+                "id": "symbol",
+                "type": "symbol",
+                "source": "geojson",
+                "layout": {
+                  "icon-image": "oneway",
+                  "icon-rotate": {
+                    "type": "identity",
+                    "property": "rotate"
+                  }
+                }
+              }
+            ]
           }
         ],
         [

@@ -6,22 +6,26 @@
       "height": 64,
       "operations": [
         [
-          "addSource",
-          "vector",
+          "setStyle",
           {
-            "type": "vector",
-            "tiles": [
-              "local://tiles/{z}-{x}-{y}.mvt"
-            ]
-          }
-        ],
-        [
-          "addLayer",
-          {
-            "id": "fill",
-            "type": "fill",
-            "source": "vector",
-            "source-layer": "water"
+            "version": 8,
+            "transition": {
+              "duration": 0
+            },
+            "sources": {
+              "vector": {
+                "type": "vector",
+                "tiles": [
+                  "local://tiles/{z}-{x}-{y}.mvt"
+                ]
+              }
+            },
+            "layers": [{
+              "id": "fill",
+              "type": "fill",
+              "source": "vector",
+              "source-layer": "water"
+            }]
           }
         ],
         [

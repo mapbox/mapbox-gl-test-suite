@@ -6,11 +6,49 @@
       "height": 64,
       "operations": [
         [
-          "addLayer",
+          "setStyle",
           {
-            "id": "fill",
-            "type": "fill",
-            "source": "geojson"
+            "version": 8,
+            "transition": {
+              "duration": 0
+            },
+            "sources": {
+              "geojson": {
+                "type": "geojson",
+                "data": {
+                  "type": "Polygon",
+                  "coordinates": [
+                    [
+                      [
+                        -10,
+                        -10
+                      ],
+                      [
+                        -10,
+                        10
+                      ],
+                      [
+                        10,
+                        10
+                      ],
+                      [
+                        10,
+                        -10
+                      ],
+                      [
+                        -10,
+                        -10
+                      ]
+                    ]
+                  ]
+                }
+              }
+            },
+            "layers": [{
+              "id": "fill",
+              "type": "fill",
+              "source": "geojson"
+            }]
           }
         ],
         [

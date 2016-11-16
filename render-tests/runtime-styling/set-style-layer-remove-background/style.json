@@ -6,8 +6,15 @@
       "height": 64,
       "operations": [
         [
-          "removeLayer",
-          "background"
+          "setStyle",
+          {
+            "version": 8,
+            "transition": {
+              "duration": 0
+            },
+            "sources": {},
+            "layers": []
+          }
         ],
         [
           "wait"

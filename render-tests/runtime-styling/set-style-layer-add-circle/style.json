@@ -6,11 +6,29 @@
       "height": 64,
       "operations": [
         [
-          "addLayer",
+          "setStyle",
           {
-            "id": "circle",
-            "type": "circle",
-            "source": "geojson"
+            "version": 8,
+            "transition": {
+              "duration": 0
+            },
+            "sources": {
+              "geojson": {
+                "type": "geojson",
+                "data": {
+                  "type": "Point",
+                  "coordinates": [
+                    0,
+                    0
+                  ]
+                }
+              }
+            },
+            "layers": [{
+              "id": "circle",
+              "type": "circle",
+              "source": "geojson"
+            }]
           }
         ],
         [
