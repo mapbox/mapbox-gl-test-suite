@@ -31,7 +31,10 @@
     {
       "id": "satellite",
       "type": "raster",
-      "source": "satellite"
+      "source": "satellite",
+      "paint": {
+        "raster-fade-duration": 0
+      }
     }
   ]
 }
