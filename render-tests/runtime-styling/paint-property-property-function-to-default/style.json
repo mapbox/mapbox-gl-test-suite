@@ -4,7 +4,6 @@
     "test": {
       "width": 64,
       "height": 64,
-      "native": false,
       "ignored": {
         "native": "https://github.com/mapbox/mapbox-gl-native/issues/4860 https://github.com/mapbox/mapbox-gl-native/issues/6518"
       },
@@ -18,7 +17,10 @@
         [
           "wait"
         ]
-      ]
+      ],
+      "skipped": {
+        "native": "needs issue"
+      }
     }
   },
   "transition": {

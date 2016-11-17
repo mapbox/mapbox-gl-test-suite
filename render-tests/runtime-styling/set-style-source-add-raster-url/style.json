@@ -35,7 +35,9 @@
           "wait"
         ]
       ],
-      "native": false
+      "skipped": {
+        "native": "needs issue"
+      }
     }
   },
   "transition": {

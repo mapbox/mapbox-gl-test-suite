@@ -4,7 +4,6 @@
     "test": {
       "width": 64,
       "height": 64,
-      "native": false,
       "operations": [
         [
           "setStyle",
@@ -62,7 +61,10 @@
         [
           "wait"
         ]
-      ]
+      ],
+      "skipped": {
+        "native": "needs issue"
+      }
     }
   },
   "transition": {
