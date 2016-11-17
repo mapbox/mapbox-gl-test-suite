@@ -1,9 +1,6 @@
 {
   "version": 8,
   "metadata": {
-    "ignored": {
-      "native": "https://github.com/mapbox/mapbox-gl-native/issues/2445"
-    },
     "test": {
       "width": 64,
       "height": 64,
@@ -48,7 +45,8 @@
         [
           "wait"
         ]
-      ]
+      ],
+      "native": false
     }
   },
   "transition": {

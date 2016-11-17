@@ -1,10 +1,6 @@
 {
   "version": 8,
   "metadata": {
-    "ignored": {
-      "native": "https://github.com/mapbox/mapbox-gl-native/issues/2445",
-      "js": "https://github.com/mapbox/mapbox-gl-js/issues/3633"
-    },
     "test": {
       "width": 64,
       "height": 64,
@@ -41,7 +37,8 @@
         [
           "wait"
         ]
-      ]
+      ],
+      "native": false
     }
   },
   "transition": {
@@ -60,15 +57,17 @@
     }
   },
   "sprite": "local://sprites/sprite",
-  "layers": [{
-    "id": "circle",
-    "type": "symbol",
-    "source": "geojson",
-    "layout": {
-      "icon-image": "dot.sdf"
-    },
-    "paint": {
-      "icon-color": "red"
+  "layers": [
+    {
+      "id": "circle",
+      "type": "symbol",
+      "source": "geojson",
+      "layout": {
+        "icon-image": "dot.sdf"
+      },
+      "paint": {
+        "icon-color": "red"
+      }
     }
-  }]
+  ]
 }

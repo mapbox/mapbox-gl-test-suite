@@ -21,12 +21,14 @@
                 ]
               }
             },
-            "layers": [{
-              "id": "fill",
-              "type": "fill",
-              "source": "vector",
-              "source-layer": "building"
-            }]
+            "layers": [
+              {
+                "id": "fill",
+                "type": "fill",
+                "source": "vector",
+                "source-layer": "building"
+              }
+            ]
           }
         ],
         [
@@ -51,10 +53,12 @@
       ]
     }
   },
-  "layers": [{
-    "id": "fill",
-    "type": "fill",
-    "source": "vector",
-    "source-layer": "landuse"
-  }]
+  "layers": [
+    {
+      "id": "fill",
+      "type": "fill",
+      "source": "vector",
+      "source-layer": "landuse"
+    }
+  ]
 }
