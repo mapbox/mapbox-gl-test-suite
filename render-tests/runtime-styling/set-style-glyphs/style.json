@@ -36,7 +36,6 @@
                 "type": "symbol",
                 "source": "geojson",
                 "layout": {
-                  "icon-image": "dog-park-12",
                   "text-field": "{name}",
                   "text-font": [
                     "NotoCJK"
@@ -79,7 +78,6 @@
       "type": "symbol",
       "source": "geojson",
       "layout": {
-        "icon-image": "dog-park-12",
         "text-field": "HELLO",
         "text-font": [
           "Open Sans Semibold",
