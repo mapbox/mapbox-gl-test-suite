@@ -37,7 +37,7 @@
       "source-layer": "road",
       "paint": {
         "line-width": 10,
-        "line-blur": {
+        "line-opacity": {
           "property": "class",
           "type": "categorical",
           "stops": [
