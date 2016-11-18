@@ -4,6 +4,9 @@
         "test": {
             "width": 64,
             "height": 64
+        },
+        "ignored": {
+            "native": "https://github.com/mapbox/mapbox-gl-native/issues/4860"
         }
     },
     "sources": {
@@ -12,32 +15,32 @@
             "data": {
                 "type": "FeatureCollection",
                 "features": [{
-                    "type":"Feature",
+                    "type": "Feature",
                     "properties": {
                         "color": "blue"
                     },
-                    "geometry":{
-                      "type": "LineString",
-                      "coordinates": [
-                        [-10,10],
-                        [10,10],
-                        [-10, -10],
-                        [10, -10]
-                      ]
+                    "geometry": {
+                        "type": "LineString",
+                        "coordinates": [
+                            [-10, 10],
+                            [10, 10],
+                            [-10, -10],
+                            [10, -10]
+                        ]
                     }
-                },{
-                    "type":"Feature",
+                }, {
+                    "type": "Feature",
                     "properties": {
                         "color": "green"
                     },
-                    "geometry":{
-                      "type": "LineString",
-                      "coordinates": [
-                        [-10,9],
-                        [10,9],
-                        [-10, -9],
-                        [10, -9]
-                      ]
+                    "geometry": {
+                        "type": "LineString",
+                        "coordinates": [
+                            [-10, 9],
+                            [10, 9],
+                            [-10, -9],
+                            [10, -9]
+                        ]
                     }
                 }]
             }
