@@ -3,7 +3,7 @@
   "metadata": {
     "test": {
       "ignored": {
-        "js": "https://github.com/mapbox/mapbox-gl/issues/4"
+        "js": "https://github.com/mapbox/mapbox-gl-js/issues/3708"
       },
       "width": 128,
       "height": 128
