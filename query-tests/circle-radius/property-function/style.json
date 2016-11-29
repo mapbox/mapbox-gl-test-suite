@@ -10,7 +10,7 @@
       ],
       "ignored": {
         "js": "https://github.com/mapbox/mapbox-gl-js/issues/3604",
-        "native": "https://github.com/mapbox/mapbox-gl-native/issues/6518"
+        "native": "https://github.com/mapbox/mapbox-gl-js/issues/3604"
       }
     }
   },
