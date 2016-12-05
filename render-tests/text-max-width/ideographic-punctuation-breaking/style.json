@@ -2,6 +2,9 @@
   "version": 8,
   "metadata": {
     "test": {
+      "ignored": {
+        "native": "https://github.com/mapbox/mapbox-gl-native/issues/7253"
+      },
       "height": 512
     }
   },
@@ -27,7 +30,7 @@
           {
             "type": "Feature",
             "properties": {
-              "name": "技指計代式灣文人觀觀人‧之之"
+              "name": "技指計代式灣文人觀觀人之之"
             },
             "geometry": {
               "type": "Point",
@@ -40,7 +43,7 @@
           {
             "type": "Feature",
             "properties": {
-              "name": "技‧指計代式灣文人觀觀人之"
+              "name": "技指計代(式灣文人)觀觀人之"
             },
             "geometry": {
               "type": "Point",
@@ -53,7 +56,7 @@
           {
             "type": "Feature",
             "properties": {
-              "name": "技指計代式灣‧文人觀觀人"
+              "name": "（技指計）代式灣‧文人觀觀人"
             },
             "geometry": {
               "type": "Point",
@@ -66,7 +69,7 @@
           {
             "type": "Feature",
             "properties": {
-              "name": "技指‧計代式灣文人觀觀"
+              "name": "技指‧計代式灣文;人觀觀"
             },
             "geometry": {
               "type": "Point",
@@ -79,7 +82,7 @@
           {
             "type": "Feature",
             "properties": {
-              "name": "技指計代式灣文人‧觀"
+              "name": "技指計 代式灣灣灣文人-觀"
             },
             "geometry": {
               "type": "Point",
