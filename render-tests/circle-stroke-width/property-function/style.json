@@ -3,7 +3,10 @@
   "metadata": {
     "test": {
       "width": 64,
-      "height": 64
+      "height": 64,
+      "ignored": {
+        "native": "https://github.com/mapbox/mapbox-gl-native/issues/4860"
+      }
     }
   },
   "sources": {
@@ -15,6 +18,7 @@
           {
             "type": "Feature",
             "properties": {
+              "width": 4
             },
             "geometry": {
               "type": "Point",
@@ -27,6 +31,7 @@
           {
             "type": "Feature",
             "properties": {
+              "width": 7
             },
             "geometry": {
               "type": "Point",
@@ -47,9 +52,10 @@
       "source": "geojson",
       "paint": {
         "circle-color": "#fff",
-        "circle-stroke-width": 5,
-        "circle-stroke-color": "blue",
-        "circle-blur": 0.5
+        "circle-stroke-width": {
+          "type": "identity",
+          "property": "width"
+        }
       }
     }
   ]

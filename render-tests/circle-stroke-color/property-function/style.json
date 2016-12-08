@@ -2,54 +2,60 @@
   "version": 8,
   "metadata": {
     "test": {
+      "width": 64,
+      "height": 64,
       "ignored": {
         "native": "https://github.com/mapbox/mapbox-gl-native/issues/4860"
-      },
-      "height": 256
+      }
     }
   },
-  "center": [
-    13.418056,
-    52.499167
-  ],
-  "zoom": 14,
   "sources": {
-    "mapbox": {
-      "type": "vector",
-      "maxzoom": 14,
-      "tiles": [
-        "local://tiles/{z}-{x}-{y}.mvt"
-      ]
+    "geojson": {
+      "type": "geojson",
+      "data": {
+        "type": "FeatureCollection",
+        "features": [
+          {
+            "type": "Feature",
+            "properties": {
+              "color": "red"
+            },
+            "geometry": {
+              "type": "Point",
+              "coordinates": [
+                -10,
+                0
+              ]
+            }
+          },
+          {
+            "type": "Feature",
+            "properties": {
+              "color": "green"
+            },
+            "geometry": {
+              "type": "Point",
+              "coordinates": [
+                10,
+                0
+              ]
+            }
+          }
+        ]
+      }
     }
   },
   "layers": [
     {
-      "id": "background",
-      "type": "background",
-      "paint": {
-        "background-color": "white"
-      }
-    },
-    {
-      "id": "poi_label",
+      "id": "circle",
       "type": "circle",
-      "source": "mapbox",
-      "source-layer": "poi_label",
+      "source": "geojson",
       "paint": {
-        "circle-radius": 5,
+        "circle-color": "#fff",
         "circle-stroke-width": 2,
         "circle-stroke-color": {
-          "stops": [
-            [
-              0,
-              "red"
-            ],
-            [
-              50,
-              "green"
-            ]
-          ],
-          "property": "localrank"
+          "type": "identity",
+          "property": "color"
         }
       }
     }

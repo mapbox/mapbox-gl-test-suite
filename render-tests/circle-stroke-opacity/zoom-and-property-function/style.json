@@ -2,76 +2,89 @@
   "version": 8,
   "metadata": {
     "test": {
+      "width": 64,
+      "height": 64,
       "ignored": {
         "native": "https://github.com/mapbox/mapbox-gl-native/issues/4860"
-      },
-      "height": 256
+      }
     }
   },
-  "center": [
-    13.418056,
-    52.499167
-  ],
-  "zoom": 14,
   "sources": {
-    "mapbox": {
-      "type": "vector",
-      "maxzoom": 14,
-      "tiles": [
-        "local://tiles/{z}-{x}-{y}.mvt"
-      ]
+    "geojson": {
+      "type": "geojson",
+      "data": {
+        "type": "FeatureCollection",
+        "features": [
+          {
+            "type": "Feature",
+            "properties": {
+              "opacity": 0
+            },
+            "geometry": {
+              "type": "Point",
+              "coordinates": [
+                -10,
+                0
+              ]
+            }
+          },
+          {
+            "type": "Feature",
+            "properties": {
+              "opacity": 1
+            },
+            "geometry": {
+              "type": "Point",
+              "coordinates": [
+                10,
+                0
+              ]
+            }
+          }
+        ]
+      }
     }
   },
   "layers": [
     {
-      "id": "background",
-      "type": "background",
-      "paint": {
-        "background-color": "white"
-      }
-    },
-    {
-      "id": "poi_label",
+      "id": "circle",
       "type": "circle",
-      "source": "mapbox",
-      "source-layer": "poi_label",
+      "source": "geojson",
       "paint": {
-        "circle-radius": 10,
-        "circle-stroke-width": 4,
-        "circle-stroke-color": "orange",
+        "circle-color": "#fff",
+        "circle-stroke-width": 5,
         "circle-stroke-opacity": {
-          "base": 1,
+          "property": "opacity",
           "stops": [
             [
               {
-                "zoom": 13.9,
+                "zoom": 0,
                 "value": 0
               },
-              0
+              0.5
             ],
             [
               {
-                "zoom": 13.9,
-                "value": 50
+                "zoom": 0,
+                "value": 1
               },
-              0.75
+              0.7
             ],
             [
               {
-                "zoom": 14.2,
+                "zoom": 1,
                 "value": 0
               },
-              0.25
+              0.9
             ],
             [
               {
-                "zoom": 14.2,
-                "value": 50
+                "zoom": 1,
+                "value": 1
               },
               1
             ]
-          ],
-          "property": "localrank"
+          ]
         }
       }
     }
