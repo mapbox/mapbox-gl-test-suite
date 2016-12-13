@@ -45,38 +45,50 @@
         "icon-image": "{maki}-12",
         "icon-offset": {
           "base": 1,
-            "stops": [
+          "stops": [
             [
               {
                 "zoom": 13.9,
                 "value": 0
               },
-              [0, 10]
+              [
+                0,
+                10
+              ]
             ],
             [
               {
                 "zoom": 13.9,
                 "value": 50
               },
-              [20, 10]
+              [
+                20,
+                10
+              ]
             ],
             [
               {
                 "zoom": 14.2,
                 "value": 0
               },
-              [0, 25]
+              [
+                0,
+                25
+              ]
             ],
             [
               {
                 "zoom": 14.2,
                 "value": 50
               },
-              [50, 25]
+              [
+                50,
+                25
+              ]
             ]
           ],
           "property": "localrank"
-          }
+        }
       },
       "paint": {
         "icon-opacity": 1
