@@ -1,9 +1,0 @@
-/render-tests/*/*/actual.png
-/render-tests/*/*/diff.png
-/render-tests/index.html
-/query-tests/index.html
-/query-tests/*/*/actual.png
-/node_modules
-npm-debug.log
-*.sublime-*
-.DS_Store
